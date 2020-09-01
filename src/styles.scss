@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/theming";
+@include mat-core();
+
+$github-webpage-primary: mat-palette($mat-indigo);
+$github-webpage-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+// $github-webpage-warn: mat-palette($mat-red);
+
+$github-webpage-theme: mat-light-theme(
+  $github-webpage-primary,
+  $github-webpage-accent,
+  $github-webpage-warn
+);
+
+@include angular-material-theme($client-theme-theme);
+
+$primary-color: #e2fadb;
+$secondary-color: #f2fdff;
+$dark-color: rgb(7, 27, 48);
+$grey-color: #dddddd;
+
+$background-color1: white;
+$background-color2: rgb(240, 240, 240);
+
+$navigation-color: white;
+$navigation-accent-color: #ccc;
+
+$footer-text-color: rgb(192, 192, 192);
+
+$error-red: rgb(255, 26, 26);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
