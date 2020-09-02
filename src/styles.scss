@@ -3,16 +3,13 @@
 
 $github-webpage-primary: mat-palette($mat-indigo);
 $github-webpage-accent: mat-palette($mat-pink, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
-// $github-webpage-warn: mat-palette($mat-red);
-
 $github-webpage-theme: mat-light-theme(
   $github-webpage-primary,
   $github-webpage-accent
 );
 
 @include angular-material-theme($github-webpage-theme);
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=PT+Sans&family=Pacifico&display=swap");
 
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
@@ -40,11 +37,11 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 h2 {
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 35px;
 }
 
