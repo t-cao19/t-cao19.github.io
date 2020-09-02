@@ -9,7 +9,7 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=PT+Sans&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Oleo+Script&family=PT+Sans&family=Pacifico&display=swap");
 
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
@@ -38,6 +38,11 @@ body {
 
 h2 {
   font-family: Roboto, sans-serif;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: "Oleo Script", cursive;
   font-size: 35px;
 }
 
