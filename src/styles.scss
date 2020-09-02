@@ -31,10 +31,6 @@ body {
   height: 100%;
 }
 
-html,
-body {
-  height: 100%;
-}
 body {
   margin: 0;
   font-family: "Abel", sans-serif;
@@ -50,6 +46,9 @@ h5 {
   font-weight: 500;
 }
 
-p {
-  font-size: 15px;
+p,
+ul,
+li {
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
 }
