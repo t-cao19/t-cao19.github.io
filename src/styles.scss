@@ -9,11 +9,10 @@ $github-webpage-accent: mat-palette($mat-pink, A200, A100, A400);
 
 $github-webpage-theme: mat-light-theme(
   $github-webpage-primary,
-  $github-webpage-accent,
-  $github-webpage-warn
+  $github-webpage-accent
 );
 
-@include angular-material-theme($client-theme-theme);
+@include angular-material-theme($github-webpage-theme);
 
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
@@ -23,7 +22,7 @@ $grey-color: #dddddd;
 $background-color1: white;
 $background-color2: rgb(240, 240, 240);
 
-$navigation-color: white;
+$navigation-color: black;
 $navigation-accent-color: #ccc;
 
 $footer-text-color: rgb(192, 192, 192);
@@ -34,7 +33,26 @@ html,
 body {
   height: 100%;
 }
+
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 35px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
 }

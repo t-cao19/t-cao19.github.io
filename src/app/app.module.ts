@@ -7,13 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { WorkComponent } from './pages/work/work.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WorkComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
