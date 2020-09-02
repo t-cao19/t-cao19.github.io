@@ -4,25 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { WorkComponent } from './pages/work/work.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ResumeComponent } from './pages/resume/resume.component';
+import { VolunteerComponent } from './pages/volunteer/volunteer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WorkComponent,
     ProjectsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ResumeComponent,
+    VolunteerComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
