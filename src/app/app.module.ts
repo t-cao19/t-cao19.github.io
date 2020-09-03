@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { VolunteerComponent } from './pages/volunteer/volunteer.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { VolunteerComponent } from './pages/volunteer/volunteer.component';
     NavbarComponent,
     ResumeComponent,
     VolunteerComponent,
+    CarouselComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
