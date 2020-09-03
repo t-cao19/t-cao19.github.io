@@ -1,7 +1,8 @@
 [
   {
-    "course-code": "CSCC01",
-    "course-title": "Intro to Software Engineering",
+    "photo": "../images/c01-agile.jpg",
+    "code": "CSCC01",
+    "title": "Intro to Software Engineering",
     "highlights": [
       "Agile Development Metholodiges",
       "Agile Requirement Illication",
@@ -9,6 +10,6 @@
       "Design Patterns (Creational, Behaviour & Structural)",
       "Version control using Git/GitHub"
     ],
-    "calendar-link": "https://utsc.calendar.utoronto.ca/course/cscc01h3"
+    "calendar": "https://utsc.calendar.utoronto.ca/course/cscc01h3"
   }
 ]
