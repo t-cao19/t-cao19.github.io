@@ -10,63 +10,44 @@
   </div>
   <div class="page-body">
     <mat-accordion class="example-headers-align">
-      <mat-expansion-panel
-        [expanded]="step === 0"
-        (opened)="setStep(0)"
-        hideToggle
-      >
-        <mat-expansion-panel-header>
-          <mat-panel-title> Personal data </mat-panel-title>
-          <mat-panel-description>
-            Type your name and age
-          </mat-panel-description>
-        </mat-expansion-panel-header>
+      <div *ngFor="let project of projects; index as i">
+        <mat-expansion-panel
+          [expanded]="step === i"
+          (opened)="setStep(i)"
+          hideToggle
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> {{ project.title }} </mat-panel-title>
+            <mat-panel-description>
+              {{ project.description }}
+              <i> {{ project.emphasis }} </i>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
 
-        <mat-form-field>
-          <mat-label>First name</mat-label>
-          <input matInput />
-        </mat-form-field>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="{{ project.image }}" class="dropdown-pic" />
+            </div>
+            <div class="col-md-8">
+              <p>{{ project.date }}</p>
+              <ul *ngFor="let point of project.points">
+                <li>
+                  {{ point }}
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <mat-form-field>
-          <mat-label>Age</mat-label>
-          <input matInput type="number" min="1" />
-        </mat-form-field>
-        <mat-action-row>
-          <button mat-button color="primary" (click)="nextStep()">Next</button>
-        </mat-action-row>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel
-        [expanded]="step === 1"
-        (opened)="setStep(1)"
-        hideToggle
-      >
-        <mat-expansion-panel-header>
-          <mat-panel-title> Destination </mat-panel-title>
-          <mat-panel-description> Type the country name </mat-panel-description>
-        </mat-expansion-panel-header>
-
-        <mat-form-field>
-          <mat-label>Country</mat-label>
-          <input matInput />
-        </mat-form-field>
-
-        <mat-action-row>
-          <button mat-button color="warn" (click)="prevStep()">Previous</button>
-          <button mat-button color="primary" (click)="nextStep()">Next</button>
-        </mat-action-row>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel
-        [expanded]="step === 2"
-        (opened)="setStep(2)"
-        hideToggle
-      >
-        <mat-action-row>
-          <button mat-button color="warn" (click)="prevStep()">Previous</button>
-          <button mat-button color="primary" (click)="nextStep()">End</button>
-        </mat-action-row>
-      </mat-expansion-panel>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()" *ngIf="i != 0">
+              Previous
+            </button>
+            <button mat-button color="primary" (click)="nextStep()">
+              Next
+            </button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </div>
     </mat-accordion>
   </div>
 </div>

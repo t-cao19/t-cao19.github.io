@@ -1,8 +1,7 @@
 @import "src/styles";
 
 .projects-page {
-  background: #f1ecce;
-  height: 100%;
+  background-color: #f1ecce;
 }
 
 .example-headers-align .mat-expansion-panel-header-title,
@@ -17,4 +16,22 @@
 
 .example-headers-align .mat-form-field + .mat-form-field {
   margin-left: 8px;
+}
+
+mat-expansion-panel {
+  width: 70%;
+  margin: 10px auto 10px auto;
+  padding: 15px;
+}
+
+mat-panel-title {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.dropdown-pic {
+  width: 195px;
+  height: 300px;
+  object-fit: cover;
 }

@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Find Dining Scarborough",
+    "description": "Food Ordering Platform for Scarborough",
+    "emphasis": "(Selected as best project by City of Toronto Ward 25)",
+    "date": "June - August 2020",
+    "points": [],
+    "image": "../../../assets/images/find_dining.jpg"
+  },
+  {
+    "title": "Pineapple eCommerce Store",
+    "description": "Mobile Android Application",
+    "date": "November - December 2019",
+    "points": [
+      "Technologies involved included Java, SQLite and Android Studio",
+      "Worked in a team of four as the project manager (keeping track of deadlines and meetings)",
+      "Developed an Android application written in Java using design principles that simulated an online commercial store using databases to store customers’ accounts and purchases"
+    ],
+    "image": "../../../assets/images/pineapple_store.jpg"
+  }
+]
