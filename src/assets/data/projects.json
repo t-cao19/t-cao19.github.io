@@ -24,5 +24,17 @@
     ],
     "image": "../../../assets/images/pineapple_store.jpg",
     "github": "https://github.com/t-cao19/Pineapple"
+  },
+  {
+    "title": "Royal Castle Hero",
+    "description": "Python Video Game",
+    "date": "May - June 2018",
+    "overview": "Video game written in Python that simulated 'Tower Fortress' on Nitrome",
+    "points": [
+      "Technologies involved included Python 2.7 and PyGame",
+      "Fully animated walking characters, scrolling background, background music and sound effects through the use of photoshop and classes in Python"
+    ],
+    "image": "../../../assets/images/royal_castle_hero.jpg",
+    "github": "https://github.com/t-cao19/royal-castle-hero"
   }
 ]
