@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import projects from '../../../assets/data/projects.json';
 
 @Component({
@@ -9,6 +10,7 @@ import projects from '../../../assets/data/projects.json';
 export class ProjectsComponent implements OnInit {
   step = 0;
   projects: any[];
+  faGitHub = faGithub;
   constructor() {
     this.projects = projects;
   }

@@ -35,3 +35,20 @@ mat-panel-title {
   height: 300px;
   object-fit: cover;
 }
+
+.media-icons {
+  position: absolute;
+  top: 135px;
+  width: 220px;
+
+  @media screen and (max-width: 850px) {
+    position: relative;
+    top: 20px;
+  }
+}
+
+.media-icon {
+  font-size: 30px;
+  float: right;
+  color: black;
+}
