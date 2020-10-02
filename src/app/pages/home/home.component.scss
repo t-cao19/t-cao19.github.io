@@ -36,9 +36,13 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 .about-me {
-  margin: 0px auto 0px auto;
-  padding: 100px 20px 20px 20px;
   background: #e2f1f8;
+}
+
+.bio {
+  width: 80%;
+  margin: 0px auto 0px auto;
+  padding: 100px 20px 100px 20px;
 }
 
 .profile-img {
@@ -65,41 +69,40 @@ $box-border-shadow-color: rgb(175, 175, 175);
 
 /* Media Queries
 ------------------------*/
-@media (min-width: 900px) {
-  .col-narrow {
-    width: 40%;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+// @media (min-width: 900px) {
+//   .col-narrow {
+//     width: 40%;
+//     float: left;
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//   }
 
-  .col-wide {
-    width: 60%;
-    float: left;
-    padding: 20px 100px 20px 10px;
-  }
-}
+//   .col-wide {
+//     width: 60%;
+//     float: left;
+//     padding: 20px 100px 20px 10px;
+//   }
+// }
 
-@media (max-width: 899px) {
-  .name {
-    padding-top: 20px;
-  }
-  .about-me {
-    width: 95%;
-  }
-  .profile-img {
-    width: 150px;
-    height: 150px;
-  }
-}
+// @media (max-width: 899px) {
+//   .name {
+//     padding-top: 20px;
+//   }
+//   .about-me {
+//     width: 95%;
+//   }
+//   .profile-img {
+//     width: 150px;
+//     height: 150px;
+//   }
+// }
 
-@media (max-width: 400px) {
-  .about-me {
-    width: 95%;
-    // background: hsl(0, 0%, 96%);
-  }
-  .profile-img {
-    width: 150px;
-    height: 150px;
-  }
-}
+// @media (max-width: 400px) {
+//   .about-me {
+//     width: 95%;
+//   }
+//   .profile-img {
+//     width: 150px;
+//     height: 150px;
+//   }
+// }

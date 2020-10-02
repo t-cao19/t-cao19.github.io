@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Senior Library Volunteer/Assistant",
+    "description": "Monarch Park Collegiate",
+    "date": "September 2014 - June 2018",
+    "overview": "Assisted the librarian with the daily operations of the library such as organizing books and event planning",
+    "points": [
+      "Organized and ran events to increase attendance of the library",
+      "Trained new members of the club",
+      "Assisted with daily adminstrative operations of the library"
+    ],
+    "image": "../../../assets/images/mpc_library.jpg"
+  },
+  {
+    "title": "Club Secretary",
+    "description": "Monarch Park Collegiate",
+    "date": "September 2015 - June 2018",
+    "overview": "Member of 'Radio Monarch' - the club responsible for daily morning annoucements to the entire school",
+    "points": [
+      "Collected messages from teaching and office staff",
+      "Provied guidance for new club members"
+    ],
+    "image": "../../../assets/images/mpc.jpg"
+  }
+]

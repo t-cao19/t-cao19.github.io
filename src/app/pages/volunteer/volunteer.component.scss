@@ -1,0 +1,62 @@
+@import "src/styles";
+
+.volunteer-page {
+  background-color: #f1ecce;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+mat-expansion-panel {
+  width: 70%;
+  margin: 10px auto 10px auto;
+  padding: 15px;
+}
+
+mat-panel-title {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.dropdown-pic {
+  width: 195px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.media-icons {
+  position: absolute;
+  top: 135px;
+  width: 220px;
+
+  @media screen and (max-width: 850px) {
+    position: relative;
+    top: 20px;
+  }
+}
+
+.media-icon {
+  font-size: 30px;
+  float: right;
+  color: black;
+}
+
+.header-box {
+  background-color: lightgray;
+}
+
+.page-header-img {
+  opacity: 0.45;
+}

@@ -1,1 +1,61 @@
-<p>volunteer works!</p>
+<div class="volunteer-page">
+  <div class="header-box">
+    <img
+      src="../../../assets/images/volunteer-header.jpg"
+      alt="Volunteer"
+      class="page-header-img"
+    />
+
+    <div class="page-header">Extracurricular Activities</div>
+  </div>
+  <div class="page-body">
+    <mat-accordion class="example-headers-align">
+      <div *ngFor="let volunteer of volunteers; index as i">
+        <mat-expansion-panel
+          [expanded]="step === i"
+          (opened)="setStep(i)"
+          hideToggle
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> {{ volunteer.title }} </mat-panel-title>
+            <mat-panel-description>
+              {{ volunteer.description }}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <div class="row">
+            <div class="col-md-4">
+              <img src="{{ volunteer.image }}" class="dropdown-pic" />
+            </div>
+            <div class="col-md-8">
+              <br />
+              <p><b>Overview:</b></p>
+              <p>{{ volunteer.overview }}</p>
+              <p><b>Dates:</b> {{ volunteer.date }}</p>
+              <p><b>Key Highlights:</b></p>
+              <ul *ngFor="let point of volunteer.points">
+                <li>
+                  {{ point }}
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()" *ngIf="i != 0">
+              Previous
+            </button>
+            <button
+              mat-button
+              color="primary"
+              (click)="nextStep()"
+              *ngIf="i != volunteers.length - 1"
+            >
+              Next
+            </button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </div>
+    </mat-accordion>
+  </div>
+</div>
