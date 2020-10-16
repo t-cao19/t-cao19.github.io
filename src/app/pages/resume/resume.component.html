@@ -5,7 +5,23 @@
       alt="Resumer"
       class="page-header-img"
     />
-
     <div class="page-header">Resumé</div>
+  </div>
+  <div class="page-body">
+    <div class="row">
+      <div class="col-md-4">
+        <app-sidebar-box
+          [category]="'Languages'"
+          [subcategories]="['Java', 'C/C++', 'Python']"
+        ></app-sidebar-box>
+        <app-sidebar-box
+          [category]="'Version Controls'"
+          [subcategories]="['SubVersion', 'Git/GitHub']"
+        ></app-sidebar-box>
+      </div>
+      <div class="col-md-8">
+        <p>SOME WORDS HERE</p>
+      </div>
+    </div>
   </div>
 </div>

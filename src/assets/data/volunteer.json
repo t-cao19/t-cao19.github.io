@@ -3,8 +3,10 @@
     "title": "Mentor",
     "description": "U of T Co-op Student Association",
     "date": "September 2020 - Present",
-    "overview": "",
-    "points": [],
+    "overview": "Mentor for Co-op Computer Science students",
+    "points": [
+      "Provided mentor support for new students entering the Co-op program or first-time seekers with activities such as resume and interview prep, workplace experience and the co-op journey"
+    ],
     "image": "../../../assets/images/CSA.jpg"
   },
   {

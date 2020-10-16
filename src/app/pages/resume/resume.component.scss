@@ -1,9 +1,16 @@
+@import "src/styles";
+
 .resume-page {
   background-color: #f1ecce;
 }
 
 .header-box {
-  background-color: lightgray;
+  background-color: white;
+}
+
+.page-body {
+  width: 80%;
+  margin: 30px auto 30px auto;
 }
 
 .page-header-img {
