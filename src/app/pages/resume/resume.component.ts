@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import works from '../../../assets/data/work.json'
 
 @Component({
   selector: 'app-resume',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  works: any[];
+
+  constructor() { 
+    this.works = works;
+  }
 
   ngOnInit(): void {
   }

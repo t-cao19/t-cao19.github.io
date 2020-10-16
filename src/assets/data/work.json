@@ -1,0 +1,23 @@
+[
+    {
+        "position": "Data Scientist Co-Op",
+        "place": "TELUS Communication",
+        "date": "January - August 2020",
+        "points": [
+            "Joined an agile team of developers focused on data analytics and automation for TELUS Procurement", 
+            "Focused on performing Spend Analytics, Data Cleaning and Data Visualization",
+            "Developed a code library in Confluence on fundamentals of programming in Python for beginners",
+            "Faciliated and presented in bi-weekly presentations showcasing current and new team projects to audiences of 70+",
+            "Ran user experience test sessions for the production and launch of the new department webpage"]
+    },
+    {
+        "position": "Customer Service Representative",
+        "place": "Pape Flower Market",
+        "date": "June 2018 - January 2020",
+        "points": [
+            "Communicated with customers in-person & digitally to resolve and meet customer needs",
+            "Organized and kept track of customer’s orders to ensure that orders were available on time"
+            ]
+    }
+
+]
