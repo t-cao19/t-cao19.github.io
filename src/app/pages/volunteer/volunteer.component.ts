@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import volunteers from '../../../assets/data/volunteer.json';
 
 @Component({
@@ -9,6 +10,9 @@ import volunteers from '../../../assets/data/volunteer.json';
 export class VolunteerComponent implements OnInit {
   step = 0;
   volunteers: any[];
+  faFacebook = faFacebook;
+  faInstagram = faInstagram;
+  
   constructor() {
     this.volunteers = volunteers;
   }

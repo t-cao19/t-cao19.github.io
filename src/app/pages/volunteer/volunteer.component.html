@@ -38,6 +38,26 @@
                   {{ point }}
                 </li>
               </ul>
+              <a
+                href="{{ volunteer.instagram }}"
+                target="_blank"
+                *ngIf="volunteer.instagram != ''"
+              >
+                <fa-icon
+                  class="media-icon"
+                  [icon]="faInstagram"
+                ></fa-icon>
+              </a>
+              <a
+              href="{{ volunteer.facebook }}"
+              target="_blank"
+              *ngIf="volunteer.facebook != ''"
+            >
+              <fa-icon
+                class="media-icon"
+                [icon]="faFacebook"
+              ></fa-icon>
+            </a>
             </div>
           </div>
 

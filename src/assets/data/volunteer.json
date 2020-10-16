@@ -7,7 +7,9 @@
     "points": [
       "Provided mentor support for new students entering the Co-op program or first-time seekers with activities such as resume and interview prep, workplace experience and the co-op journey"
     ],
-    "image": "../../../assets/images/CSA.jpg"
+    "image": "../../../assets/images/CSA.jpg",
+    "facebook": "https://www.facebook.com/utcsa/",
+    "instagram": "https://www.instagram.com/uoftcsa/"
   },
   {
     "title": "Senior Library Volunteer/Assistant",
@@ -19,7 +21,9 @@
       "Trained new members of the club",
       "Assisted with daily adminstrative operations of the library"
     ],
-    "image": "../../../assets/images/mpc_library.jpg"
+    "image": "../../../assets/images/mpc_library.jpg",
+    "facebook": "https://www.facebook.com/Monarch-Park-Collegiate-Library-163929130477060/",
+    "instagram": ""
   },
   {
     "title": "Club Secretary",
@@ -30,6 +34,8 @@
       "Collected messages from teaching and office staff",
       "Provied guidance for new club members"
     ],
-    "image": "../../../assets/images/mpc.jpg"
+    "image": "../../../assets/images/mpc.jpg",
+    "facebook": "",
+    "instagram": ""
   }
 ]
