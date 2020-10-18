@@ -20,7 +20,7 @@ $background-color1: white;
 $background-color2: rgb(240, 240, 240);
 
 $navigation-color: black;
-$navigation-accent-color: #ccc;
+$navigation-accent-color: #495057;
 
 $footer-text-color: rgb(192, 192, 192);
 
@@ -48,7 +48,8 @@ h2 {
 
 h5 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
+  font-family: "Abel", sans-serif;
 }
 
 p,
