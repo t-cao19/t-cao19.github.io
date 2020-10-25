@@ -1,0 +1,36 @@
+@import "src/styles";
+
+footer {
+  font-size: 15px;
+  padding: 30px;
+  background-color: #e2ece9;
+  border-top: 2px solid silver;
+}
+
+.contact {
+  text-align: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.media-icon {
+  font-size: 30px;
+  margin: 10px;
+  color: black;
+}
+
+.icons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-content {
+  margin: 50px 20%;
+  color: $footer-text-color;
+
+  @media screen and (max-width: 700px) {
+    margin: 20px;
+  }
+}

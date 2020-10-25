@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SidebarBoxComponent } from './components/sidebar-box/sidebar-box.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SidebarBoxComponent } from './components/sidebar-box/sidebar-box.compon
     VolunteerComponent,
     CarouselComponent,
     SidebarBoxComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
