@@ -9,7 +9,7 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Slab&family=Oleo+Script&family=PT+Sans&family=Pacifico&family=Ubuntu+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;1,300&family=Nunito&family=Oswald&display=swap");
 
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
@@ -19,8 +19,8 @@ $grey-color: #dddddd;
 $background-color1: white;
 $background-color2: rgb(240, 240, 240);
 
-$navigation-color: black;
-$navigation-accent-color: #495057;
+$navigation-color: #d9dcd6;
+$navigation-accent-color: #81c3d7;
 
 $footer-text-color: rgb(192, 192, 192);
 
@@ -33,30 +33,42 @@ body {
 
 body {
   margin: 0;
-  font-family: "Abel", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
-  font-family: "Josefin Slab", serif;
+  font-family: "Oswald", sans-serif;
   font-size: 50px;
 }
 
 h2 {
-  font-family: "Oleo Script", cursive;
+  font-family: "Oswald", sans-serif;
   font-size: 35px;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
 h5 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
   font-family: "Abel", sans-serif;
 }
 
-p,
 ul,
 li {
-  font-size: 20px;
-  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
   margin-bottom: 5px;
 }
 
@@ -88,4 +100,8 @@ li {
 .page-body {
   position: relative;
   margin-top: 20px;
+}
+
+.nav-link {
+  color: white;
 }
