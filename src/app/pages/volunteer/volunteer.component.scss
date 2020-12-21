@@ -1,8 +1,23 @@
 @import "src/styles";
 
 .volunteer-page {
-  // background-color: #f1ecce;
-  background-color: #e2ece9;
+  background: linear-gradient(
+      0deg,
+      rgba(58, 124, 165, 0.5),
+      rgba(58, 124, 165, 0.5)
+    ),
+    url(../../../assets/images/Background.jpg) center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 100px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
 }
 
 .example-headers-align .mat-expansion-panel-header-title,
@@ -19,6 +34,10 @@
   margin-left: 8px;
 }
 
+.row {
+  padding-top: 15px;
+}
+
 mat-expansion-panel {
   width: 70%;
   margin: 10px auto 10px auto;
@@ -26,9 +45,8 @@ mat-expansion-panel {
 }
 
 mat-panel-title {
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 25px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 .dropdown-pic {
@@ -49,7 +67,7 @@ mat-panel-title {
 }
 
 .media-icon {
-  font-size: 30px;
+  font-size: 35px;
   float: right;
   color: black;
   padding-left: 10px;
@@ -66,4 +84,8 @@ mat-panel-title {
 .more-activites {
   padding: 15px;
   text-align: center;
+}
+
+.icons {
+  padding-top: 15px;
 }
