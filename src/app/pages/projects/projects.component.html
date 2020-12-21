@@ -1,19 +1,7 @@
 <div class="projects-page">
-  <div class="header-box">
-    <img
-      src="../../../assets/images/projects-header.jpeg"
-      alt="Projects"
-      class="page-header-img"
-    />
-
-    <div class="page-header">Projects</div>
-  </div>
   <div class="page-body">
-    <div class="project-info">
-      <p>
-        Welcome to my list of projects! These projects range from basic programs
-        to mobile applications to web applications!
-      </p>
+    <div class="title">
+      <h2>Projects</h2>
     </div>
     <mat-accordion class="example-headers-align">
       <div *ngFor="let project of projects; index as i">
@@ -23,10 +11,10 @@
           hideToggle
         >
           <mat-expansion-panel-header>
-            <mat-panel-title> {{ project.title }} </mat-panel-title>
-            <mat-panel-description>
+            <mat-panel-title> <h3>{{ project.title }} </h3></mat-panel-title>
+            <mat-panel-description><p>
               {{ project.description }}
-              <i> {{ project.emphasis }} </i>
+            </p>
             </mat-panel-description>
           </mat-expansion-panel-header>
 
@@ -36,6 +24,8 @@
             </div>
             <div class="col-md-8">
               <br />
+              <h5><u> {{ project.emphasis }} </u> </h5>
+              <br>
               <p><b>Project Overview:</b></p>
               <p>{{ project.overview }}</p>
               <br>
@@ -59,7 +49,7 @@
 
           <mat-action-row>
             <button mat-button color="warn" (click)="prevStep()" *ngIf="i != 0">
-              Previous
+              <p>Previous</p>
             </button>
             <button
               mat-button
@@ -67,14 +57,14 @@
               (click)="nextStep()"
               *ngIf="i != projects.length - 1"
             >
-              Next
+             <p>Next</p> 
             </button>
           </mat-action-row>
         </mat-expansion-panel>
       </div>
     </mat-accordion>
-    <div class="more-projects">
+    <!-- <div class="more-projects">
       <h2>More Projects to Come!</h2>
-    </div>
+    </div> -->
   </div>
 </div>
