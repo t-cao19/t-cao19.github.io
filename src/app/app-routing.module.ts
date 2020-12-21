@@ -4,10 +4,12 @@ import { HomeComponent } from '../app/pages/home/home.component';
 import { ProjectsComponent } from '../app/pages/projects/projects.component';
 import { ResumeComponent } from '../app/pages/resume/resume.component';
 import { VolunteerComponent } from '../app/pages/volunteer/volunteer.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'volunteer', component: VolunteerComponent },

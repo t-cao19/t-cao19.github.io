@@ -19,6 +19,14 @@ export class NavbarComponent implements OnInit {
     });
   }
 
+  about(): void{
+    this.router.navigate(['/about']).then(() => {
+      setTimeout(function () {
+        window.location.reload();
+      }, 100);
+    });
+  }
+
   resume(): void {
     this.router.navigate(['/resume']).then(() => {
       setTimeout(function () {

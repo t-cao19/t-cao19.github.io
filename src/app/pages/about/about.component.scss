@@ -1,0 +1,100 @@
+@import "src/styles";
+
+.about-page {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 124, 165, 0.5),
+      rgba(58, 124, 165, 0.5)
+    ),
+    url(../../../assets/images/Background.jpg) center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  overflow: auto;
+}
+
+.profile-box {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  margin: 125px auto 20px auto;
+  width: 70%;
+  padding: 20px 20px 20px 20px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.col-wide {
+  text-align: center;
+}
+
+.bio-text {
+  text-align: left;
+}
+
+.media-icon {
+  font-size: 50px;
+  margin: 10px 10px 20px 20px;
+  color: black;
+}
+
+.icons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  //   position: absolute;
+  top: 90%;
+  left: 50%;
+  //   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Media Queries
+------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 40%;
+    float: left;
+  }
+
+  .col-wide {
+    width: 60%;
+    float: left;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 899px) {
+  .name {
+    padding-top: 20px;
+  }
+  .profile-box {
+    width: 95%;
+    //   background: hsl(0, 0%, 96%);
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-box {
+    width: 95%;
+    //   background: hsl(0, 0%, 96%);
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
