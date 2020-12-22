@@ -1,61 +1,63 @@
 <div class="resume-page">
-  <div class="header-box">
-    <img
-      src="../../../assets/images/resume-header.jpg"
-      alt="Resumer"
-      class="page-header-img"
-    />
-    <div class="page-header">Resumé</div>
-  </div>
   <div class="page-body">
-    <div class="row">
-      <div class="col-md-3 sideboxes">
-        <app-sidebar-box
-          [category]="'Languages'"
-          [subcategories]="['Java', 'C/C++', 'Python (Pandas & NumPy)', 'HTML/CSS', 'TypeScript', 'JavaScript', 'Shell Scripting', 'SQL']"
-        ></app-sidebar-box>
-        <app-sidebar-box
-          [category]="'Software'"
-          [subcategories]="['Tableau', 'KNIME Analytics', 'LaTex', 'Jira', 'Confluence', 'Android Studio', 'G Suite', 'MS Office']"
-        ></app-sidebar-box>
-        <app-sidebar-box
-        [category]="'Frameworks'"
-        [subcategories]="['Angular']"
-      ></app-sidebar-box>
-        <app-sidebar-box
-        [category]="'Version Controls'"
-        [subcategories]="['SubVersion', 'Git/GitHub']"
-      ></app-sidebar-box>
-      </div>
-      <div class="col-md-9 content">
-        <div class="education">
-        <h2>Education</h2>
-        <p><b>University of Toronto (2018 - Present)</b></p>
-        <ul>
-          <li>Honours Bachelor of Science Canadidate</li>
-          <li>3rd year Co-op Specialist in Software Engineering and Major in Mathematics</li>
-          <li>Grade Point Average (GPA): 3.92/4.0</li>
-        </ul>
-        <br>
-        <p><u>Awards & Achievements</u></p>
-        <ul>
-          <li>Designated U of T Scholar ($7,500) in Fall 2018</li>
-          <li>Named to Dean's List in Fall 2019 and Fall 2020</li>
-          <li>Recieved a scholarship of $3,000 in Fall 2019 for having cGPA > 3.7</li>
-        </ul>
-      </div>
-        <h2>Work Experience</h2>
-        <div class="work-info" *ngFor="let work of works">
-          <p><b>{{ work.position }}</b>; {{ work.place }}</p>
-          <p><i>{{ work.date }}</i></p>
-          <ul *ngFor="let point of work.points">
-            <li>{{ point }} </li>
-          </ul>
-          <br>
-        </div>
-        <h2>Projects & Extracurricular</h2>
-        <p>Visit the project and extracurricular page!</p>
-      </div>
+    <div class="title">
+      <h2>Resume</h2>
     </div>
+      <div class="work">
+        <div class="subtitle">
+          <h4>Work Experience</h4>
+        </div>
+        <table class="work-table">
+          <thead>
+            <tr class="work-header">
+              <th><h3>Employer</h3></th>
+              <th><h3>Position</h3></th>
+              <th><h3>Duration</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><p>University of Toronto</p></td>
+              <td><p>Facilitated Study Group Leader</p></td>
+              <td><p>January 2021 - Present</p></td>
+            </tr>
+            <tr>
+              <td><p>Telus</p></td>
+              <td><p>Data Science Co-Op</p></td>
+              <td><p>January 2020 - August 2020</p></td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="resume">
+        <div class="subtitle">
+          <h4>Full Resume</h4>
+        </div>
+        <pdf-viewer [src]="pdfSrc"
+        [original-size]="false"
+        [autoresize]="true"
+        style="display: block;">
+      </pdf-viewer>
+      </div>
+      <div class="icons">
+        <a href="mailto:jtony.cao@mail.utoronto.ca" >
+          <fa-icon
+          class="footer-icon"
+          [icon]="faEnvelope"
+          ></fa-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+            <fa-icon
+            class="footer-icon"
+            [icon]="faLinkedinIn"
+            ></fa-icon>
+        </a>
+        <a href="https://github.com/t-cao19" target="_blank">
+            <fa-icon
+            class="footer-icon"
+            [icon]="faGitHub"
+            ></fa-icon>
+        </a>
+      </div>
   </div>
 </div>

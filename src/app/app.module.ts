@@ -17,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SidebarBoxComponent } from './components/sidebar-box/sidebar-box.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AboutComponent } from './pages/about/about.component';
     MatFormFieldModule,
     MatInputModule,
     FontAwesomeModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
