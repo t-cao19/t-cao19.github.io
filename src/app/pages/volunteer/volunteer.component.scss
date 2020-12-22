@@ -49,6 +49,12 @@ mat-panel-title {
   padding-bottom: 15px;
 }
 
+mat-action-row {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 .dropdown-pic {
   width: 195px;
   height: 300px;
@@ -89,7 +95,7 @@ mat-panel-title {
 .footer-icon {
   font-size: 50px;
   margin: 10px 10px 20px 20px;
-  color: black;
+  color: white;
 }
 
 .icons {

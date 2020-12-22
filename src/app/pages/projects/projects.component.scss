@@ -45,10 +45,18 @@ mat-panel-title {
   padding-bottom: 10px;
 }
 
+mat-action-row {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 .dropdown-pic {
   width: 195px;
   height: 300px;
   object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .row {
   padding-top: 15px;
@@ -94,7 +102,7 @@ h5 {
 .footer-icon {
   font-size: 50px;
   margin: 10px 10px 20px 20px;
-  color: black;
+  color: white;
 }
 
 .icons {
