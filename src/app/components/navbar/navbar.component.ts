@@ -12,42 +12,22 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {}
 
   home(): void {
-    this.router.navigate(['/home']).then(() => {
-      setTimeout(function () {
-        window.location.reload();
-      }, 100);
-    });
+    this.router.navigate(['/home']);
   }
 
   about(): void{
-    this.router.navigate(['/about']).then(() => {
-      setTimeout(function () {
-        window.location.reload();
-      }, 100);
-    });
+    this.router.navigate(['/about']);
   }
 
   resume(): void {
-    this.router.navigate(['/resume']).then(() => {
-      setTimeout(function () {
-        window.location.reload();
-      }, 100);
-    });
+    this.router.navigate(['/resume']);
   }
 
   projects(): void {
-    this.router.navigate(['/projects']).then(() => {
-      setTimeout(function () {
-        window.location.reload();
-      }, 100);
-    });
+    this.router.navigate(['/projects']);
   }
 
   volunteer(): void {
-    this.router.navigate(['/volunteer']).then(() => {
-      setTimeout(function () {
-        window.location.reload();
-      }, 100);
-    });
+    this.router.navigate(['/volunteer']);
   }
 }

@@ -3,8 +3,8 @@
 $box-border-shadow-color: rgb(175, 175, 175);
 
 .header {
-  position: absolute;
-  top: 30%;
+  position: relative;
+  margin-top: 200px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -14,8 +14,8 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 .tagline-one {
-  position: absolute;
-  top: 55%;
+  position: relative;
+  padding-top: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -24,8 +24,8 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 .tagline-two {
-  position: absolute;
-  top: 65%;
+  position: relative;
+  padding-top: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -34,8 +34,8 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 .tagline-three {
-  position: absolute;
-  top: 75%;
+  position: relative;
+  padding-top: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -77,4 +77,12 @@ $box-border-shadow-color: rgb(175, 175, 175);
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (max-width: 400px) {
+  .header {
+    // line-height: 55px !important;
+    white-space: nowrap; /* ensure no wrapping */
+    word-break: break-word;
+  }
 }
