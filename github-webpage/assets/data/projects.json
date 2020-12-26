@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Doodle Jump",
+    "description": "Video Game Written in Assembly",
+    "date": "November - December 2020",
+    "overview": "Assembly implementation of the popular video game 'Doodle Jump'",
+    "points": [
+      "Written completely from scratch using MIPS Assembly",
+      "Includes complete graphics and animations similar to the mobile game"
+    ],
+    "image": "../../../assets/images/Doodle-Jump.jpg",
+    "github": "https://github.com/t-cao19/CSCB58-Doodle"
+  },
+  {
+    "title": "t-cao19.github.io",
+    "description": "Personal Portfolio Webpage",
+    "date": "September 2020 - Present",
+    "overview": "A webpage built completely from scratch using Angular to showcase all my accomplishments",
+    "points": [
+      "Technologies involved included Angular, TypeScript/JavaScript and HTML/CSS",
+      "Webpage is fully adapted for screens of all size"
+    ],
+    "image": "../../../assets/images/t-cao19.github.io.jpg",
+    "github": ""
+  },
+  {
+    "title": "Find Dining Scarborough",
+    "description": "Food Ordering Platform for Scarborough",
+    "emphasis": "Best Project - City of Toronto & The BRIDGE UTSC",
+    "date": "June - August 2020",
+    "overview": "Food ordering web platform designed specifically for the Scarborough community to highlight their culinary backgrounds and stories by implementing pages that showcased owner profiles",
+    "points": [
+      "Technologies involved included Angular, TypeScript/JavaScript and HTML/CSS",
+      "Selected by the City of Toronto and the BRDIGE UTSC as winning project out of 4 other software engineer student groups",
+      "Worked in a team of 5 as front-end developer and project coordinator"
+    ],
+    "image": "../../../assets/images/find_dining.jpg",
+    "github": "https://github.com/t-cao19/team_08-project"
+  },
+  {
+    "title": "Pineapple eCommerce Store",
+    "description": "Mobile Android Application",
+    "date": "November - December 2019",
+    "overview": "Android application written in Java featuring design principles that simulated an online commercial store using databases to store customers’ accounts and purchases",
+    "points": [
+      "Technologies involved included Java, SQLite and Android Studio",
+      "Worked in a team of four as the project manager (keeping track of deadlines and meetings)"
+    ],
+    "image": "../../../assets/images/pineapple_store.jpg",
+    "github": "https://github.com/t-cao19/Pineapple"
+  },
+  {
+    "title": "Royal Castle Hero",
+    "description": "Python Video Game",
+    "date": "May - June 2018",
+    "overview": "Video game written in Python that simulated 'Tower Fortress' on Nitrome",
+    "points": [
+      "Technologies involved included Python 2.7 and PyGame",
+      "Fully animated walking characters, scrolling background, background music and sound effects through the use of photoshop and classes in Python"
+    ],
+    "image": "../../../assets/images/royal_castle_hero.jpg",
+    "github": "https://github.com/t-cao19/royal-castle-hero"
+  }
+]
