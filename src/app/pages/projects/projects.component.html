@@ -37,7 +37,7 @@
                   {{ point }}
                 </li>
               </ul>
-              <a href="{{ project.github }}" target="_blank">
+              <a href="{{ project.github }}" target="_blank" *ngIf="project.github != ''">
                 <fa-icon
                   class="media-icon"
                   [icon]="faGitHub"

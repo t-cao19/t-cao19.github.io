@@ -15,16 +15,16 @@
               <th><h3>Duration</h3></th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-              <td><p>University of Toronto</p></td>
-              <td><p>Facilitated Study Group Leader</p></td>
-              <td><p>January 2021 - Present</p></td>
+        <tbody *ngFor="let work of works; let even = even">  
+            <tr class="gray-background" *ngIf="!even">
+              <td><p> {{ work.employer }} </p></td>
+              <td><p> {{ work.position }}</p></td>
+              <td><p> {{ work.duration }}</p></td>
             </tr>
-            <tr>
-              <td><p>Telus</p></td>
-              <td><p>Data Science Co-Op</p></td>
-              <td><p>January 2020 - August 2020</p></td>
+            <tr class="blue-background" *ngIf="even">
+              <td><p> {{ work.employer }} </p></td>
+              <td><p> {{ work.position }}</p></td>
+              <td><p> {{ work.duration }}</p></td>
             </tr>
         </tbody>
         </table>

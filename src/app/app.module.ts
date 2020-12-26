@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { VolunteerComponent } from './pages/volunteer/volunteer.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -27,7 +26,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     NavbarComponent,
     ResumeComponent,
     VolunteerComponent,
-    CarouselComponent,
     SidebarBoxComponent,
     FooterComponent,
     AboutComponent,

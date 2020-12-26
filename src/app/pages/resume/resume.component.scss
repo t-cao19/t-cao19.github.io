@@ -66,12 +66,12 @@ td {
   letter-spacing: 1px;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #81c3d7;
+.gray-background {
+  background-color: #d9dcd6;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #d9dcd6;
+.blue-background {
+  background-color: #81c3d7;
 }
 
 .footer-icon {

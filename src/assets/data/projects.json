@@ -1,5 +1,29 @@
 [
   {
+    "title": "Doodle Jump",
+    "description": "Video Game Written in Assembly",
+    "date": "November - December 2020",
+    "overview": "Assembly implementation of the popular video game 'Doodle Jump'",
+    "points": [
+      "Written completely from scratch using MIPS Assembly",
+      "Includes complete graphics and animations similar to the mobile game"
+    ],
+    "image": "../../../assets/images/Doodle-Jump.jpg",
+    "github": "https://github.com/t-cao19/CSCB58-Doodle"
+  },
+  {
+    "title": "t-cao19.github.io",
+    "description": "Personal Portfolio Webpage",
+    "date": "September 2020 - Present",
+    "overview": "A webpage built completely from scratch using Angular to showcase all my accomplishments",
+    "points": [
+      "Technologies involved included Angular, TypeScript/JavaScript and HTML/CSS",
+      "Webpage is fully adapted for screens of all size"
+    ],
+    "image": "../../../assets/images/t-cao19.github.io.jpg",
+    "github": ""
+  },
+  {
     "title": "Find Dining Scarborough",
     "description": "Food Ordering Platform for Scarborough",
     "emphasis": "Best Project - City of Toronto & The BRIDGE UTSC",
