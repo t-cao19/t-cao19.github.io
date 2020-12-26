@@ -70,19 +70,36 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 .icons {
-  padding-top: 15px;
   padding-bottom: 15px;
-  position: absolute;
-  top: 90%;
+  position: relative;
+  padding-top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
-@media (max-width: 400px) {
-  .header {
-    // line-height: 55px !important;
-    white-space: nowrap; /* ensure no wrapping */
-    word-break: break-word;
+@media only screen and (min-width: 501px) {
+  .separate-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .separate-title {
+    padding-top: 95px;
+  }
+
+  .tagline-one {
+    padding-top: 10px;
+  }
+
+  .tagline-two {
+    padding-top: 10px;
   }
 }
