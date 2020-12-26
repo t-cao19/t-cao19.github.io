@@ -59,6 +59,19 @@ mat-action-row {
   width: 195px;
   height: 300px;
   object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 950px) and (min-width: 750px) {
+    padding-right: 30px;
+    width: 200px;
+    height: 265px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 225px;
+    height: 275px;
+  }
 }
 
 .media-icons {
@@ -103,4 +116,32 @@ mat-action-row {
   padding-bottom: 15px;
   left: 50%;
   text-align: center;
+}
+
+mat-expansion-panel-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+mat-panel-description {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.col-md-4 {
+  @media screen and (max-width: 750px) {
+    text-align: center;
+  }
+}
+
+h2 {
+  @media screen and (max-width: 750px) {
+    line-height: 70px;
+  }
 }
