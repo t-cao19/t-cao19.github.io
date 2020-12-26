@@ -64,7 +64,7 @@
 
 /* Media Queries
 ------------------------*/
-@media (min-width: 900px) {
+@media (min-width: 1001px) {
   .col-narrow {
     width: 40%;
     float: left;
@@ -77,25 +77,17 @@
   }
 }
 
-@media (max-width: 899px) {
-  .name {
-    padding-top: 20px;
+@media (max-width: 1000px) {
+  .col-narrow {
+    text-align: center;
+    padding-bottom: 20px;
   }
-  .profile-box {
-    width: 95%;
-  }
-  .profile-img {
-    width: 150px;
-    height: 150px;
-  }
-}
 
-@media (max-width: 400px) {
   .profile-box {
     width: 95%;
   }
   .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }

@@ -78,13 +78,13 @@ $box-border-shadow-color: rgb(175, 175, 175);
   text-align: center;
 }
 
-@media only screen and (min-width: 501px) {
+@media (min-width: 501px) {
   .separate-title {
     display: none;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   h1 {
     padding: 0;
     margin: 0;
