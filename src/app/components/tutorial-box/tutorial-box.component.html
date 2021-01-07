@@ -1,0 +1,12 @@
+<div class="card tutorialBox">
+    <div class="col">
+        <div class="card-body">
+            <h5 class="card-title">{{ tutorial.week | titlecase }}</h5>
+            <p><b>Topics Covered:</b></p>
+            <ul *ngFor="let topic of tutorial.topics">
+                <li> {{ topic }}</li>
+            </ul>
+            <a href="{{ tutorial.notes }}" target=”_blank”><p><b>Link to Notes</b></p></a>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import tutorials from '../../../assets/data/mata37-tutorial.json'
 
 @Component({
   selector: 'app-mata37-tutorial',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MATA37TutorialComponent implements OnInit {
 
-  constructor() { }
+  tutorials: any[];
+
+  constructor() { 
+    this.tutorials = tutorials;
+  }
 
   ngOnInit(): void {
   }

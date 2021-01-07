@@ -6,5 +6,13 @@
         <div class="subtitle">
             <h4>Calculus II for the Mathematical Sciences</h4>
         </div>
+        <div *ngIf="tutorials.length == 0">
+            <h5>No tutorial notes yet, check back later!</h5>
+        </div>
+        <div *ngIf="tutorials.length > 0">
+            <div class="tutorial-notes" *ngFor="let tutorial of tutorials">
+                <app-tutorial-box [tutorial]="tutorial"></app-tutorial-box>
+            </div>
+        </div>
     </div>
 </div>

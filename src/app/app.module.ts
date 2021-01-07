@@ -18,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { MATA37TutorialComponent } from './pages/mata37-tutorial/mata37-tutorial.component';
+import { TutorialBoxComponent } from './components/tutorial-box/tutorial-box.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MATA37TutorialComponent } from './pages/mata37-tutorial/mata37-tutorial
     FooterComponent,
     AboutComponent,
     MATA37TutorialComponent,
+    TutorialBoxComponent,
   ],
   imports: [
     BrowserModule,
