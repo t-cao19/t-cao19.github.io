@@ -17,6 +17,7 @@ import { SidebarBoxComponent } from './components/sidebar-box/sidebar-box.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { MATA37TutorialComponent } from './pages/mata37-tutorial/mata37-tutorial.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     SidebarBoxComponent,
     FooterComponent,
     AboutComponent,
+    MATA37TutorialComponent,
   ],
   imports: [
     BrowserModule,
