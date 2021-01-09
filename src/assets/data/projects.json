@@ -9,7 +9,7 @@
       "Includes complete graphics and animations similar to the mobile game"
     ],
     "image": "../../../assets/images/Doodle-Jump.jpg",
-    "github": ""
+    "github": "https://github.com/t-cao19/CSCB58-Doodle"
   },
   {
     "title": "t-cao19.github.io",
@@ -59,6 +59,6 @@
       "Fully animated walking characters, scrolling background, background music and sound effects through the use of photoshop and classes in Python"
     ],
     "image": "../../../assets/images/royal_castle_hero.jpg",
-    "github": "https://github.com/t-cao19/royal-castle-hero"
+    "github": ""
   }
 ]

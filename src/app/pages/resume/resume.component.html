@@ -18,12 +18,22 @@
         <tbody *ngFor="let work of works; let even = even">  
             <tr class="gray-background" *ngIf="!even">
               <td><p> {{ work.employer }} </p></td>
-              <td><p> {{ work.position }}</p></td>
+              <td *ngIf="work.link == ''">
+                <p> {{ work.position }}</p>
+              </td> 
+              <td *ngIf="work.link != ''">
+                <a href="{{ work.link }}" class="resume-link"><p> {{ work.position }}</p></a>
+              </td> 
               <td><p> {{ work.duration }}</p></td>
             </tr>
             <tr class="blue-background" *ngIf="even">
               <td><p> {{ work.employer }} </p></td>
-              <td><p> {{ work.position }}</p></td>
+              <td *ngIf="work.link == ''">
+                <p> {{ work.position }}</p>
+              </td> 
+              <td *ngIf="work.link != ''">
+                <a href="{{ work.link }}" class="resume-link"><p> {{ work.position }}</p></a>
+              </td> 
               <td><p> {{ work.duration }}</p></td>
             </tr>
         </tbody>
