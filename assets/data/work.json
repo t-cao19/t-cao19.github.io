@@ -1,12 +1,20 @@
 [
     {
         "employer": "University of Toronto",
+        "position": "Teaching Assistant",
+        "link": "../mata37-w21",
+        "duration": "January 2021 - Present"
+    },
+    {
+        "employer": "University of Toronto",
         "position": "Facilitated Study Group Leader",
+        "link": "",
         "duration": "January 2021 - Present"
     },
     {
         "employer": "Telus",
         "position": "Data Science Co-Op",
+        "link": "",
         "duration": "January 2020 - August 2020"
     }
 
