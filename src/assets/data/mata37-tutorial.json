@@ -1,7 +1,12 @@
 [ 
     {
+        "week": "Week 9: Mar 16, 2021",
+        "topics": ["Integration Technique: Trigonometric Substitution", "Improper Integrals: Type I and Type II"],
+        "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EfFsDxlXyLBPtIFhYcLuTasBA-jF2Jxs3wjWO27kQu7IiQ?e=YW97zN"
+    },
+    {
         "week": "Week 8: Mar 9, 2021",
-        "topics": ["Integration Technique: Partial Fraction Decomposition (Polynomial Long Division)", "Integration Technique: Trignometric Integrals"],
+        "topics": ["Integration Technique: Partial Fraction Decomposition (Polynomial Long Division)", "Integration Technique: Trigonometric Integrals"],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EflBedEUF_tCk5cm1MMo1UcB6WV-ohC6ktOl3XSaJYvuFQ?e=3e5pIy"
     },
     {
