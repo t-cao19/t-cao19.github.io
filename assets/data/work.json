@@ -1,6 +1,12 @@
 [
     {
         "employer": "University of Toronto",
+        "position": "Software Developer Co-Op",
+        "link": "",
+        "duration": "May 2021 - "
+    },
+    {
+        "employer": "University of Toronto",
         "position": "Teaching Assistant",
         "link": "../mata37-w21",
         "duration": "January 2021 - Present"
