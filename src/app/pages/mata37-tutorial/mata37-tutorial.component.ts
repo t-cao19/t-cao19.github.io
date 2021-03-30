@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import tutorials from '../../../assets/data/mata37-tutorial.json'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 @Component({
   selector: 'app-mata37-tutorial',
@@ -9,6 +11,9 @@ import tutorials from '../../../assets/data/mata37-tutorial.json'
 export class MATA37TutorialComponent implements OnInit {
 
   tutorials: any[];
+  faEnvelope = faEnvelope;
+  faLinkedinIn = faLinkedinIn;
+  faGitHub = faGithub;
 
   constructor() { 
     this.tutorials = tutorials;
