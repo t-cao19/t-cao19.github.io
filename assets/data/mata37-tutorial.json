@@ -1,5 +1,10 @@
 [ 
     {
+        "week": "Week 12: Apr 6, 2021",
+        "topics": ["Integral Test", "P-Series Test", "Alternating Series Test (AST)", "Comparsion Theorem for Series"],
+        "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ESmJiB2bc_NOiDzbvUsWESIBGO4iWkqGyTTMn4wBONCfvQ?e=opkgHt"
+    },
+    {
         "week": "Week 11: Mar 30, 2021",
         "topics": ["Bounded Monotone Convergence Theorem (BMCT)", "Intro to Series", "Series Tests: By Definition, Geometric Series Test, Divergence Test"],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ES3AAIMLvcpCrT-cbrBny3cBZRzKM_0lHRCXh0B-obIFHw?e=zXTezc"
