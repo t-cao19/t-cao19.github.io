@@ -1,5 +1,17 @@
 [
   {
+    "title": "PintOS",
+    "description": "Open Source Operating Systems",
+    "date": "January - April 2021",
+    "overview": "Course project for Operating Systems course at University of Toronto",
+    "points": [
+      "Technologies involved included Docker, GDB Debugger and C",
+      "Enhanced an existing open-source operating system by adding support for kernel threads, virtual memory, user programs and file systems"
+    ],
+    "image": "../../../assets/images/PintOS.jpg",
+    "github": ""
+  },
+  {
     "title": "Doodle Jump",
     "description": "Video Game Written in Assembly",
     "date": "November - December 2020",

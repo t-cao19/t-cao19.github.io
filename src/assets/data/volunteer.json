@@ -1,8 +1,21 @@
 [
   {
+    "title": "Front-End Developer",
+    "description": "U of T LIVE Competition",
+    "date": "May 2021 - Present",
+    "overview": "Responsible for front-end developemnt within LIVE",
+    "points": [
+      "Improved the competition portal, Blueboard, using Angular and TypeScript to allow for a smoother and more reliable system",
+      "Participated and presented in weekly sprint meetings to showcase new improvements to the entire team"
+    ],
+    "image": "../../../assets/images/LIVE.jpg",
+    "facebook": "https://www.facebook.com/LIVECompetition",
+    "instagram": "https://www.instagram.com/livecompetition/?hl=en"
+  },
+  {
     "title": "Mentor",
     "description": "U of T Co-op Student Association",
-    "date": "September 2020 - Present",
+    "date": "September 2020 - April 2021",
     "overview": "Mentor for Co-op Computer Science students",
     "points": [
       "Provided mentor support for new students entering the Co-op program or first-time seekers with activities such as resume and interview prep, workplace experience and the co-op journey"
