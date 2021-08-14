@@ -1,20 +1,35 @@
 @import "src/styles";
 
 .navbar {
-  background-color: #16425b;
+  background-color: #f0efeb;
   z-index: 100;
 }
 
-.nav-link {
-  font-family: "Montserrat", sans-serif;
+h2 {
+  font-size: 50px;
+  line-height: 50px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 35px;
+  padding-top: 25px;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 25px;
-  color: $navigation-color;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0px;
+  font-weight: normal;
+}
+
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 22px;
+  color: black;
+  margin-left: 15px;
+  padding: 25px 0px 0px 0px;
 }
 
 .navbar-toggler {
