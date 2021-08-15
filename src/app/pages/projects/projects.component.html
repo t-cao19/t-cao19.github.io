@@ -3,84 +3,18 @@
     <div class="title">
       <h2>Projects</h2>
     </div>
-    <mat-accordion class="example-headers-align">
-      <div *ngFor="let project of projects; index as i">
-        <mat-expansion-panel
-          [expanded]="step === i"
-          (opened)="setStep(i)"
-          hideToggle
-        >
-          <mat-expansion-panel-header>
-            <mat-panel-title> <h3>{{ project.title }} </h3></mat-panel-title>
-            <mat-panel-description><p>
-              {{ project.description }}
-            </p>
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-
-          <div class="row">
-            <div class="col-md-4">
-              <img src="{{ project.image }}" class="dropdown-pic" />
-            </div>
-            <div class="col-md-8">
-              <br />
-              <h5><u> {{ project.emphasis }} </u> </h5>
-              <br>
-              <p><b>Project Overview:</b></p>
-              <p>{{ project.overview }}</p>
-              <br>
-              <p><b>Project Dates:</b> {{ project.date }}</p>
-              <br>
-              <p><b>Key Highlights:</b></p>
-              <ul *ngFor="let point of project.points">
-                <li>
-                  {{ point }}
-                </li>
-              </ul>
-              <a href="{{ project.github }}" target="_blank" *ngIf="project.github != ''">
-                <fa-icon
-                  class="media-icon"
-                  [icon]="faGitHub"
-                  ngbTooltip="View Project on GitHub"
-                ></fa-icon>
-              </a>
-            </div>
-          </div>
-
-          <mat-action-row>
-            <button mat-button color="warn" (click)="prevStep()" *ngIf="i != 0">
-              <p>Previous</p>
-            </button>
-            <button
-              mat-button
-              color="primary"
-              (click)="nextStep()"
-              *ngIf="i != projects.length - 1"
-            >
-             <p>Next</p> 
-            </button>
-          </mat-action-row>
-        </mat-expansion-panel>
-      </div>
-    </mat-accordion>
+    <div class="projects" *ngFor="let project of projects">
+      <app-project-box [project]="project"></app-project-box>
+    </div>
     <div class="icons">
-      <a href="mailto:jtony.cao@mail.utoronto.ca" >
-        <fa-icon
-        class="footer-icon"
-        [icon]="faEnvelope"
-        ></fa-icon>
+      <a href="mailto:jtony.cao@mail.utoronto.ca">
+        <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
       </a>
       <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-          <fa-icon
-          class="footer-icon"
-          [icon]="faLinkedinIn"
-          ></fa-icon>
+        <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
       </a>
       <a href="https://github.com/t-cao19" target="_blank">
-          <fa-icon
-          class="footer-icon"
-          [icon]="faGitHub"
-          ></fa-icon>
+        <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
       </a>
     </div>
   </div>
