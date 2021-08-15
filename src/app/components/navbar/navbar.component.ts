@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  about(): void{
+  about(): void {
     this.router.navigate(['/about']);
   }
 
@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/projects']);
   }
 
-  volunteer(): void {
-    this.router.navigate(['/volunteer']);
+  teaching(): void {
+    this.router.navigate(['/teaching']);
   }
 }

@@ -1,0 +1,43 @@
+@import "src/styles";
+
+.teachingBox {
+  width: 50%;
+  height: 250px;
+  flex: 0 0 auto;
+  margin: 20px auto 20px auto;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: scroll;
+}
+
+p {
+  color: #16425b;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.school {
+  font-size: 20px;
+  text-align: right;
+}
+
+.tutorial-webpage {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 150px;
+  height: 50px;
+  background: #2f6690;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.card-title {
+  text-align: left;
+  padding-bottom: 15px;
+}

@@ -20,6 +20,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { MATA37TutorialComponent } from './pages/mata37-tutorial/mata37-tutorial.component';
 import { TutorialBoxComponent } from './components/tutorial-box/tutorial-box.component';
 import { ProjectBoxComponent } from './components/project-box/project-box.component';
+import { TeachingComponent } from './pages/teaching/teaching.component';
+import { TeachingListComponent } from './components/teaching-list/teaching-list.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { ProjectBoxComponent } from './components/project-box/project-box.compon
     MATA37TutorialComponent,
     TutorialBoxComponent,
     ProjectBoxComponent,
+    TeachingComponent,
+    TeachingListComponent,
   ],
   imports: [
     BrowserModule,

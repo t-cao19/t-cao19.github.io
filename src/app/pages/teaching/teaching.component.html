@@ -1,0 +1,21 @@
+<div class="teaching-page">
+  <div class="page-body">
+    <div class="title">
+      <h2>Teaching</h2>
+    </div>
+    <div class="teaching" *ngFor="let teaching of teachings">
+      <app-teaching-list [teaching]="teaching"></app-teaching-list>
+    </div>
+    <div class="icons">
+      <a href="mailto:jtony.cao@mail.utoronto.ca">
+        <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+        <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
+      </a>
+      <a href="https://github.com/t-cao19" target="_blank">
+        <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
+      </a>
+    </div>
+  </div>
+</div>

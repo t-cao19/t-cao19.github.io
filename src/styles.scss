@@ -9,8 +9,8 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-// @import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;1,300&family=Nunito&family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@700&family=Nunito&family=Oswald:wght@400;500;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@700&family=Nunito&family=Oswald:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;400&family=Oswald:wght@400;500;700&family=Poppins&display=swap");
 
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
@@ -72,9 +72,12 @@ h4 {
 }
 
 h5 {
-  font-size: 40px;
-  font-family: "Abel", sans-serif;
-  line-height: 40px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 30px;
+  color: #16425b;
 }
 
 ul,
