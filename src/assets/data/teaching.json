@@ -1,4 +1,12 @@
 [
+  {
+    "course": "MATA31H3: Calculus for Mangement I",
+    "date": "Fall 2021 (Sept - Dec)",
+    "school": "University of Toronto",
+    "tutorial": "TBA",
+    "instructor" : "Dr. Raymond Grinnell",
+    "webpage": ""
+  },
     {
       "course": "MATA37H3: Calculus II for Mathematical Sciences",
       "date": "Winter 2021 (Jan - Apr)",

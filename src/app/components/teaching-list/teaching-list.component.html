@@ -17,7 +17,12 @@
         <p>{{ teaching.instructor }}</p>
       </div>
       <div class="col-md-3">
-        <button class="tutorial-webpage" type="button" (click)="navigate()">
+        <button
+          class="tutorial-webpage"
+          type="button"
+          (click)="navigate()"
+          *ngIf="teaching.webpage"
+        >
           Webpage
         </button>
       </div>

@@ -1,12 +1,7 @@
 @import "src/styles";
 
 .about-page {
-  background: linear-gradient(
-      0deg,
-      rgba(58, 124, 165, 0.5),
-      rgba(58, 124, 165, 0.5)
-    ),
-    url(../../../assets/images/Background.jpg) center top;
+  background: #e6dace;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -14,9 +9,8 @@
   padding-top: 100px;
 }
 
-.title {
-  text-align: center;
-  color: white;
+p {
+  line-height: 1.15;
 }
 
 .content-wrap {
@@ -27,18 +21,22 @@
 }
 
 .profile-box {
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 40px;
-  margin: 40px auto 20px auto;
-  width: 70%;
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 20px auto 20px auto;
+  width: 65%;
+  padding-top: 10px;
 }
 
 .profile-img {
   width: 250px;
   height: 350px;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 20px;
+}
+
+.img {
+  text-align: center;
+  padding-top: 20px;
 }
 
 .col-wide {
@@ -52,7 +50,7 @@
 .footer-icon {
   font-size: 50px;
   margin: 10px 10px 20px 20px;
-  color: white;
+  color: black;
 }
 
 .icons {
