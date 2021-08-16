@@ -1,0 +1,61 @@
+[
+    {
+        "employer": "University of Toronto",
+        "position": "Teaching Assistant",
+        "link": "./teaching",
+        "date": "January 2021 - Present",
+        "image": "../../../assets/images/UofT.jpg",
+        "facebook" : "",
+        "instagram": "",
+        "note": "Mathematics Teaching Assistant"
+    },
+    {
+        "employer": "University of Toronto Scarborough Library",
+        "position": "Software Developer Co-Op",
+        "link": "https://digital.utsc.utoronto.ca/staff/tony-cao",
+        "image": "../../../assets/images/UTSC.jpg",
+        "facebook" : "",
+        "instagram": "",
+        "date": "May 2021 - August 2021",
+        "note": "Digital Scholarship Unit"
+    },
+    {
+        "position": "Front-End Developer",
+        "employer": "U of T LIVE Competition",
+        "date": "May 2021 - Present",
+        "link": "https://www.live-competition.org/",
+        "image": "../../../assets/images/LIVE.jpg",
+        "facebook": "https://www.facebook.com/LIVECompetition",
+        "instagram": "https://www.instagram.com/livecompetition/?hl=en"
+    },
+    {
+        "employer": "University of Toronto",
+        "position": "Facilitated Study Group Leader",
+        "link": "https://www.utsc.utoronto.ca/ctl/facilitated-study-groups-fsg",
+        "image": "../../../assets/images/UofT.jpg",
+        "facebook" : "https://www.facebook.com/UTSC-Facilitated-Study-Groups-163359907679243/",
+        "instagram": "",
+        "note": "Linear Algebra Facilitator",
+        "date": "January 2021 - April 2021"
+    },
+    {
+        "employer": "Telus",
+        "position": "Data Science Co-Op",
+        "note": "Procurement Analytics Centre of Excellence",
+        "link": "",
+        "image": "../../../assets/images/PACE.jpg",
+        "facebook" : "",
+        "instagram": "",
+        "date": "January 2020 - August 2020"
+    },
+    {
+        "position": "Mentor",
+        "employer": "U of T Co-op Student Association",
+        "link": "",
+        "date": "September 2020 - April 2021",
+        "image": "../../../assets/images/CSA.jpg",
+        "facebook": "https://www.facebook.com/utcsa/",
+        "instagram": "https://www.instagram.com/uoftcsa/"
+    }
+
+]

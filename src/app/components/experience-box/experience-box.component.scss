@@ -1,0 +1,64 @@
+@import "src/styles";
+
+.experienceBox {
+  width: 65%;
+  height: 290px;
+  flex: 0 0 auto;
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: scroll;
+}
+
+p {
+  color: #16425b;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.position {
+  font-size: 25px;
+}
+
+.experience-webpage {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 150px;
+  height: 50px;
+  background: #2f6690;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.card-title {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.media-icon {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 35px;
+  float: left;
+  color: black;
+}
+
+.experience-pic {
+  width: 195px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 950px) and (min-width: 750px) {
+    padding-right: 30px;
+    width: 200px;
+    height: 265px;
+  }
+}
