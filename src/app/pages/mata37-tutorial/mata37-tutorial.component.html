@@ -1,53 +1,57 @@
 <div class="tutorial-page">
-    <div class="page-body">
-        <div class="title">
-            <h2> MATA37 Winter 2021: TUT016</h2>
-        </div>
-        <div class="subtitle">
-            <h4>Calculus II for the Mathematical Sciences</h4>
-        </div>
-        <div class="tutorials">
-            <div class="tutorial-info row">
-                <div class="col-md-4">
-                    <h3><u>TA Name:</u> <br> Tony Cao</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3><u>Tutorial Times:</u> <br> Tues 9-11am EST</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3><u>Office Hours:</u> <br> Tues 11 am - 1pm EST</h3>
-                </div>
-            </div>
-        <div *ngIf="tutorials.length == 0">
-            <h5>No tutorial notes yet, check back later!</h5>
-        </div>
-        <div class="final-remarks">
-            <h4><b>That's all for tutorials! <br> Best of luck on final + everything!</b></h4>
-        </div>
-        <div *ngIf="tutorials.length > 0">
-            <div class="tutorial-notes" *ngFor="let tutorial of tutorials">
-                <app-tutorial-box [tutorial]="tutorial"></app-tutorial-box>
-            </div>
-        </div>
-        <div class="icons">
-            <a href="mailto:jtony.cao@mail.utoronto.ca" >
-              <fa-icon
-              class="footer-icon"
-              [icon]="faEnvelope"
-              ></fa-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-                <fa-icon
-                class="footer-icon"
-                [icon]="faLinkedinIn"
-                ></fa-icon>
-            </a>
-            <a href="https://github.com/t-cao19" target="_blank">
-                <fa-icon
-                class="footer-icon"
-                [icon]="faGitHub"
-                ></fa-icon>
-            </a>
-          </div>
+  <div class="page-body">
+    <div class="title">
+      <h2>MATA37 Winter 2021: TUT016</h2>
     </div>
+    <div class="subtitle">
+      <h4>Calculus II for the Mathematical Sciences</h4>
+    </div>
+    <div class="tutorials">
+      <div class="tutorial-info row">
+        <div class="col-md-4">
+          <h3><u>TA Name:</u></h3>
+          <p>Tony Cao</p>
+        </div>
+        <div class="col-md-4">
+          <h3>
+            <u>Tutorial Times:</u>
+          </h3>
+          <p>Tues 9-11am EST</p>
+        </div>
+        <div class="col-md-4">
+          <h3>
+            <u>Office Hours:</u>
+          </h3>
+          <p>Tues 11 am - 1pm EST</p>
+        </div>
+      </div>
+      <div *ngIf="tutorials.length == 0">
+        <h5>No tutorial notes yet, check back later!</h5>
+      </div>
+      <div class="final-remarks">
+        <h4>
+          <b
+            >That's all for tutorials! <br />
+            Best of luck on final + everything!</b
+          >
+        </h4>
+      </div>
+      <div *ngIf="tutorials.length > 0">
+        <div class="tutorial-notes" *ngFor="let tutorial of tutorials">
+          <app-tutorial-box [tutorial]="tutorial"></app-tutorial-box>
+        </div>
+      </div>
+      <div class="icons">
+        <a href="mailto:jtony.cao@mail.utoronto.ca">
+          <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+          <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
+        </a>
+        <a href="https://github.com/t-cao19" target="_blank">
+          <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
