@@ -15,11 +15,18 @@ export class ResumeComponent implements OnInit {
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
-  pdfSrc = '../../../assets/data/Tony Cao - Resume.pdf';
+  education: any;
 
   constructor() {
     this.works = works;
     this.experiences = experiences;
+    this.education = {
+      employer: '4th Year Student',
+      position: '2018 - Present',
+      date: 'University of Toronto',
+      image: '../../../assets/images/UofT.jpg',
+      note: 'CS Specialist & Math Major',
+    };
   }
 
   ngOnInit(): void {}

@@ -5,35 +5,41 @@
     </div>
     <div class="work">
       <div class="subtitle">
-        <h4><u>Work Experience</u></h4>
+        <h4><u>Experience</u></h4>
       </div>
       <div *ngFor="let experience of experiences">
         <app-experience-box [experience]="experience"></app-experience-box>
       </div>
-    </div>
-    <div class="resume">
-      <div class="subtitle">
-        <h4>Full Resume</h4>
+      <div class="education">
+        <div class="subtitle">
+          <h4><u>Education</u></h4>
+        </div>
+        <app-experience-box [experience]="this.education"></app-experience-box>
       </div>
-      <div class="resume-pdf">
-        <iframe
-          src="https://drive.google.com/file/d/1qmCXwOQARQjJ3dzU8FTdXK0Rh_U3JUUe/preview"
-          width="80%"
-          height="500"
-          allow="autoplay"
-        ></iframe>
+      <div class="resume">
+        <div class="subtitle">
+          <h4><u>Full Resume</u></h4>
+        </div>
+        <div class="resume-pdf">
+          <iframe
+            src="https://drive.google.com/file/d/1qmCXwOQARQjJ3dzU8FTdXK0Rh_U3JUUe/preview"
+            width="80%"
+            height="500"
+            allow="autoplay"
+          ></iframe>
+        </div>
       </div>
-    </div>
-    <div class="icons">
-      <a href="mailto:jtony.cao@mail.utoronto.ca">
-        <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
-      </a>
-      <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-        <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
-      </a>
-      <a href="https://github.com/t-cao19" target="_blank">
-        <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
-      </a>
+      <div class="icons">
+        <a href="mailto:jtony.cao@mail.utoronto.ca">
+          <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+          <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
+        </a>
+        <a href="https://github.com/t-cao19" target="_blank">
+          <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
+        </a>
+      </div>
     </div>
   </div>
 </div>
