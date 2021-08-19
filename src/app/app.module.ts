@@ -23,6 +23,7 @@ import { ProjectBoxComponent } from './components/project-box/project-box.compon
 import { TeachingComponent } from './pages/teaching/teaching.component';
 import { TeachingListComponent } from './components/teaching-list/teaching-list.component';
 import { ExperienceBoxComponent } from './components/experience-box/experience-box.component';
+import { EducationBoxComponent } from './components/education-box/education-box.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ExperienceBoxComponent } from './components/experience-box/experience-b
     TeachingComponent,
     TeachingListComponent,
     ExperienceBoxComponent,
+    EducationBoxComponent,
   ],
   imports: [
     BrowserModule,
