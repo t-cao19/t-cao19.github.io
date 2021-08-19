@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import works from '../../../assets/data/work.json';
 import experiences from '../../../assets/data/experience.json';
 
 @Component({
@@ -10,7 +9,6 @@ import experiences from '../../../assets/data/experience.json';
   styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-  works: any[];
   experiences: any[];
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
@@ -18,7 +16,6 @@ export class ResumeComponent implements OnInit {
   education: any;
 
   constructor() {
-    this.works = works;
     this.experiences = experiences;
     this.education = {
       employer: '4th Year Student',
