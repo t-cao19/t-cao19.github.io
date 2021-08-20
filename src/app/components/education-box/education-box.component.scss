@@ -8,6 +8,28 @@
   padding: 10px;
   background: rgba(255, 255, 255, 0.8);
   overflow: scroll;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    height: 450px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 85%;
+    height: 800px;
+  }
+}
+
+h5 {
+  @media screen and (max-width: 900px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 p {
@@ -16,11 +38,29 @@ p {
   font-style: normal;
   font-size: 22px;
   line-height: 1.5;
+
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+  }
 }
 
 .major {
   font-style: italic;
   font-size: 20px;
+
+  @media screen and (max-width: 900px) {
+    // font-size: 20px;
+    // line-height: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .relevant {
@@ -28,6 +68,17 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  line-height: 24px;
+
+  @media screen and (max-width: 900px) {
+    // font-size: 20px;
+    // line-height: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 hr {
@@ -38,11 +89,31 @@ hr {
 .date {
   font-weight: bold;
   font-weight: 25px;
+  line-height: 25px;
+
+  @media screen and (max-width: 900px) {
+    // width: 100%;
+    // height: 600px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .course {
   font-style: italic;
   font-weight: 300;
+  @media screen and (max-width: 900px) {
+    // width: 100%;
+    // height: 600px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .card-title {
