@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-8">
       <div class="card-body">
-        <h4 class="card-title">{{ project.title | titlecase }}</h4>
+        <h4 class="card-title">{{ project.title }}</h4>
         <p>{{ project.date }}</p>
         <br />
         <ul *ngFor="let point of project.points">
@@ -21,7 +21,7 @@
         </a>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 picture">
       <img src="{{ project.image }}" class="project-pic" />
     </div>
   </div>
