@@ -7,10 +7,37 @@
 
 h1 {
   padding-top: 10px;
+
+  @media screen and (max-width: 1400px) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 40px;
+  }
 }
 
 h3 {
   padding-top: 25px;
+
+  @media screen and (max-width: 1400px) {
+    font-size: 30px;
+    padding-top: 24px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 28px;
+    padding-top: 22px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
+    padding-top: 24px;
+  }
 }
 
 .nav-link {
@@ -22,6 +49,20 @@ h3 {
   color: black;
   margin-left: 15px;
   padding: 25px 0px 0px 0px;
+
+  @media screen and (max-width: 1400px) {
+    font-size: 18px;
+    margin-left: 1px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+  }
 }
 
 .navbar-toggler {
