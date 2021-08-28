@@ -24,6 +24,7 @@ import { TeachingComponent } from './pages/teaching/teaching.component';
 import { TeachingListComponent } from './components/teaching-list/teaching-list.component';
 import { ExperienceBoxComponent } from './components/experience-box/experience-box.component';
 import { EducationBoxComponent } from './components/education-box/education-box.component';
+import { MATA32TutorialComponent } from './pages/mata32-tutorial/mata32-tutorial.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { EducationBoxComponent } from './components/education-box/education-box.
     TeachingListComponent,
     ExperienceBoxComponent,
     EducationBoxComponent,
+    MATA32TutorialComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,7 @@ import { EducationBoxComponent } from './components/education-box/education-box.
     MatFormFieldModule,
     MatInputModule,
     FontAwesomeModule,
-    PdfViewerModule
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
