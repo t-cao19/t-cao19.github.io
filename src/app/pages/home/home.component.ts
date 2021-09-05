@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -12,10 +13,14 @@ export class HomeComponent implements OnInit {
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
 
+  constructor() {}
 
-  constructor() {
+  ngOnInit(): void {
+    AOS.init({
+      delay: 400,
+      duration: 2000,
+      once: false,
+      anchorPlacement: 'top-bottom',
+    });
   }
-
-  ngOnInit(): void {}
-    
 }

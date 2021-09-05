@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import experiences from '../../../assets/data/experience.json';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-resume',
@@ -26,5 +27,12 @@ export class ResumeComponent implements OnInit {
     };
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init({
+      delay: 300,
+      duration: 2000,
+      once: false,
+      anchorPlacement: 'top-bottom',
+    });
+  }
 }
