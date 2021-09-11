@@ -1,30 +1,28 @@
-<div data-aos="fade-up" data-aos-once="true">
-  <div class="card projectBox">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="card-body">
-          <h4 class="card-title">{{ project.title }}</h4>
-          <p>{{ project.date }}</p>
-          <br />
-          <ul *ngFor="let point of project.points">
-            <li>{{ point }}</li>
-          </ul>
-          <a
-            href="{{ project.github }}"
-            target="_blank"
-            *ngIf="project.github != ''"
-          >
-            <fa-icon
-              class="media-icon"
-              [icon]="faGitHub"
-              ngbTooltip="View Project on GitHub"
-            ></fa-icon>
-          </a>
-        </div>
+<div class="card projectBox">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">{{ project.title }}</h4>
+        <p>{{ project.date }}</p>
+        <br />
+        <ul *ngFor="let point of project.points">
+          <li>{{ point }}</li>
+        </ul>
+        <a
+          href="{{ project.github }}"
+          target="_blank"
+          *ngIf="project.github != ''"
+        >
+          <fa-icon
+            class="media-icon"
+            [icon]="faGitHub"
+            ngbTooltip="View Project on GitHub"
+          ></fa-icon>
+        </a>
       </div>
-      <div class="col-md-4 picture">
-        <img src="{{ project.image }}" class="project-pic" />
-      </div>
+    </div>
+    <div class="col-md-4 picture">
+      <img src="{{ project.image }}" class="project-pic" />
     </div>
   </div>
 </div>

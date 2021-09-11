@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({
-      delay: 400,
+      delay: 300,
       duration: 2000,
       once: false,
       anchorPlacement: 'top-bottom',
