@@ -1,0 +1,29 @@
+[
+  {
+    "course": "CSCA67H3: Discrete Mathematics",
+    "date": "Fall 2021 (Sept - Dec)",
+    "school": "University of Toronto",
+    "tutorial": "TBA",
+    "instructor" : "Dr. Anna Bretscher",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/csca67h3"
+  },
+  {
+    "course": "MATA32H3: Calculus for Mangement I",
+    "date": "Fall 2021 (Sept - Dec)",
+    "school": "University of Toronto",
+    "tutorial": "TBA",
+    "instructor" : "Dr. Raymond Grinnell",
+    "webpage": "/mata32-f21",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/mata32h3"
+  },
+  {
+      "course": "MATA37H3: Calculus II for Mathematical Sciences",
+      "date": "Winter 2021 (Jan - Apr)",
+      "school": "University of Toronto",
+      "tutorial": "TUT016",
+      "instructor" : "Dr. Kathleen Smith",
+      "webpage": "/mata37-w21",
+      "calendar": "https://utsc.calendar.utoronto.ca/course/mata37h3"
+  }
+]
