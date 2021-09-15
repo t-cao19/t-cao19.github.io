@@ -29,8 +29,8 @@ export class ResumeComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({
-      delay: 300,
-      duration: 2000,
+      delay: 200,
+      duration: 1500,
       once: false,
       anchorPlacement: 'top-bottom',
     });
