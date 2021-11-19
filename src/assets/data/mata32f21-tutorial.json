@@ -1,5 +1,13 @@
 [
     {
+        "week": "Week 10: Nov 15 - 19, 2021",
+        "topics": [
+            "Intro to Integration",
+            "Initial Value Conditions"
+        ],
+        "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EXpm-j3dtIZCvs2n2HO_Zi4Bv40tRiN-0MzOMxf7iOav4w?e=cuMmSv"
+    },
+    {
         "week": "Week 9: Nov 8 - 12, 2021",
         "topics": [
             "Increasing, Decreasing Functions",
@@ -18,7 +26,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/Ef2zxn8eUj9Eg5oiXBDGqsYBDa8WvnGT8GNE41cWh04TtQ?e=Kt0MdT"
     },
     {
-        "week": "Week 7: Oct 25 -29, 2021",
+        "week": "Week 7: Oct 25 - 29, 2021",
         "topics": [
             "Point Elasticity of Demand",
             "Implicit Differentiation"
@@ -26,7 +34,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EURUJXUErYJFuwt6Z-lkQhYBk2gyH7vghkw9juDOSN_w2A?e=Ppstgi"
     },
     {
-        "week": "Week 6: Oct 18 -22, 2021",
+        "week": "Week 6: Oct 18 - 22, 2021",
         "topics": [
             "Derivative of Logarithmic and Exponential Function",
             "Midterm Review"
