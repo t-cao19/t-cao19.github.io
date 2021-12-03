@@ -30,14 +30,14 @@
       <div *ngIf="tutorials.length == 0">
         <h5>No tutorial notes yet, check back later!</h5>
       </div>
-      <!-- <div class="final-remarks">
+      <div class="final-remarks">
         <h4>
           <b
             >That's all for tutorials! <br />
-            Best of luck on final + everything!</b
+            Best of luck on the final + everything!</b
           >
         </h4>
-      </div> -->
+      </div>
       <div *ngIf="tutorials.length > 0">
         <div class="tutorial-notes" *ngFor="let tutorial of tutorials">
           <app-tutorial-box [tutorial]="tutorial"></app-tutorial-box>
