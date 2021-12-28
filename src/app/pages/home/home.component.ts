@@ -17,10 +17,11 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.wordArray = [
+      'Tony Cao',
       '4th Year U of T Student',
       'CS + Math Enthusiast',
       'U of T Teaching Assistant',
-      'Front-End Addict',
+      'Front - End Addict',
     ];
   }
 

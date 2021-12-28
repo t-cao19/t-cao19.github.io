@@ -30,15 +30,29 @@
   </div>
   <div class="col-md-7 desc">
     <div class="right-side">
-      <ngx-sbz-type-delete
-        [textColor]="'black'"
-        [blinkWidth]="'8px'"
-        [fontSize]="'40px'"
-        [typingSpeedMilliseconds]="100"
-        [deleteSpeedMilliseconds]="200"
-        [wordArray]="wordArray"
-      >
-      </ngx-sbz-type-delete>
+      <div class="terminal space shadow">
+        <div class="top">
+          <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+          </div>
+          <div class="title">bash -- 94x24</div>
+        </div>
+        <div class="body">
+          ~ % whoami
+          <br /><br />
+          <ngx-sbz-type-delete
+            [textColor]="'#7afb4c;'"
+            [blinkWidth]="'8px'"
+            [fontSize]="'20px'"
+            [typingSpeedMilliseconds]="150"
+            [deleteSpeedMilliseconds]="200"
+            [wordArray]="wordArray"
+          >
+          </ngx-sbz-type-delete>
+        </div>
+      </div>
     </div>
   </div>
 </div>
