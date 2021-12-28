@@ -30,11 +30,15 @@
   </div>
   <div class="col-md-7 desc">
     <div class="right-side">
-      <h1 class="headline" data-aos="zoom-in-up" data-aos-once="true">Hello</h1>
-      <h4 data-aos="fade-up-left">4th Year U of T CS and Math Student</h4>
-      <h4 data-aos="fade-up-left">U of T CS + Math TA</h4>
-      <h4 data-aos="fade-up-left">Front-End Enthusiast</h4>
-      <h4 data-aos="fade-up-left">Avid Baker</h4>
+      <ngx-sbz-type-delete
+        [textColor]="'black'"
+        [blinkWidth]="'8px'"
+        [fontSize]="'40px'"
+        [typingSpeedMilliseconds]="100"
+        [deleteSpeedMilliseconds]="200"
+        [wordArray]="wordArray"
+      >
+      </ngx-sbz-type-delete>
     </div>
   </div>
 </div>

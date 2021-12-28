@@ -13,7 +13,16 @@ export class HomeComponent implements OnInit {
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
 
-  constructor() {}
+  wordArray: string[];
+
+  constructor() {
+    this.wordArray = [
+      '4th Year U of T Student',
+      'CS + Math Enthusiast',
+      'U of T Teaching Assistant',
+      'Front-End Addict',
+    ];
+  }
 
   ngOnInit(): void {
     AOS.init({

@@ -25,6 +25,7 @@ import { TeachingListComponent } from './components/teaching-list/teaching-list.
 import { ExperienceBoxComponent } from './components/experience-box/experience-box.component';
 import { EducationBoxComponent } from './components/education-box/education-box.component';
 import { MATA32TutorialComponent } from './pages/mata32-tutorial/mata32-tutorial.component';
+import { InfiniteTypeDeleteModule } from 'ngx-sbz-type-delete';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { MATA32TutorialComponent } from './pages/mata32-tutorial/mata32-tutorial
     MatInputModule,
     FontAwesomeModule,
     PdfViewerModule,
+    InfiniteTypeDeleteModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
