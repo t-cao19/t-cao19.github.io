@@ -1,58 +1,207 @@
-<div class="home-page row">
-  <div class="col-md-5 profile">
-    <div class="profile-box">
-      <div class="info">
-        <img
-          class="profile-img"
-          src="../../../assets/images/Tony Cao.jpeg"
-          alt="Tony Cao"
-        />
-        <div class="name">
-          <h1>TONY CAO</h1>
+<div class="home-page">
+  <div class="banner row">
+    <div class="col-md-5 profile">
+      <div class="profile-box">
+        <div class="info">
+          <img
+            class="profile-img"
+            src="../../../assets/images/Tony Cao.jpeg"
+            alt="Tony Cao"
+          />
+          <div class="name">
+            <h1>TONY CAO</h1>
+          </div>
+          <hr />
+          <div class="tagline">
+            <h3>Software Developer</h3>
+          </div>
         </div>
-        <hr />
-        <div class="tagline">
-          <h3>Software Developer</h3>
+        <div class="social">
+          <a href="mailto:jtony.cao@mail.utoronto.ca">
+            <fa-icon class="media-icon" [icon]="faEnvelope"></fa-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+            <fa-icon class="media-icon" [icon]="faLinkedinIn"></fa-icon>
+          </a>
+          <a href="https://github.com/t-cao19" target="_blank">
+            <fa-icon class="media-icon" [icon]="faGitHub"></fa-icon>
+          </a>
         </div>
       </div>
-      <div class="social">
-        <a href="mailto:jtony.cao@mail.utoronto.ca">
-          <fa-icon class="media-icon" [icon]="faEnvelope"></fa-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-          <fa-icon class="media-icon" [icon]="faLinkedinIn"></fa-icon>
-        </a>
-        <a href="https://github.com/t-cao19" target="_blank">
-          <fa-icon class="media-icon" [icon]="faGitHub"></fa-icon>
-        </a>
+    </div>
+    <div class="col-md-7 desc">
+      <div class="right-side">
+        <div class="terminal space shadow">
+          <div class="top">
+            <div class="btns">
+              <span class="circle red"></span>
+              <span class="circle yellow"></span>
+              <span class="circle green"></span>
+            </div>
+            <div class="title">bash -- 94x24</div>
+          </div>
+          <div class="body">
+            ~ % whoami
+            <br /><br />
+            <ngx-sbz-type-delete
+              [textColor]="'#7afb4c;'"
+              [blinkWidth]="'8px'"
+              [fontSize]="'20px'"
+              [typingSpeedMilliseconds]="300"
+              [deleteSpeedMilliseconds]="300"
+              [wordArray]="wordArray"
+            >
+            </ngx-sbz-type-delete>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-7 desc">
-    <div class="right-side">
-      <div class="terminal space shadow">
-        <div class="top">
-          <div class="btns">
-            <span class="circle red"></span>
-            <span class="circle yellow"></span>
-            <span class="circle green"></span>
-          </div>
-          <div class="title">bash -- 94x24</div>
+  <div class="highlights container">
+    <h3 class="highlight-tag">Currently...</h3>
+    <main class="grid">
+      <article>
+        <div class="text">
+          <h3>U of T Student</h3>
+          <p>Computer Science (Software Engineering) and Mathematics</p>
         </div>
-        <div class="body">
-          ~ % whoami
-          <br /><br />
-          <ngx-sbz-type-delete
-            [textColor]="'#7afb4c;'"
-            [blinkWidth]="'8px'"
-            [fontSize]="'20px'"
-            [typingSpeedMilliseconds]="150"
-            [deleteSpeedMilliseconds]="200"
-            [wordArray]="wordArray"
+      </article>
+      <article>
+        <div class="text">
+          <h3>Teaching Assistant</h3>
+          <p>
+            Teaching assistant for variety of first year Computer Science and
+            Mathematics course at the University of Toronto
+          </p>
+          <a
+            href="/teaching"
+            class="btn btn-primary btn-block"
+            target="”_blank”"
+            >List of Teachings</a
           >
-          </ngx-sbz-type-delete>
         </div>
-      </div>
-    </div>
+      </article>
+      <article>
+        <div class="text">
+          <h3>Front-End Developer</h3>
+          <p>Front-end developer for LIVE compeition</p>
+          <a
+            href="https://www.live-competition.org/"
+            class="btn btn-primary btn-block align-self-end"
+            target="”_blank”"
+            >LIVE Competition</a
+          >
+        </div>
+      </article>
+    </main>
+    <h3 class="highlight-tag">Previously...</h3>
+    <main class="grid">
+      <article>
+        <img
+          src="https://picsum.photos/600/400?image=1083"
+          alt="Sample photo"
+        />
+        <div class="text">
+          <h3>Software Application Developer Co-op</h3>
+          <p>
+            University of Toronto Scarborough Library - Digital Scholarship Unit
+          </p>
+          <a
+            href="https://digital.utsc.utoronto.ca/"
+            class="btn btn-primary btn-block"
+            target="”_blank”"
+            >DSU Webpage</a
+          >
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://picsum.photos/600/400?image=1063"
+          alt="Sample photo"
+        />
+        <div class="text">
+          <h3>Linear Algebra Leader</h3>
+          <p>
+            Facilitated study group leader for first year linear algebra course
+            with over 800+ students
+          </p>
+          <a
+            href="https://www.utsc.utoronto.ca/ctl/facilitated-study-groups-program"
+            class="btn btn-primary btn-block"
+            target="”_blank”"
+            >FSG Program</a
+          >
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://picsum.photos/600/400?image=1063"
+          alt="Sample photo"
+        />
+        <div class="text">
+          <h3>Student Mentor</h3>
+          <p>
+            Student mentor for the University of Toronto Co-op Student
+            Association for Computer Science, Math and Statistic Co-op students.
+          </p>
+          <a
+            href="https://codepen.io/collection/XdWJOQ/"
+            class="btn btn-primary btn-block"
+            >Here's how</a
+          >
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://picsum.photos/600/400?image=1056"
+          alt="Sample photo"
+        />
+        <div class="text">
+          <h3>PintOS</h3>
+          <p>
+            Completely synergize resource taxing relationships via premier niche
+            markets.
+          </p>
+          <a
+            href="https://codepen.io/collection/XdWJOQ/"
+            class="btn btn-primary btn-block"
+            >Read more</a
+          >
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://picsum.photos/600/400?image=1083"
+          alt="Sample photo"
+        />
+        <div class="text">
+          <h3>Find Dining Scarborough</h3>
+          <p>TO BE DONE</p>
+          <a
+            href="https://codepen.io/collection/XdWJOQ/"
+            class="btn btn-primary btn-block"
+            >TO BE DONE</a
+          >
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://picsum.photos/600/400?image=1056"
+          alt="Sample photo"
+        />
+        <div class="text">
+          <h3>Data Scientist Co-op</h3>
+          <p>Telus Communications - Procurement Department</p>
+          <!-- <a
+            href="https://codepen.io/collection/XdWJOQ/"
+            class="btn btn-primary btn-block"
+            >Read more</a
+          > -->
+        </div>
+      </article>
+    </main>
+  </div>
+  <div class="bottom">
+    <h3>TO BE DONE: Some nice quotes? Last updated?</h3>
   </div>
 </div>
