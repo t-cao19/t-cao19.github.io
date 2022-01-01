@@ -11,7 +11,7 @@ import { MATA32TutorialComponent } from '../app/pages/mata32-tutorial/mata32-tut
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'now', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'teaching', component: TeachingComponent },

@@ -1,12 +1,8 @@
 @import "src/styles";
 
 .volunteer-page {
-  background: linear-gradient(
-      0deg,
-      rgba(58, 124, 165, 0.5),
-      rgba(58, 124, 165, 0.5)
-    ),
-    url(../../../assets/images/Background.jpg) center top;
+  background: black;
+  // url(../../../assets/images/Background.jpg) center top;
   background-size: cover;
   width: 100%;
   height: 100%;

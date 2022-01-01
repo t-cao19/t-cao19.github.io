@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   }
 
   about(): void {
-    this.router.navigate(['/about']);
+    this.router.navigate(['/now']);
   }
 
   resume(): void {

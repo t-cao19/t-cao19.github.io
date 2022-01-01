@@ -17,9 +17,9 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({
-      delay: 400,
-      duration: 2000,
-      once: false,
+      delay: 300,
+      duration: 1500,
+      once: true,
       anchorPlacement: 'top-bottom',
     });
   }
