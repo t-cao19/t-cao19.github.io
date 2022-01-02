@@ -1,4 +1,3 @@
-
 export interface TimelineItem {
   label?: string;
   icon?: string;
@@ -15,4 +14,5 @@ export interface TimelineItem {
   styleClass?: string;
   title?: string;
   id?: string;
+  date?: string;
 }

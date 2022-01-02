@@ -52,22 +52,15 @@ export class ResumeComponent implements OnInit {
         styleClass: 'teste',
         content: item.content,
         title: item.title,
+        date: item.date,
         command() {
-          window.open(item.link, '_blank').focus();
+          if (item.link) {
+            window.open(item.link, '_blank').focus();
+          } else {
+            window.open('/home').focus();
+          }
         },
       });
     }
-
-    // this.items.push({
-    //   label: 'Action',
-    //   icon: 'fa fa-calendar-plus-o',
-    //   styleClass: 'teste',
-    //   content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    //   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    //   title: 'Software Application Developer',
-    //   command() {
-    //     alert(`test: ${self.externalVariable}`);
-    //   },
-    // });
   }
 }

@@ -1,4 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+
+$timeline-colour: #3a7ca5;
+
 header:after,
 #timeline .timeline-item:after,
 header:before,
@@ -59,7 +62,7 @@ header {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
 }
 header .logo {
-  color: #877ff1;
+  color: $timeline-colour;
   float: left;
   font-family: "Dosis", arial, tahoma, verdana;
   font-size: 22px;
@@ -91,7 +94,7 @@ header .social .btn {
   content: "";
   width: 3px;
   height: 100%;
-  background: #877ff1;
+  background: $timeline-colour;
   left: 50%;
   top: 0;
   position: absolute;
@@ -107,7 +110,7 @@ header .social .btn {
   position: relative;
 }
 #timeline .timeline-item .timeline-icon {
-  background: #877ff1;
+  background: $timeline-colour;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -147,7 +150,7 @@ header .social .btn {
 }
 #timeline .timeline-item .timeline-content h2 {
   padding: 15px;
-  background: #877ff1;
+  background: $timeline-colour;
   color: #fff;
   margin: -20px -20px 0 -20px;
   font-weight: 300;
@@ -165,7 +168,7 @@ header .social .btn {
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid #877ff1;
+  border-left: 7px solid $timeline-colour;
 }
 #timeline .timeline-item .timeline-content.right {
   float: right;
@@ -175,7 +178,7 @@ header .social .btn {
   right: 45%;
   left: inherit;
   border-left: 0;
-  border-right: 7px solid #877ff1;
+  border-right: 7px solid $timeline-colour;
 }
 .btn {
   display: inline-block;
@@ -189,7 +192,7 @@ header .social .btn {
   background-image: none;
   border: 1px solid transparent;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -199,7 +202,7 @@ header .social .btn {
   color: white;
 }
 .bg-purple {
-  background-color: #877ff1 !important;
+  background-color: $timeline-colour !important;
 }
 @media screen and (max-width: 768px) {
   #timeline {
@@ -219,7 +222,7 @@ header .social .btn {
     left: 10%;
     margin-left: -6px;
     border-left: 0;
-    border-right: 7px solid #877ff1;
+    border-right: 7px solid $timeline-colour;
   }
   #timeline .timeline-item .timeline-icon {
     left: 0;
@@ -233,5 +236,23 @@ header .social .btn {
 
 .timeline-content p {
   margin: 10px 0 10px;
-  font-size: 1.1em;
+  font-size: 18px;
+}
+
+.header {
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+fa-icon {
+  font-size: 16px;
+  padding-right: 10px;
 }
