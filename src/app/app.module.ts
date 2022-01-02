@@ -26,6 +26,7 @@ import { ExperienceBoxComponent } from './components/experience-box/experience-b
 import { EducationBoxComponent } from './components/education-box/education-box.component';
 import { MATA32TutorialComponent } from './pages/mata32-tutorial/mata32-tutorial.component';
 import { InfiniteTypeDeleteModule } from 'ngx-sbz-type-delete';
+import { NgxVerticalTimelineComponent } from './components/ngx-vertical-timeline/ngx-vertical-timeline.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { InfiniteTypeDeleteModule } from 'ngx-sbz-type-delete';
     ExperienceBoxComponent,
     EducationBoxComponent,
     MATA32TutorialComponent,
+    NgxVerticalTimelineComponent,
   ],
   imports: [
     BrowserModule,
