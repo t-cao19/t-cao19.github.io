@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import volunteers from '../../../assets/data/volunteer.json';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-volunteer',
@@ -17,9 +16,9 @@ export class VolunteerComponent implements OnInit {
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
-  
+
   constructor() {
-    this.volunteers = volunteers;
+    this.volunteers = [];
   }
 
   ngOnInit(): void {}

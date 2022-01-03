@@ -60,148 +60,52 @@
   <div class="highlights container">
     <h3 class="highlight-tag">Currently...</h3>
     <main class="grid">
-      <article>
+      <article *ngFor="let highlight of currently">
+        <img src="{{ highlight.image }}" alt="{{ highlight.alt }}" />
         <div class="text">
-          <h3>U of T Student</h3>
-          <p>Computer Science (Software Engineering) and Mathematics</p>
-        </div>
-      </article>
-      <article>
-        <div class="text">
-          <h3>Teaching Assistant</h3>
-          <p>
-            Teaching assistant for variety of first year Computer Science and
-            Mathematics course at the University of Toronto
-          </p>
+          <h3>{{ highlight.title }}</h3>
+          <p>{{ highlight.content }}</p>
           <a
-            href="/teaching"
-            class="btn btn-primary btn-block"
-            target="”_blank”"
-            >List of Teachings</a
-          >
-        </div>
-      </article>
-      <article>
-        <div class="text">
-          <h3>Front-End Developer</h3>
-          <p>Front-end developer for LIVE compeition</p>
-          <a
-            href="https://www.live-competition.org/"
+            *ngIf="highlight.link && highlight.button"
+            href="{{ highlight.link }}"
             class="btn btn-primary btn-block align-self-end"
             target="”_blank”"
-            >LIVE Competition</a
+            >{{ highlight.button }}</a
           >
         </div>
       </article>
     </main>
     <h3 class="highlight-tag">Previously...</h3>
     <main class="grid">
-      <article>
-        <img
-          src="https://picsum.photos/600/400?image=1083"
-          alt="Sample photo"
-        />
+      <article *ngFor="let highlight of previously">
+        <img src="{{ highlight.image }}" alt="{{ highlight.alt }}" />
         <div class="text">
-          <h3>Software Application Developer Co-op</h3>
-          <p>
-            University of Toronto Scarborough Library - Digital Scholarship Unit
-          </p>
+          <h3>{{ highlight.title }}</h3>
+          <p>{{ highlight.content }}</p>
           <a
-            href="https://digital.utsc.utoronto.ca/"
-            class="btn btn-primary btn-block"
+            *ngIf="highlight.link && highlight.button"
+            href="{{ highlight.link }}"
+            class="btn btn-primary btn-block align-self-end"
             target="”_blank”"
-            >DSU Webpage</a
+            >{{ highlight.button }}</a
           >
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://picsum.photos/600/400?image=1063"
-          alt="Sample photo"
-        />
-        <div class="text">
-          <h3>Linear Algebra Leader</h3>
-          <p>
-            Facilitated study group leader for first year linear algebra course
-            with over 800+ students
-          </p>
-          <a
-            href="https://www.utsc.utoronto.ca/ctl/facilitated-study-groups-program"
-            class="btn btn-primary btn-block"
-            target="”_blank”"
-            >FSG Program</a
-          >
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://picsum.photos/600/400?image=1063"
-          alt="Sample photo"
-        />
-        <div class="text">
-          <h3>Student Mentor</h3>
-          <p>
-            Student mentor for the University of Toronto Co-op Student
-            Association for Computer Science, Math and Statistic Co-op students.
-          </p>
-          <a
-            href="https://codepen.io/collection/XdWJOQ/"
-            class="btn btn-primary btn-block"
-            >Here's how</a
-          >
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://picsum.photos/600/400?image=1056"
-          alt="Sample photo"
-        />
-        <div class="text">
-          <h3>PintOS</h3>
-          <p>
-            Completely synergize resource taxing relationships via premier niche
-            markets.
-          </p>
-          <a
-            href="https://codepen.io/collection/XdWJOQ/"
-            class="btn btn-primary btn-block"
-            >Read more</a
-          >
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://picsum.photos/600/400?image=1083"
-          alt="Sample photo"
-        />
-        <div class="text">
-          <h3>Find Dining Scarborough</h3>
-          <p>TO BE DONE</p>
-          <a
-            href="https://codepen.io/collection/XdWJOQ/"
-            class="btn btn-primary btn-block"
-            >TO BE DONE</a
-          >
-        </div>
-      </article>
-      <article>
-        <img
-          src="https://picsum.photos/600/400?image=1056"
-          alt="Sample photo"
-        />
-        <div class="text">
-          <h3>Data Scientist Co-op</h3>
-          <p>Telus Communications - Procurement Department</p>
-          <!-- <a
-            href="https://codepen.io/collection/XdWJOQ/"
-            class="btn btn-primary btn-block"
-            >Read more</a
-          > -->
         </div>
       </article>
     </main>
   </div>
+  <hr class="bottom-line" />
   <div class="bottom">
-    <h3>TO BE DONE: Some nice quotes? Last updated?</h3>
+    <img
+      class="bottom-image"
+      src="../../../assets/images/WE_HAVE_CONQUERED_CG.jpg"
+      alt="WE HAVE CONQUERED COMPUTER GRAPHICS"
+    />
+    <p>
+      <i
+        >"Yesterday's the past, tomorrow's the future, but today is a gift.
+        That's why it's called the present." ~ Billy Keane</i
+      >
+    </p>
+    <h3>Last Updated: January 2022</h3>
   </div>
 </div>

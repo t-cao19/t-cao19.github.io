@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { TimelineItem } from '../../components/ngx-vertical-timeline/timeline-item';
-import experiences from '../../../assets/data/experience.json';
 import resume from '../../../assets/data/resume.json';
 import * as AOS from 'aos';
 
@@ -12,8 +11,6 @@ import * as AOS from 'aos';
   styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-  experiences: any[];
-  resume: any[];
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
@@ -23,17 +20,7 @@ export class ResumeComponent implements OnInit {
   items: TimelineItem[] = [];
   externalVariable = 'hello';
 
-  constructor() {
-    this.experiences = experiences;
-    this.resume = resume;
-    this.education = {
-      employer: '4th Year Student',
-      position: '2018 - Present',
-      date: 'University of Toronto',
-      image: '../../../assets/images/UofT.jpg',
-      note: 'CS Specialist & Math Major',
-    };
-  }
+  constructor() {}
 
   ngOnInit(): void {
     AOS.init({
@@ -62,5 +49,8 @@ export class ResumeComponent implements OnInit {
         },
       });
     }
+  }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
   }
 }

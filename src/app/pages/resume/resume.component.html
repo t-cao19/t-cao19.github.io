@@ -3,12 +3,16 @@
     <div class="title">
       <h2>Resume</h2>
     </div>
-
+    <div class="options">
+      <button class="tutorial-webpage" type="button" (click)="scroll(resume)">
+        Resume PDF
+      </button>
+    </div>
     <div class="timeline">
       <h4>Experience Timeline</h4>
       <app-ngx-vertical-timeline [(items)]="items"></app-ngx-vertical-timeline>
     </div>
-    <div class="subtitle">
+    <div class="subtitle" #resume>
       <h4>Resume PDF</h4>
     </div>
     <div class="resume-pdf">
