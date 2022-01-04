@@ -3,8 +3,10 @@
     <div class="title">
       <h2>Projects</h2>
     </div>
-    <div class="projects" *ngFor="let project of projects">
-      <app-project-box [project]="project"></app-project-box>
+    <div data-aos="fade-up">
+      <div class="projects" *ngFor="let project of projects">
+        <app-project-box [project]="project"></app-project-box>
+      </div>
     </div>
     <div class="icons">
       <a href="mailto:jtony.cao@mail.utoronto.ca">

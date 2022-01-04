@@ -57,55 +57,57 @@
       </div>
     </div>
   </div>
-  <div class="highlights container">
-    <h3 class="highlight-tag">Currently...</h3>
-    <main class="grid">
-      <article *ngFor="let highlight of currently">
-        <img src="{{ highlight.image }}" alt="{{ highlight.alt }}" />
-        <div class="text">
-          <h3>{{ highlight.title }}</h3>
-          <p>{{ highlight.content }}</p>
-          <a
-            *ngIf="highlight.link && highlight.button"
-            href="{{ highlight.link }}"
-            class="btn btn-primary btn-block align-self-end"
-            target="”_blank”"
-            >{{ highlight.button }}</a
-          >
-        </div>
-      </article>
-    </main>
-    <h3 class="highlight-tag">Previously...</h3>
-    <main class="grid">
-      <article *ngFor="let highlight of previously">
-        <img src="{{ highlight.image }}" alt="{{ highlight.alt }}" />
-        <div class="text">
-          <h3>{{ highlight.title }}</h3>
-          <p>{{ highlight.content }}</p>
-          <a
-            *ngIf="highlight.link && highlight.button"
-            href="{{ highlight.link }}"
-            class="btn btn-primary btn-block align-self-end"
-            target="”_blank”"
-            >{{ highlight.button }}</a
-          >
-        </div>
-      </article>
-    </main>
+  <div class="highlights">
+    <div class="container">
+      <h3 class="highlight-tag" data-aos="fade-up">Currently...</h3>
+      <main class="grid" data-aos="fade-up">
+        <article *ngFor="let highlight of currently">
+          <img src="{{ highlight.image }}" alt="{{ highlight.alt }}" />
+          <div class="text">
+            <h3>{{ highlight.title }}</h3>
+            <p>{{ highlight.content }}</p>
+            <a
+              *ngIf="highlight.link && highlight.button"
+              href="{{ highlight.link }}"
+              class="btn btn-primary btn-block align-self-end"
+              target="”_blank”"
+              >{{ highlight.button }}</a
+            >
+          </div>
+        </article>
+      </main>
+      <h3 class="highlight-tag" data-aos="fade-up">Previously...</h3>
+      <main class="grid" data-aos="fade-up">
+        <article *ngFor="let highlight of previously">
+          <img src="{{ highlight.image }}" alt="{{ highlight.alt }}" />
+          <div class="text">
+            <h3>{{ highlight.title }}</h3>
+            <p>{{ highlight.content }}</p>
+            <a
+              *ngIf="highlight.link && highlight.button"
+              href="{{ highlight.link }}"
+              class="btn btn-primary btn-block align-self-end"
+              target="”_blank”"
+              >{{ highlight.button }}</a
+            >
+          </div>
+        </article>
+      </main>
+    </div>
   </div>
   <hr class="bottom-line" />
-  <div class="bottom">
-    <img
-      class="bottom-image"
-      src="../../../assets/images/WE_HAVE_CONQUERED_CG.jpg"
-      alt="WE HAVE CONQUERED COMPUTER GRAPHICS"
-    />
-    <p>
+  <div class="bottom" data-aos="fade-up">
+    <p class="quote">
       <i
         >"Yesterday's the past, tomorrow's the future, but today is a gift.
         That's why it's called the present." ~ Billy Keane</i
       >
     </p>
-    <h3>Last Updated: January 2022</h3>
+    <img
+      class="bottom-image"
+      src="../../../assets/images/WE_HAVE_CONQUERED_CG.jpg"
+      alt="WE HAVE CONQUERED COMPUTER GRAPHICS"
+    />
+    <h3 class="last-updated">Last Updated: January 2022</h3>
   </div>
 </div>

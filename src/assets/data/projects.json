@@ -1,5 +1,17 @@
 [
   {
+    "title": "React Movie Database",
+    "description": "Movie Database Written in React",
+    "date": "December 2021",
+    "overview": "Mini project written to lookup a movie, view its synopsis and IMDB ratings",
+    "points": [
+      "Written using the ReactJS Framework",
+      "Uses the open source API (OMDb API)"
+    ],
+    "image": "../../../assets/images/PintOS.jpg",
+    "github": "https://github.com/t-cao19/react-moviedb"
+  },
+  {
     "title": "PintOS",
     "description": "Open Source Operating Systems",
     "date": "January - April 2021",

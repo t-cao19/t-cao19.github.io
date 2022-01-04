@@ -10,6 +10,7 @@ $box-border-shadow-color: rgb(175, 175, 175);
   overflow: auto;
   padding-top: 100px;
   min-height: 85vh;
+  padding-bottom: 15px;
 }
 
 h1 {
@@ -120,6 +121,7 @@ hr {
   overflow: auto;
   padding-top: 100px;
   min-height: 85vh;
+  padding-bottom: 165px;
 
   @media screen and (max-width: 400px) {
     padding-top: 50px;
@@ -240,10 +242,19 @@ hr {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
+.highlights {
+  // background-color: #659dbd;
+  background-color: #34568b;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
 .highlight-tag {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  color: white;
+  font-size: 50px;
 }
 
 body {
@@ -262,6 +273,7 @@ body {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   height: 475px;
   position: relative;
+  background-color: white;
 }
 
 .grid > article img {
@@ -300,4 +312,12 @@ body {
 .bottom {
   margin-top: 20px;
   text-align: center;
+}
+
+.last-updated {
+  margin: 20px 0;
+}
+
+.quote {
+  padding-bottom: 10px;
 }

@@ -21,7 +21,12 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({
+      delay: 200,
+      duration: 1500,
+      once: false,
+      anchorPlacement: 'top-bottom',
+    });
   }
 
   setStep(index: number) {
