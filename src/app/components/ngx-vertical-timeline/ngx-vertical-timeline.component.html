@@ -2,15 +2,22 @@
   <div data-aos="fade-up">
     <div *ngFor="let item of list; let i = index" class="timeline-item">
       <div [class]="item.styleClass ? item.styleClass : ''">
-        <div class="timeline-icon"></div>
+        <fa-icon [icon]="faCalendarPlus" class="timeline-icon"></fa-icon>
+
         <div class="timeline-content" [class.right]="i % 2 !== 0">
           <div class="header">
             <h2>{{ item?.title }}</h2>
             <h3>{{ item?.date }}</h3>
           </div>
-          <p>
+          <p *ngIf="item.content">
             {{ item?.content }}
           </p>
+          <div *ngIf="item.bullets">
+            <p><b>Topics Covered:</b></p>
+            <ul *ngFor="let point of item.bullets">
+              <li>{{ point }}</li>
+            </ul>
+          </div>
           <button
             *ngIf="item?.command"
             class="btn bg-purple"

@@ -1,13 +1,13 @@
 [
     {
-        "week": "Week 12: Nov 22 - 26, 2021",
+        "date": "Nov 29 - Dec 3, 2021",
         "topics": [
             "Area between curves"
         ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EVeovqYES8BPoVMizelGK84BAehWrsCbe3qm_mWSD-Uu_w?e=mwrlAS"
     },
     {
-        "week": "Week 11: Nov 22 - 26, 2021",
+        "date": "Nov 22 - 26, 2021",
         "topics": [
             "Integration Technique: U-Sub",
             "Integration Technique: By Parts",
@@ -17,7 +17,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EarT9LkuLkZDuI5R5gBUbPQB5FfJ4pb-9GdscTZqDhBw2g?e=5w6r9v"
     },
     {
-        "week": "Week 10: Nov 15 - 19, 2021",
+        "date": "Nov 15 - 19, 2021",
         "topics": [
             "Intro to Integration",
             "Initial Value Conditions"
@@ -25,7 +25,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EXpm-j3dtIZCvs2n2HO_Zi4Bv40tRiN-0MzOMxf7iOav4w?e=cuMmSv"
     },
     {
-        "week": "Week 9: Nov 8 - 12, 2021",
+        "date": "Nov 8 - 12, 2021",
         "topics": [
             "Increasing, Decreasing Functions",
             "Critical Points",
@@ -35,7 +35,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EfRzaHwUD2ZNkff6kFUy1kQBsnh0BsOurKTzw0s0QA6j6Q?e=0G9xwH"
     },
     {
-        "week": "Week 8: Nov 1 - 5, 2021",
+        "date": "Nov 1 - 5, 2021",
         "topics": [
             "Newton's Method",
             "Higher Order Dervivatives"
@@ -43,7 +43,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/Ef2zxn8eUj9Eg5oiXBDGqsYBDa8WvnGT8GNE41cWh04TtQ?e=Kt0MdT"
     },
     {
-        "week": "Week 7: Oct 25 - 29, 2021",
+        "date": "Oct 25 - 29, 2021",
         "topics": [
             "Point Elasticity of Demand",
             "Implicit Differentiation"
@@ -51,7 +51,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EURUJXUErYJFuwt6Z-lkQhYBk2gyH7vghkw9juDOSN_w2A?e=Ppstgi"
     },
     {
-        "week": "Week 6: Oct 18 - 22, 2021",
+        "date": "Oct 18 - 22, 2021",
         "topics": [
             "Derivative of Logarithmic and Exponential Function",
             "Midterm Review"
@@ -59,7 +59,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EYB5EER7NStJo-iPeXenu40BMqsO99uAsM3fVFNrtqAWzw?e=Fg0pdQ"
     },
     {
-        "week": "Week 5: Oct 4 - 8, 2021",
+        "date": "Oct 4 - 8, 2021",
         "topics": [
             "First Principles Definition of a Dervivative",
             "Basic Dervivative Rules"
@@ -67,7 +67,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EUU74YH9TQRCkYtwSiQ8w-MBHUgtbC8ZUls51m9cDtrOTw?e=F8FJIC"
     },
     {
-        "week": "Week 4: Sept 27 - Oct 1, 2021",
+        "date": "Sept 27 - Oct 1, 2021",
         "topics": [
             "Limits at a Point",
             "Left/Right Sided Limit",
@@ -77,7 +77,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EWGJD2iAMZpFujxXYFy-rUwBVJb11WyMN5mAqQ0TqtIkow?e=ioA71L"
     },
     {
-        "week": "Week 3: Sept 20 - 24, 2021",
+        "date": "Sept 20 - 24, 2021",
         "topics": [
             "Interest Compounded Continuously",
             "Annuities"
@@ -85,7 +85,7 @@
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EUN-U1IQRC5NhFGOWMCIIfEBpoAYqhgoAwAazEV62SfaQw?e=SMKOCl"
     },
     {
-        "week": "Week 2: Sept 13 - 17, 2021",
+        "date": "Sept 13 - 17, 2021",
         "topics": [
             "Intro/Admin",
             "Compound Interest Formula",

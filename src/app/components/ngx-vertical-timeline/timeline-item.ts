@@ -11,6 +11,7 @@ export interface TimelineItem {
   style?: any;
   color?: string;
   content?: string;
+  bullets?: string[];
   styleClass?: string;
   title?: string;
   id?: string;

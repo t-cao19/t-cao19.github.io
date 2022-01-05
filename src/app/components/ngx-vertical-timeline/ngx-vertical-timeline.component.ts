@@ -21,6 +21,7 @@ export class NgxVerticalTimelineComponent implements OnInit {
   constructor() {}
 
   faSearchPlus = faSearchPlus;
+  faCalendarPlus = faCalendarPlus;
 
   @Input()
   set items(list: TimelineItem[]) {

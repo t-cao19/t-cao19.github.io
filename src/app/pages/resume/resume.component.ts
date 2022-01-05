@@ -18,7 +18,6 @@ export class ResumeComponent implements OnInit {
 
   // For vertical timeline
   items: TimelineItem[] = [];
-  externalVariable = 'hello';
 
   constructor() {}
 
