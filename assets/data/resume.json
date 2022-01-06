@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Front-End Developer",
+        "location": "LIVE Competition",
+        "date": "May 2021 - Jan 2022",
+        "link": "https://www.live-competition.org/",
+        "icon": "faHandsHelping",
+        "content": "Director for Front-End Development for the largest business case competition in Canada"
+    },
+    {
+        "title": "Software Application Developer Co-op",
+        "location": "University of Toronto Scarborough Library",
+        "date": "May - Aug 2021",
+        "link": "https://digital.utsc.utoronto.ca/",
+        "icon": "faBriefcase",
+        "content": "Digital Scholarship Unit - Responsible for Open-Source development in collobration with academia instiutions around the world"
+    },
+    {
+        "title": "Teaching Assistant",
+        "location": "University of Toronto",
+        "date": "Jan 2021 - Present",
+        "link": "./teaching",
+        "icon": "faChalkboardTeacher",
+        "content": "Teaching assistant for variety of first year Computer Science and Mathematics course at the University of Toronto"
+    },
+    {
+        "title": "Linear Algebra Leader",
+        "location": "University of Toronto Scarborough",
+        "date": "Jan - Apr 2021",
+        "link": "https://www.utsc.utoronto.ca/ctl/facilitated-study-groups-program",
+        "icon": "faChalkboardTeacher",
+        "content": "Facilitated study group leader for first year linear algebra course with over 800+ students"
+    },
+    {
+        "title": "Student Mentor",
+        "location": "University of Toronto Co-op Student Association",
+        "date": "Sept 2020 - Apr 2021",
+        "link": "https://www.linkedin.com/company/co-op-students%27-association",
+        "icon": "faHandsHelping",
+        "content": "Senior mentor for Computer Science, Math and Statistic Co-op studnets"
+    },
+    {
+        "title": "Data Scientist Co-op",
+        "location": "Telus Communications",
+        "date": "Jan - Aug 2020",
+        "link": "https://www.telus.com/en/about/procurement",
+        "icon": "faBriefcase",
+        "content": "Procurement Department - Procurement Analytics Centre of Excellence"
+    },
+    {
+        "title": "University Student",
+        "location": "University of Toronto",
+        "date": "Sept 2018 - Present",
+        "link": "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
+        "icon": "faUniveristy",
+        "content": "Honours Bachelors of Science; Computer Science Specialist and Math Major"
+    }
+]

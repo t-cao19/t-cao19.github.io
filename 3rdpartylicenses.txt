@@ -332,6 +332,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ng2-pdf-viewer
 MIT
 
+ngx-sbz-type-delete
+SEE LICENSE IN LICENSE
+
 pdfjs-dist
 Apache-2.0
 

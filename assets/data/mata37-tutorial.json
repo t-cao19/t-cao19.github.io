@@ -1,57 +1,104 @@
 [ 
     {
-        "week": "Week 12: Apr 6, 2021",
-        "topics": ["Integral Test", "P-Series Test", "Alternating Series Test (AST)", "Comparsion Theorem for Series"],
+        "date": "Apr 6, 2021",
+        "term": "W21",
+        "topics": [
+            "Integral Test",
+            "P-Series Test",
+            "Alternating Series Test (AST)",
+            "Comparsion Theorem for Series"],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ESmJiB2bc_NOiDzbvUsWESIBGO4iWkqGyTTMn4wBONCfvQ?e=opkgHt"
     },
     {
-        "week": "Week 11: Mar 30, 2021",
-        "topics": ["Bounded Monotone Convergence Theorem (BMCT)", "Intro to Series", "Series Tests: By Definition, Geometric Series Test, Divergence Test"],
+        "date": "Mar 30, 2021",
+        "term": "W21",
+        "topics": [
+            "Bounded Monotone Convergence Theorem (BMCT)",
+            "Intro to Series",
+            "Series Tests: By Definition, Geometric Series Test, Divergence Test"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ES3AAIMLvcpCrT-cbrBny3cBZRzKM_0lHRCXh0B-obIFHw?e=zXTezc"
     },
     {
-        "week": "Week 10: Mar 23, 2021",
-        "topics": ["(Late) Comparison Theorem", "Intro to Sequences"],
+        "date": "Mar 23, 2021",
+        "term": "W21",
+        "topics": [
+            "(Late) Comparison Theorem", 
+            "Intro to Sequences"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EQv4sB1ZMBdPscnl6KCf6DYBaGs0uz0vD8fEv9djEEVU4Q?e=NrlLSE"
     },
     {
-        "week": "Week 9: Mar 16, 2021",
-        "topics": ["Integration Technique: Trigonometric Substitution", "Improper Integrals: Type I and Type II"],
+        "date": "Mar 16, 2021",
+        "term": "W21",
+        "topics": [
+            "Integration Technique: Trigonometric Substitution",
+            "Improper Integrals: Type I and Type II"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EfFsDxlXyLBPtIFhYcLuTasBA-jF2Jxs3wjWO27kQu7IiQ?e=YW97zN"
     },
     {
-        "week": "Week 8: Mar 9, 2021",
-        "topics": ["Integration Technique: Partial Fraction Decomposition (Polynomial Long Division)", "Integration Technique: Trigonometric Integrals"],
+        "date": "Mar 9, 2021",
+        "term": "W21",
+        "topics": [
+            "Integration Technique: Partial Fraction Decomposition (Polynomial Long Division)",
+            "Integration Technique: Trigonometric Integrals"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EflBedEUF_tCk5cm1MMo1UcB6WV-ohC6ktOl3XSaJYvuFQ?e=3e5pIy"
     },
     {
-        "week": "Week 7: Mar 2, 2021",
-        "topics": ["Integration Technique: Integration by Parts"],
+        "date": "Mar 2, 2021",
+        "term": "W21",
+        "topics": [
+            "Integration Technique: Integration by Parts"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ERE628tOnoJHmJPP5-OXVPsBrKQOAvXZLSR4v6zyr1NrjA?e=YBHTiJ"
     },
     {
-        "week": "Week 6: Feb 23, 2021",
-        "topics": ["Fundamental Theorem of Calculus II (More Complex Examples)", "Integration Technique: U-Sub"],
+        "date": "Feb 23, 2021",
+        "term": "W21",
+        "topics": [
+            "Fundamental Theorem of Calculus II (More Complex Examples)",
+            "Integration Technique: U-Sub"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ESDE9YjUzBNHlj99yXGhPEABgW4SN5OToiMwpCRWkYiGxQ?e=gd8cdI"
     },
     {
-        "week": "Week 5: Feb 9, 2021",
-        "topics": ["Fundamental Theorem of Calculus I and II"],
+        "date": "Feb 9, 2021",
+        "term": "W21",
+        "topics": [
+            "Fundamental Theorem of Calculus I and II"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EbJvy2PnSuhBpcXUObdzt6MBPVkiohXipOiyhhUtrPI0Sw?e=K6REeO"
     },
     {
-    "week": "Week 4: Feb 2, 2021",
-    "topics": ["Darboux Definition of Integrability", "Integrability Epsilon Reformulation", "Indefinite Integral"],
-    "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EWQd2DtKys5BmKCPhQTa8FQB_mdCBYo9xJDwb9uJlTeoNA?e=vLWt3U"
+        "date": "Feb 2, 2021",
+        "term": "W21",
+        "topics": [
+            "Darboux Definition of Integrability",
+            "Integrability Epsilon Reformulation",
+            "Indefinite Integral"
+        ],
+        "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EWQd2DtKys5BmKCPhQTa8FQB_mdCBYo9xJDwb9uJlTeoNA?e=vLWt3U"
     },
     {
-        "week": "Week 3: Jan 26, 2021",
-        "topics": ["Definition of Definite Integral", "Definte Integral Properties", "Lower and Upper Sum"],
+        "date": "Jan 26, 2021",
+        "term": "W21",
+        "topics": [
+            "Definition of Definite Integral",
+            "Definte Integral Properties",
+            "Lower and Upper Sum"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EdhWpsH5lNxGgbTxAkBHKmIBOOEeGgADXXExfBJwDZb6pw?e=c24HG5"
     },
     {
-        "week": "Week 2: Jan 19, 2021",
-        "topics": ["Intro/Admin", "Sigma Notation", "Rienmann Sums"],
+        "date": "Jan 19, 2021",
+        "term": "W21",
+        "topics": [
+            "Intro/Admin", 
+            "Sigma Notation",
+            "Rienmann Sums"
+        ],
         "notes": "https://utoronto-my.sharepoint.com/:f:/g/personal/jtony_cao_mail_utoronto_ca/EkDC772dOHVCpzcijQZ_FKwBeKcQdR0IBP39sinNb--E1w?e=FxkpmY"
     }
 ]
