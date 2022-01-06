@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { TimelineItem } from '../../components/ngx-vertical-timeline/timeline-item';
@@ -19,7 +19,7 @@ export class ResumeComponent implements OnInit {
   // For vertical timeline
   items: TimelineItem[] = [];
 
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
     AOS.init({
@@ -49,7 +49,12 @@ export class ResumeComponent implements OnInit {
       });
     }
   }
+
   scroll(el: HTMLElement) {
-    el.scrollIntoView();
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'nearest',
+    });
   }
 }

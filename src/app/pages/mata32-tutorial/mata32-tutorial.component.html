@@ -30,7 +30,7 @@
       <div *ngIf="items.length == 0">
         <h5>No tutorial notes yet, check back later!</h5>
       </div>
-      <div class="final-remarks">
+      <div class="final-remarks" *ngIf="items.length == 11">
         <h4>
           <b
             >That's all for tutorials! <br />
@@ -38,12 +38,11 @@
           >
         </h4>
       </div>
-      <!-- <div *ngIf="tutorials.length > 0">
-        <div class="tutorial-notes" *ngFor="let tutorial of tutorials">
-          <app-tutorial-box [tutorial]="tutorial"></app-tutorial-box>
-        </div>
-      </div> -->
-      <app-ngx-vertical-timeline [(items)]="items"></app-ngx-vertical-timeline>
+      <div *ngIf="items.length > 0">
+        <app-ngx-vertical-timeline
+          [(items)]="items"
+        ></app-ngx-vertical-timeline>
+      </div>
       <div class="icons">
         <a href="mailto:jtony.cao@mail.utoronto.ca">
           <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>

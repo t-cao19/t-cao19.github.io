@@ -1,56 +1,106 @@
 <div class="tutorial-page">
+  <h2 class="course-code">MATA37: Calculus II for Mathematical Sciences</h2>
   <div class="page-body">
-    <div class="title">
-      <h2>MATA37 Winter 2021: TUT016</h2>
+    <div class="row sessions">
+      <div class="col-md-6">
+        <button type="button" (click)="scroll(mata37w22)">Winter 2022</button>
+      </div>
+      <div class="col-md-6">
+        <button type="button" (click)="scroll(mata37w21)">Winter 2021</button>
+      </div>
     </div>
-    <div class="subtitle">
-      <h4>Calculus II for the Mathematical Sciences</h4>
-    </div>
-    <div class="tutorials">
-      <div class="tutorial-info row">
-        <div class="col-md-4">
-          <h3><u>TA Name:</u></h3>
-          <p>Tony Cao</p>
+    <div class="session" #mata37w22>
+      <div class="subtitle">
+        <h4>MATA37 Winter 2022: TUTXXX</h4>
+      </div>
+      <div class="tutorials">
+        <div class="tutorial-info row">
+          <div class="col-md-4">
+            <h3><u>TA Name:</u></h3>
+            <p>Tony Cao</p>
+          </div>
+          <div class="col-md-4">
+            <h3>
+              <u>Tutorial Times:</u>
+            </h3>
+            <p>TBA</p>
+          </div>
+          <div class="col-md-4">
+            <h3>
+              <u>Office Hours:</u>
+            </h3>
+            <p>TBA</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h3>
-            <u>Tutorial Times:</u>
-          </h3>
-          <p>Tues 9-11am EST</p>
+        <div *ngIf="winter22Timeline.length == 0">
+          <h5>No tutorial notes yet, check back later!</h5>
         </div>
-        <div class="col-md-4">
-          <h3>
-            <u>Office Hours:</u>
-          </h3>
-          <p>Tues 11 am - 1pm EST</p>
+        <div class="final-remarks" *ngIf="winter22Timeline.length == 11">
+          <h4>
+            <b
+              >That's all for tutorials! <br />
+              Best of luck on final + everything!</b
+            >
+          </h4>
+        </div>
+        <div *ngIf="winter22Timeline.length > 0">
+          <app-ngx-vertical-timeline
+            [(items)]="winter22Timeline"
+          ></app-ngx-vertical-timeline>
         </div>
       </div>
-      <div *ngIf="tutorials.length == 0">
-        <h5>No tutorial notes yet, check back later!</h5>
-      </div>
-      <div class="final-remarks">
-        <h4>
-          <b
-            >That's all for tutorials! <br />
-            Best of luck on final + everything!</b
-          >
-        </h4>
-      </div>
-      <div *ngIf="tutorials.length > 0">
-        <div class="tutorial-notes" *ngFor="let tutorial of tutorials">
-          <app-tutorial-box [tutorial]="tutorial"></app-tutorial-box>
+      <hr />
+      <div class="session" #mata37w21>
+        <div class="subtitle">
+          <h4>MATA37 Winter 2021: TUT016</h4>
         </div>
-      </div>
-      <div class="icons">
-        <a href="mailto:jtony.cao@mail.utoronto.ca">
-          <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-          <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
-        </a>
-        <a href="https://github.com/t-cao19" target="_blank">
-          <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
-        </a>
+        <div class="tutorials">
+          <div class="tutorial-info row">
+            <div class="col-md-4">
+              <h3><u>TA Name:</u></h3>
+              <p>Tony Cao</p>
+            </div>
+            <div class="col-md-4">
+              <h3>
+                <u>Tutorial Times:</u>
+              </h3>
+              <p>Tues 9-11am Online</p>
+            </div>
+            <div class="col-md-4">
+              <h3>
+                <u>Office Hours:</u>
+              </h3>
+              <p>Tues 11 am - 1pm Online</p>
+            </div>
+          </div>
+          <div *ngIf="winter21Timeline.length == 0">
+            <h5>No tutorial notes yet, check back later!</h5>
+          </div>
+          <div class="final-remarks" *ngIf="winter21Timeline.length == 11">
+            <h4>
+              <b
+                >That's all for tutorials! <br />
+                Best of luck on final + everything!</b
+              >
+            </h4>
+          </div>
+          <div *ngIf="winter21Timeline.length > 0">
+            <app-ngx-vertical-timeline
+              [(items)]="winter21Timeline"
+            ></app-ngx-vertical-timeline>
+          </div>
+        </div>
+        <div class="icons">
+          <a href="mailto:jtony.cao@mail.utoronto.ca">
+            <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+            <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
+          </a>
+          <a href="https://github.com/t-cao19" target="_blank">
+            <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
   </div>

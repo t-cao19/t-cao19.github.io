@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'teaching', component: TeachingComponent },
-  { path: 'mata37-w21', component: MATA37TutorialComponent },
+  { path: 'mata37', component: MATA37TutorialComponent },
   { path: 'mata32-f21', component: MATA32TutorialComponent },
 ];
 

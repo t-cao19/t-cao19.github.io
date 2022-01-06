@@ -18,7 +18,6 @@ export class MATA32TutorialComponent implements OnInit {
   items: TimelineItem[] = [];
 
   constructor() {
-    // this.tutorials = tutorials;
     for (let i = 0; i < tutorials.length; i++) {
       this.items.push({
         title: 'Week ' + (tutorials.length - i + 1),
