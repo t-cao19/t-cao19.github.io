@@ -72,14 +72,20 @@ h4 {
   object-fit: cover;
   border-radius: 50px;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1400px) {
     width: 200px;
+    height: 275px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 150px;
     height: 200px;
   }
 
   @media screen and (max-width: 400px) {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
   }
 }
 
