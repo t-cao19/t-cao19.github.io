@@ -11,7 +11,7 @@
     </div>
     <div class="session" #mata37w22>
       <div class="subtitle">
-        <h4>MATA37 Winter 2022: TUTXXX</h4>
+        <h4>MATA37 Winter 2022: TUT002</h4>
       </div>
       <div class="tutorials">
         <div class="tutorial-info row">
@@ -23,13 +23,13 @@
             <h3>
               <u>Tutorial Times:</u>
             </h3>
-            <p>TBA</p>
+            <p>Tues 7-9pm Online*</p>
           </div>
           <div class="col-md-4">
             <h3>
               <u>Office Hours:</u>
             </h3>
-            <p>TBA</p>
+            <p class="tutorial">Mon 11am - 12pm & Tues 3 - 4pm Online*</p>
           </div>
         </div>
         <div *ngIf="winter22Timeline.length == 0">
@@ -47,6 +47,13 @@
           <app-ngx-vertical-timeline
             [(items)]="winter22Timeline"
           ></app-ngx-vertical-timeline>
+        </div>
+        <div>
+          <p class="footnotes">
+            <i
+              >*Online until the University reopens for in-person instruction</i
+            >
+          </p>
         </div>
       </div>
       <hr />
