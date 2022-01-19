@@ -3,6 +3,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { TimelineItem } from 'src/app/components/ngx-vertical-timeline/timeline-item';
 import tutorialsW21 from '../../../assets/data/mata37w21-tutorial.json';
+import tutorialsW22 from '../../../assets/data/mata37w22-tutorial.json';
 
 @Component({
   selector: 'app-mata37-tutorial',
@@ -19,6 +20,22 @@ export class MATA37TutorialComponent implements OnInit {
   winter22Timeline: TimelineItem[] = [];
 
   constructor() {
+    for (let i = 0; i < tutorialsW22.length; i++) {
+      this.winter22Timeline.push({
+        title: 'Week ' + (tutorialsW22.length - i + 1),
+        date: tutorialsW22[i].date,
+        bullets: tutorialsW22[i].topics,
+        label: 'Notes',
+        command() {
+          if (tutorialsW22[i].notes) {
+            window.open(tutorialsW22[i].notes, '_blank').focus();
+          } else {
+            window.open('/home').focus();
+          }
+        },
+      });
+    }
+
     for (let i = 0; i < tutorialsW21.length; i++) {
       this.winter21Timeline.push({
         title: 'Week ' + (tutorialsW21.length - i + 1),
