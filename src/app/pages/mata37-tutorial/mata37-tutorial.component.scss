@@ -169,3 +169,10 @@ button {
   font-size: 18px;
   text-align: center;
 }
+
+::ng-deep .mat-tab-label {
+  color: #16425b;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+}

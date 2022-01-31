@@ -27,6 +27,7 @@ import { EducationBoxComponent } from './components/education-box/education-box.
 import { MATA32TutorialComponent } from './pages/mata32-tutorial/mata32-tutorial.component';
 import { InfiniteTypeDeleteModule } from 'ngx-sbz-type-delete';
 import { NgxVerticalTimelineComponent } from './components/ngx-vertical-timeline/ngx-vertical-timeline.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { NgxVerticalTimelineComponent } from './components/ngx-vertical-timeline
     FontAwesomeModule,
     PdfViewerModule,
     InfiniteTypeDeleteModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
