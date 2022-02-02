@@ -1,5 +1,15 @@
 [ 
     {
+        "date": "Feb 1, 2022",
+        "term": "W22",
+        "topics": [
+            "Darboux Definition of Integrability",
+            "Integrability Epsilon Reformulation",
+            "Indefinite Integral"
+        ],
+        "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/EVbp7GMXhadLsxgtgpoigCYB5RGCMROTKIW9rCtgR5OzpQ?e=xgLtgD"
+    },
+    {
         "date": "Jan 26, 2022",
         "term": "W22",
         "topics": [
