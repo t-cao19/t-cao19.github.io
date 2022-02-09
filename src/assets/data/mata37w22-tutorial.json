@@ -1,5 +1,14 @@
 [ 
     {
+        "date": "Feb 8, 2022",
+        "term": "W22",
+        "topics": [
+            "Fundamental Theorem of Calculus I",
+            "Fundamental Theorem of Calculus II"
+        ],
+        "notes": "https://utoronto-my.sharepoint.com/:b:/g/personal/jtony_cao_mail_utoronto_ca/ETySnbDBnZRCtd8mGqdlOnUB7G-5K8D9LsLdNrad4CJIxg?e=ST7RAC"
+    },
+    {
         "date": "Feb 1, 2022",
         "term": "W22",
         "topics": [
