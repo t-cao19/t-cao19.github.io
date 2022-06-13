@@ -27,8 +27,8 @@ export class HomeComponent implements OnInit {
       'Front - End Addict ',
     ];
 
-    this.currently = highlights.slice(0, 3);
-    this.previously = highlights.slice(3);
+    this.currently = highlights.slice(0, 2);
+    this.previously = highlights.slice(2);
   }
 
   ngOnInit(): void {
