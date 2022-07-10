@@ -1,38 +1,57 @@
 [
   {
-    "course": "MATA37H3: Calculus II for Mathematical Sciences",
-    "date": "Winter 2022 (Jan - Apr)",
+    "course": "Calculus II for Mathematical Sciences",
+    "date": "Summer 2022 (May - Aug)",
     "school": "University of Toronto",
-    "tutorial": "TUT002",
-    "instructor" : "Dr. Kathleen Smith",
-    "webpage": "/mata37",
-    "calendar": "https://utsc.calendar.utoronto.ca/course/mata37h3"
+    "instructor": "Dr. Kathleen Smith",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/mata37h3",
+    "image": "../../../assets/images/courses/MATA37.jpg"
   },
   {
-    "course": "CSCA67H3: Discrete Mathematics",
+    "course": "Techniques of the Calculus of Several Variables I",
+    "date": "Summer 2022 (May - Aug)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Xiamei Jiang",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/matb41h3",
+    "image": "../../../assets/images/courses/MATB41.jpg"
+  },
+  {
+    "course": "Calculus II for Mathematical Sciences",
+    "date": "Winter 2022 (Jan - Apr)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Kathleen Smith",
+    "webpage": "/mata37",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/mata37h3",
+    "image": "../../../assets/images/courses/MATA37.jpg"
+  },
+  {
+    "course": "Discrete Mathematics",
     "date": "Fall 2021 (Sept - Dec)",
     "school": "University of Toronto",
     "tutorial": "TUT005",
-    "instructor" : "Dr. Anna Bretscher",
+    "instructor": "Dr. Anna Bretscher",
     "webpage": "",
-    "calendar": "https://utsc.calendar.utoronto.ca/course/csca67h3"
+    "calendar": "https://utsc.calendar.utoronto.ca/course/csca67h3",
+    "image": "../../../assets/images/courses/CSCA67.jpg"
   },
   {
-    "course": "MATA32H3: Calculus for Mangement I",
+    "course": "Calculus for Mangement I",
     "date": "Fall 2021 (Sept - Dec)",
     "school": "University of Toronto",
-    "tutorial": "TUT001 & TUT031",
-    "instructor" : "Dr. Raymond Grinnell",
+    "instructor": "Dr. Raymond Grinnell",
     "webpage": "/mata32-f21",
-    "calendar": "https://utsc.calendar.utoronto.ca/course/mata32h3"
+    "calendar": "https://utsc.calendar.utoronto.ca/course/mata32h3",
+    "image": "../../../assets/images/courses/MATA32.jpg"
   },
   {
-      "course": "MATA37H3: Calculus II for Mathematical Sciences",
-      "date": "Winter 2021 (Jan - Apr)",
-      "school": "University of Toronto",
-      "tutorial": "TUT016",
-      "instructor" : "Dr. Kathleen Smith",
-      "webpage": "/mata37",
-      "calendar": "https://utsc.calendar.utoronto.ca/course/mata37h3"
+    "course": "Calculus II for Mathematical Sciences",
+    "date": "Winter 2021 (Jan - Apr)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Kathleen Smith",
+    "webpage": "/mata37",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/mata37h3",
+    "image": "../../../assets/images/courses/MATA37.jpg"
   }
 ]

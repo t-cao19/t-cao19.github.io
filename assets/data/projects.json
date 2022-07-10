@@ -8,7 +8,7 @@
       "Written using the ReactJS Framework",
       "Uses the open source API (OMDb API)"
     ],
-    "image": "../../../assets/images/react-moviedb.jpg",
+    "image": "../../../assets/images/projects/react-moviedb.jpg",
     "github": "https://github.com/t-cao19/react-moviedb"
   },
   {
@@ -20,7 +20,7 @@
       "Technologies involved included Docker, GDB Debugger and C",
       "Enhanced an existing open-source operating system by adding support for kernel threads, virtual memory, user programs and file systems"
     ],
-    "image": "../../../assets/images/PintOS.jpg",
+    "image": "../../../assets/images/projects/PintOS.jpg",
     "github": ""
   },
   {
@@ -32,7 +32,7 @@
       "Written completely from scratch using MIPS Assembly",
       "Includes complete graphics and animations similar to the mobile game"
     ],
-    "image": "../../../assets/images/Doodle-Jump.jpg",
+    "image": "../../../assets/images/projects/Doodle-Jump.jpg",
     "github": "https://github.com/t-cao19/CSCB58-Doodle"
   },
   {
@@ -44,7 +44,7 @@
       "Technologies involved included Angular, TypeScript/JavaScript and HTML/CSS",
       "Webpage is fully adapted for screens of all size"
     ],
-    "image": "../../../assets/images/t-cao19.github.io.jpg",
+    "image": "../../../assets/images/projects/t-cao19.github.io.jpg",
     "github": "https://github.com/t-cao19/t-cao19.github.io"
   },
   {
@@ -58,7 +58,7 @@
       "Selected by the City of Toronto and the BRDIGE UTSC as winning project out of 4 other software engineer student groups",
       "Worked in a team of 5 as front-end developer and project coordinator"
     ],
-    "image": "../../../assets/images/find_dining.jpg",
+    "image": "../../../assets/images/projects/find_dining.jpg",
     "github": "https://github.com/t-cao19/team_08-project"
   },
   {
@@ -70,7 +70,7 @@
       "Technologies involved included Java, SQLite and Android Studio",
       "Worked in a team of four as the project manager (keeping track of deadlines and meetings)"
     ],
-    "image": "../../../assets/images/pineapple_store.jpg",
+    "image": "../../../assets/images/projects/pineapple_store.jpg",
     "github": "https://github.com/t-cao19/Pineapple"
   },
   {
@@ -82,7 +82,7 @@
       "Technologies involved included Python 2.7 and PyGame",
       "Fully animated walking characters, scrolling background, background music and sound effects through the use of photoshop and classes in Python"
     ],
-    "image": "../../../assets/images/royal_castle_hero.jpg",
+    "image": "../../../assets/images/projects/royal_castle_hero.jpg",
     "github": ""
   }
 ]
