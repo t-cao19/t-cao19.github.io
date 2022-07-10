@@ -129,12 +129,6 @@ hr {
   }
 }
 
-.new-header {
-  color: white;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
 .tagline {
   text-align: center;
   padding-bottom: 25px;
@@ -158,19 +152,6 @@ hr {
 
   @media screen and (max-width: 400px) {
     padding-top: 15px;
-  }
-}
-
-.headline {
-  font-size: 72px;
-  padding-bottom: 15px;
-
-  @media screen and (max-width: 900px) {
-    font-size: 70px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 66px;
   }
 }
 
@@ -251,7 +232,6 @@ hr {
 }
 
 .highlights {
-  // background-color: #659dbd;
   background-color: #34568b;
   padding-bottom: 50px;
   padding-top: 20px;
