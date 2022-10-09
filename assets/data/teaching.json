@@ -1,5 +1,50 @@
 [
   {
+    "course": "Discrete Mathematics",
+    "date": "Fall 2022 (Sept - Dec)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Anna Bretscher",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/csca67h3",
+    "image": "../../../assets/images/courses/CSCA67.jpg"
+  },
+  {
+    "course": "Introduction to Databases",
+    "date": "Fall 2022 (Sept - Dec)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Purva Gawde",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/cscc43h3",
+    "image": "../../../assets/images/courses/CSCC43.jpg"
+  },
+  {
+    "course": "Linear Algebra II",
+    "date": "Fall 2022 (Sept - Dec)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Xiamei Jiang",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/matb24h3",
+    "image": "../../../assets/images/courses/MATB24.jpg"
+  },
+  {
+    "course": "Techniques of the Calculus of Several Variables I",
+    "date": "Fall 2022 (Sept - Dec)",
+    "school": "University of Toronto",
+    "instructor": "Parker Glynn-Adey",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/matb41h3",
+    "image": "../../../assets/images/courses/MATB41.jpg"
+  },
+  {
+    "course": "Groups and Symmetry",
+    "date": "Fall 2022 (Sept - Dec)",
+    "school": "University of Toronto",
+    "instructor": "Dr. Kathleen Smith",
+    "webpage": "",
+    "calendar": "https://utsc.calendar.utoronto.ca/course/matc01h3",
+    "image": "../../../assets/images/courses/MATC01.jpg"
+  },
+  {
     "course": "Calculus II for Mathematical Sciences",
     "date": "Summer 2022 (May - Aug)",
     "school": "University of Toronto",
