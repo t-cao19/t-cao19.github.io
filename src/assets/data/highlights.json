@@ -14,6 +14,14 @@
     "button": "List of Teachings"
   },
   {
+    "title": "Student Leader",
+    "content": "Student Leader for the department of Computer and Mathematical Sciences at the University of Toronto",
+    "image": "../../../assets/images/CMS_Leader.png",
+    "alt": "University of Toronto",
+    "link": "https://www.utsc.utoronto.ca/cms/",
+    "button": "Department Page"
+  },
+  {
     "title": "Front-End Developer",
     "content": "Director of Front-End Development as part of LIVE Executive 2021",
     "image": "../../../assets/images/LIVE.jpg",
@@ -54,7 +62,7 @@
   {
     "title": "Find Dining Scarborough",
     "content": "Developed an award winning food ordering web platform (in teams of 5) specific for the Scarborough hospitality community during the COVID-19 pandemic",
-    "image": "../../../assets/images/projects/find_dining_logo.jpg",
+    "image": "../../../assets/images/projects/find_dining.jpg",
     "alt": "Find Dining Scarborough",
     "link": "https://github.com/t-cao19/team_08-project",
     "button": "GitHub Repo"

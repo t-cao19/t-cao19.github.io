@@ -21,14 +21,14 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.wordArray = [
       'Tony Cao ',
-      '4th Year U of T Student ',
+      '5th Year U of T Student ',
       'CS + Math Enthusiast ',
       'U of T Teaching Assistant ',
       'Front - End Addict ',
     ];
 
-    this.currently = highlights.slice(0, 2);
-    this.previously = highlights.slice(2);
+    this.currently = highlights.slice(0, 3);
+    this.previously = highlights.slice(3);
   }
 
   ngOnInit(): void {
