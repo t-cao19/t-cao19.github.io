@@ -48,13 +48,13 @@
   {
     "title": "PintOS",
     "content": "Advanced an existing open-source operating system by adding support for kernel threads, virtual memory, user programs, and file systems",
-    "image": "../../../assets/images/PintOS.jpg",
+    "image": "../../../assets/images/projects/PintOS.jpg",
     "alt": "PintOS operating system"
   },
   {
     "title": "Find Dining Scarborough",
     "content": "Developed an award winning food ordering web platform (in teams of 5) specific for the Scarborough hospitality community during the COVID-19 pandemic",
-    "image": "../../../assets/images/find_dining_logo.jpg",
+    "image": "../../../assets/images/projects/find_dining_logo.jpg",
     "alt": "Find Dining Scarborough",
     "link": "https://github.com/t-cao19/team_08-project",
     "button": "GitHub Repo"
