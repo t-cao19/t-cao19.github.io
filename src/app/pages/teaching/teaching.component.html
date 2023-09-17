@@ -16,6 +16,7 @@
                 <p>{{ teaching.date }}</p>
                 <p>{{ teaching.instructor }}</p>
                 <p>{{ teaching.school }}</p>
+                <p *ngIf="teaching.head"><i>*Head Teaching Assistant</i></p>
                 <a
                   *ngIf="teaching.webpage"
                   href="{{ teaching.webpage }}"

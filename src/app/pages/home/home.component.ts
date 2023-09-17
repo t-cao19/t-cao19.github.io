@@ -21,10 +21,10 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.wordArray = [
       'Tony Cao ',
-      '5th Year U of T Student ',
+      'Final Year U of T Student ',
       'CS + Math Enthusiast ',
       'U of T Teaching Assistant ',
-      'Front - End Addict ',
+      'Inspiring Frontend Developer ',
     ];
 
     this.currently = highlights.slice(0, 3);
