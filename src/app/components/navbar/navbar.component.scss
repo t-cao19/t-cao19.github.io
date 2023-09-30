@@ -1,67 +1,62 @@
 @import "src/styles";
 
 .navbar {
-  background-color: #f0efeb;
-  z-index: 100;
+  background: #fff;
 }
 
-h1 {
-  padding-top: 10px;
-
-  @media screen and (max-width: 1400px) {
-    font-size: 45px;
-  }
-
-  @media screen and (max-width: 900px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 40px;
-  }
+#navbar-title {
+  color: #1b1a19;
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-left: 10%;
 }
 
-h3 {
-  padding-top: 25px;
-
-  @media screen and (max-width: 1400px) {
-    font-size: 30px;
-    padding-top: 24px;
-  }
-
-  @media screen and (max-width: 900px) {
-    font-size: 28px;
-    padding-top: 22px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 24px;
-    padding-top: 24px;
-  }
+#navbarNav {
+  border-bottom: rgba(0, 0, 0, 0.16) 1px solid;
 }
 
 .nav-link {
-  font-family: "Oswald", sans-serif;
+  color: #1b1a19;
+  font-family: Work Sans;
+  font-size: 20px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 22px;
+  font-weight: 600;
+  line-height: 150%;
+
   color: black;
   margin-left: 15px;
-  padding: 25px 0px 0px 0px;
 
-  @media screen and (max-width: 1400px) {
-    font-size: 18px;
-    margin-left: 1px;
-  }
+  // @media screen and (max-width: 1400px) {
+  //   font-size: 18px;
+  //   margin-left: 1px;
+  // }
+
+  // @media screen and (max-width: 900px) {
+  //   font-size: 20px;
+  //   line-height: 20px;
+  // }
+
+  // @media screen and (max-width: 400px) {
+  //   font-size: 18px;
+  // }
+}
+
+.media-icon {
+  padding-right: 20px;
+  font-size: 20px;
+
+  color: black;
 
   @media screen and (max-width: 900px) {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 38px;
   }
 
   @media screen and (max-width: 400px) {
-    font-size: 18px;
+    font-size: 36px;
   }
 }
 
@@ -89,13 +84,6 @@ h3 {
 
 .nav-item {
   margin-top: 10px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.navbar-nav {
-  margin: auto;
 }
 
 .nav-link:hover {

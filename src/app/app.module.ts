@@ -17,14 +17,12 @@ import { SidebarBoxComponent } from './components/sidebar-box/sidebar-box.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { MATA37TutorialComponent } from './pages/mata37-tutorial/mata37-tutorial.component';
 import { TutorialBoxComponent } from './components/tutorial-box/tutorial-box.component';
 import { ProjectBoxComponent } from './components/project-box/project-box.component';
 import { TeachingComponent } from './pages/teaching/teaching.component';
 import { TeachingListComponent } from './components/teaching-list/teaching-list.component';
 import { ExperienceBoxComponent } from './components/experience-box/experience-box.component';
 import { EducationBoxComponent } from './components/education-box/education-box.component';
-import { MATA32TutorialComponent } from './pages/mata32-tutorial/mata32-tutorial.component';
 import { InfiniteTypeDeleteModule } from 'ngx-sbz-type-delete';
 import { NgxVerticalTimelineComponent } from './components/ngx-vertical-timeline/ngx-vertical-timeline.component';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -40,14 +38,12 @@ import { MatTabsModule } from '@angular/material/tabs';
     SidebarBoxComponent,
     FooterComponent,
     AboutComponent,
-    MATA37TutorialComponent,
     TutorialBoxComponent,
     ProjectBoxComponent,
     TeachingComponent,
     TeachingListComponent,
     ExperienceBoxComponent,
     EducationBoxComponent,
-    MATA32TutorialComponent,
     NgxVerticalTimelineComponent,
   ],
   imports: [

@@ -9,8 +9,7 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;500;700&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,300;0,400;0,700;1,300&family=Oswald:wght@400;500;700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@500&family=Josefin+Sans:wght@600&family=Lora:ital,wght@1,700&family=Raleway&family=Roboto:wght@400;500;700&family=Work+Sans:wght@600;800&display=swap");
 
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
@@ -125,5 +124,11 @@ p {
   color: white;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
