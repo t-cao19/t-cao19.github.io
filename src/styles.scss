@@ -9,14 +9,13 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@500&family=Josefin+Sans:wght@600&family=Lora:ital,wght@1,700&family=Raleway&family=Roboto:wght@400;500;700&family=Work+Sans:wght@600;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@500&family=Eczar:wght@600&family=Josefin+Sans:wght@600&family=Lora:ital,wght@1,700&family=Raleway&family=Roboto:wght@400;500;700&family=Work+Sans:wght@600;800&display=swap");
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
 $dark-color: rgb(7, 27, 48);
 $grey-color: #dddddd;
 
-$background-color1: white;
+$background-color1: #fff;
 $background-color2: rgb(240, 240, 240);
 
 $navigation-color: #d9dcd6;
@@ -37,11 +36,13 @@ body {
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
+  color: #151413;
+  font-family: Eczar;
+  font-size: 64px;
   font-style: normal;
-  font-size: 50px;
-  line-height: 50px;
+  font-weight: 600;
+  line-height: 125%; /* 80px */
+  letter-spacing: 1.28px;
 }
 
 h2 {
