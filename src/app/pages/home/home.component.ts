@@ -14,11 +14,43 @@ export class HomeComponent implements OnInit {
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
   featuredWork: any[];
-
   wordArray: string[];
+  carouselHighlight: any[];
+  highlight1Pos: number;
+  highlight2Pos: number;
 
   constructor() {
     this.featuredWork = homeData.featuredWork;
+    this.highlight1Pos = 0;
+    this.highlight2Pos = this.highlight1Pos + 1;
+    this.carouselHighlight = [
+      homeData.highlights[this.highlight1Pos],
+      homeData.highlights[this.highlight2Pos],
+    ];
+  }
+
+  nextArrow(): void {
+    this.highlight1Pos = this.highlight2Pos;
+    this.highlight2Pos =
+      this.highlight2Pos + 1 < homeData.highlights.length
+        ? this.highlight2Pos + 1
+        : 0;
+    this.carouselHighlight = [
+      homeData.highlights[this.highlight1Pos],
+      homeData.highlights[this.highlight2Pos],
+    ];
+  }
+
+  prevArrow(): void {
+    this.highlight2Pos = this.highlight1Pos;
+    this.highlight1Pos =
+      this.highlight1Pos - 1 > -1
+        ? this.highlight2Pos - 1
+        : homeData.highlights.length - 1;
+    this.carouselHighlight = [
+      homeData.highlights[this.highlight1Pos],
+      homeData.highlights[this.highlight2Pos],
+    ];
   }
 
   ngOnInit(): void {

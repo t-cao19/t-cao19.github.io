@@ -85,7 +85,7 @@ button {
 }
 
 /* Second container CSS */
-.featured-work {
+#featured-work {
   background: rgba(0, 0, 0, 0.93);
   padding: 45px 10%;
 }
@@ -107,6 +107,60 @@ button {
   color: #fff;
 }
 
+/* Third container CSS */
+#highlights {
+  background: #fff;
+  padding: 45px 10%;
+}
+
+#highlights-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#highlights h2 {
+  color: #020202;
+  margin-bottom: 0px;
+}
+
+#highlights h4 {
+  font-size: 18px;
+}
+
+#highlights-carousel {
+  height: 325px;
+}
+
+.carousel-title {
+  margin-bottom: 30px;
+}
+
+.carousel-card {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.carousel-footer {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+.carousel-footer > div {
+  color: #000;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+
+.carousel-arrows {
+  margin: auto 0px;
+}
+
 .profile {
   background: url(../../../assets/images/new-background.jpg) center top;
   background-size: cover;
@@ -122,12 +176,6 @@ h3 {
 }
 
 h4 {
-  color: black;
-  font-weight: normal;
-  font-style: italic;
-  padding-top: 20px;
-  font-size: 34px;
-
   @media screen and (max-width: 1400px) {
     margin-top: 32px;
   }

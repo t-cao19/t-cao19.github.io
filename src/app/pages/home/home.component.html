@@ -35,13 +35,70 @@
       />
     </div>
   </div>
-  <div class="featured-work">
+  <div id="featured-work">
     <div class="row">
       <h2>Featured Work</h2>
       <button id="more-project-button">View more under projects</button>
     </div>
     <div class="work" *ngFor="let work of featuredWork">
       <app-featured-work [work]="work"></app-featured-work>
+    </div>
+  </div>
+  <div id="highlights">
+    <div id="highlights-title">
+      <h2>Some Selected Highlights</h2>
+      <h4>Selection of highlights from my professional career so far</h4>
+    </div>
+    <div class="row" id="highlights-carousel">
+      <div class="col-md-1 carousel-arrows" (click)="prevArrow()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="86"
+          height="86"
+          viewBox="0 0 86 86"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M52.7002 22.5495C54.0996 23.9489 54.0996 26.2178 52.7002 27.6171L37.3173 43L52.7002 58.3829C54.0996 59.7822 54.0996 62.0511 52.7002 63.4505C51.3008 64.8498 49.032 64.8498 47.6326 63.4505L29.7159 45.5338C28.3166 44.1344 28.3166 41.8656 29.7159 40.4662L47.6326 22.5495C49.032 21.1502 51.3008 21.1502 52.7002 22.5495Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <div class="col-md-5 carousel-card">
+        <h3 class="carousel-title">{{ carouselHighlight[0].position }}</h3>
+        <p>{{ carouselHighlight[0].content }}</p>
+        <div class="carousel-footer">
+          <h5>{{ carouselHighlight[0].company }}</h5>
+          <div>{{ carouselHighlight[0].subtitle }}</div>
+        </div>
+      </div>
+      <div class="col-md-5 carousel-card">
+        <h3 class="carousel-title">{{ carouselHighlight[1].position }}</h3>
+        <p>{{ carouselHighlight[1].content }}</p>
+        <div class="carousel-footer">
+          <h5>{{ carouselHighlight[1].company }}</h5>
+          <div>{{ carouselHighlight[1].subtitle }}</div>
+        </div>
+      </div>
+
+      <div class="col-md-1 carousel-arrows" (click)="nextArrow()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="86"
+          height="86"
+          viewBox="0 0 86 86"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.2995 22.5495C34.6989 21.1502 36.9678 21.1502 38.3671 22.5495L56.2838 40.4662C57.6832 41.8656 57.6832 44.1344 56.2838 45.5338L38.3671 63.4505C36.9678 64.8498 34.6989 64.8498 33.2995 63.4505C31.9002 62.0511 31.9002 59.7822 33.2995 58.3829L48.6824 43L33.2995 27.6171C31.9002 26.2178 31.9002 23.9489 33.2995 22.5495Z"
+            fill="black"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <!-- <div class="highlights">
