@@ -26,6 +26,8 @@ import { EducationBoxComponent } from './components/education-box/education-box.
 import { InfiniteTypeDeleteModule } from 'ngx-sbz-type-delete';
 import { NgxVerticalTimelineComponent } from './components/ngx-vertical-timeline/ngx-vertical-timeline.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
+import { FeaturedWorkComponent } from './components/featured-work/featured-work.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     ExperienceBoxComponent,
     EducationBoxComponent,
     NgxVerticalTimelineComponent,
+    FeaturedProjectsComponent,
+    FeaturedWorkComponent,
   ],
   imports: [
     BrowserModule,

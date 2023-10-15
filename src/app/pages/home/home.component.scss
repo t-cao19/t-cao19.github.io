@@ -2,6 +2,7 @@
 
 $box-border-shadow-color: rgb(175, 175, 175);
 
+/* First container CSS */
 #helloAll {
   display: flex;
   padding: 12px 24px;
@@ -28,7 +29,8 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 #intro {
-  height: 500px;
+  height: fit-content;
+  padding-bottom: 30px;
 }
 
 .profile-img {
@@ -54,6 +56,7 @@ $box-border-shadow-color: rgb(175, 175, 175);
 #intro-buttons {
   margin-left: 0px;
   margin-right: 5px;
+  margin-top: 20px;
 }
 
 #projects-button svg {
@@ -61,7 +64,7 @@ $box-border-shadow-color: rgb(175, 175, 175);
   height: 25px;
 }
 
-#intro-buttons > Button {
+button {
   margin-right: 10px;
   border: 4px solid #000;
   display: flow;
@@ -81,19 +84,37 @@ $box-border-shadow-color: rgb(175, 175, 175);
   line-height: 150%; /* 30px */
 }
 
+/* Second container CSS */
+.featured-work {
+  background: rgba(0, 0, 0, 0.93);
+  padding: 45px 10%;
+}
+
+.featured-work > h2 {
+  color: #fffefc;
+}
+
+.row {
+  margin-left: 0px;
+}
+
+#more-project-button {
+  margin-left: 50px;
+  width: 325px;
+  border-radius: 5px;
+  border: 4px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
 .profile {
   background: url(../../../assets/images/new-background.jpg) center top;
   background-size: cover;
-  // width: 100%;
-  // height: 100%;
+
   overflow: auto;
   padding-top: 100px;
   min-height: 85vh;
   padding-bottom: 15px;
-}
-
-h1 {
-  font-size: 44px;
 }
 
 h3 {

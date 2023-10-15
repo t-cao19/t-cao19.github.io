@@ -9,7 +9,7 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@500&family=Eczar:wght@600&family=Josefin+Sans:wght@600&family=Lora:ital,wght@1,700&family=Raleway&family=Roboto:wght@400;500;700&family=Work+Sans:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@500&family=Eczar:wght@600&family=Josefin+Sans:wght@600&family=Lora:ital,wght@1,700&family=Raleway&family=Roboto:wght@400;500;700&family=Work+Sans:wght@500;600;800&display=swap");
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
 $dark-color: rgb(7, 27, 48);
@@ -38,7 +38,7 @@ body {
 h1 {
   color: #151413;
   font-family: Eczar;
-  font-size: 64px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 80px */
@@ -46,20 +46,22 @@ h1 {
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
+  color: #fffefc;
+  font-family: Eczar;
+  font-size: 36px;
   font-style: normal;
-  color: black;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 70px;
+  font-weight: 600;
+  line-height: 175%; /* 50px */
+  letter-spacing: 0.8px;
 }
 
 h3 {
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
+  color: #000;
+  font-family: Work Sans;
+  font-size: 28px;
   font-style: normal;
-  font-size: 35px;
-  line-height: 35px;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
 }
 
 h4 {
@@ -83,12 +85,12 @@ h5 {
 ul,
 li,
 p {
+  color: #594f43;
+  font-family: Work Sans;
   font-size: 20px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
   font-style: normal;
-  margin-bottom: 5px;
-  line-height: 20px;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
 }
 
 .page-header-img {

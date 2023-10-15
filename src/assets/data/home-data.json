@@ -1,0 +1,19 @@
+{
+  "featuredWork": [
+    {
+      "title": "Divide and Conquer",
+      "desc": "Online real-time code competition platform for solving programming and algorithm questions.",
+      "imagePath": "../../../assets/images/projects/DivideAndConquer.png"
+    },
+    {
+      "title": "Political Chat Bot",
+      "desc": "Chat bot capable of answering general federal politic questions through the Open Parliament API.",
+      "imagePath": "../../../assets/images/projects/FederalBot.png"
+    },
+    {
+      "title": "Find Dining Scarborough",
+      "desc": "Award winning project (chosen by City of Toronto) to deliver a food ordering application during the COVID-19 pandemic.",
+      "imagePath": "../../../assets/images/projects/FindDiningScarborough.png"
+    }
+  ]
+}

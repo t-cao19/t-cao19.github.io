@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from 'aos';
-import highlights from '../../../assets/data/highlights.json';
+import homeData from '../../../assets/data/home-data.json';
 
 @Component({
   selector: 'app-home',
@@ -13,22 +13,12 @@ export class HomeComponent implements OnInit {
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
-  currently: any[];
-  previously: any[];
+  featuredWork: any[];
 
   wordArray: string[];
 
   constructor() {
-    this.wordArray = [
-      'Tony Cao ',
-      'Final Year U of T Student ',
-      'CS + Math Enthusiast ',
-      'U of T Teaching Assistant ',
-      'Inspiring Frontend Developer ',
-    ];
-
-    this.currently = highlights.slice(0, 3);
-    this.previously = highlights.slice(3);
+    this.featuredWork = homeData.featuredWork;
   }
 
   ngOnInit(): void {
