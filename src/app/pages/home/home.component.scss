@@ -29,11 +29,11 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 #intro {
-  height: fit-content;
+  height: 500px;
   padding-bottom: 30px;
 }
 
-.profile-img {
+#intro-pic {
   display: block;
   width: 550px;
   height: 400px;
@@ -130,6 +130,7 @@ button {
 
 #highlights-carousel {
   height: 325px;
+  margin-bottom: 40px;
 }
 
 .carousel-title {
@@ -159,6 +160,39 @@ button {
 
 .carousel-arrows {
   margin: auto 0px;
+}
+
+/* Fourth container CSS */
+#about-me {
+  height: 700px;
+}
+
+#about-me-desc {
+  background: #000;
+  padding-left: 10%;
+  padding-top: 50px;
+  padding-right: 5%;
+}
+
+#about-me p {
+  color: #fff;
+}
+
+#contact-me-button {
+  width: 200px;
+  border-radius: 5px;
+  border: 4px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-top: 30px;
+}
+
+#about-me-pic {
+  width: 110%;
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 700px;
+  margin-left: -15px;
 }
 
 .profile {
