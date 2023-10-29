@@ -195,6 +195,58 @@ button {
   margin-left: -15px;
 }
 
+/* Fifth container CSS */
+
+#contact-me {
+  background: #fff;
+  padding: 55px 10%;
+}
+
+#contact-me-box {
+  margin: 20px auto;
+  width: 60%;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 15px;
+  background: rgba(196, 196, 196, 0.3);
+  width: 100%;
+  height: 65px;
+  flex-shrink: 0;
+  border: 0;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+::placeholder {
+  color: #000;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+}
+
+textarea {
+  border-radius: 15px;
+  background: rgba(196, 196, 196, 0.3);
+  width: 100%;
+  height: 100px;
+  flex-shrink: 0;
+  border: 0;
+  margin-left: -20px;
+  padding: 20px 15px;
+}
+
+#send-message {
+  color: #000;
+  background: transparent;
+}
+
 .profile {
   background: url(../../../assets/images/new-background.jpg) center top;
   background-size: cover;

@@ -28,6 +28,8 @@ import { NgxVerticalTimelineComponent } from './components/ngx-vertical-timeline
 import { MatTabsModule } from '@angular/material/tabs';
 import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
 import { FeaturedWorkComponent } from './components/featured-work/featured-work.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NowComponent } from './pages/now/now.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { FeaturedWorkComponent } from './components/featured-work/featured-work.
     NgxVerticalTimelineComponent,
     FeaturedProjectsComponent,
     FeaturedWorkComponent,
+    NowComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +65,8 @@ import { FeaturedWorkComponent } from './components/featured-work/featured-work.
     PdfViewerModule,
     InfiniteTypeDeleteModule,
     MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
