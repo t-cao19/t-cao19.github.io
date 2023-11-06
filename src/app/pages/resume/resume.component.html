@@ -1,5 +1,47 @@
 <div class="resume-page">
-  <div class="page-body">
+  <div class="row" id="resume">
+    <div class="col-md-6" id="resume-desc">
+      <h1>Resume</h1>
+      <h4>
+        A walkthrough of my current and past experiences along with the skills I
+        have gained through it.
+      </h4>
+    </div>
+    <div class="col-md-6">
+      <img
+        id="resume-pic"
+        src="../../../assets/images/TelusGarden.jpg"
+        alt="Tony Cao"
+      />
+    </div>
+  </div>
+  <div id="statistics">
+    <h2>Some quick statistics</h2>
+    <div class="row">
+      <div class="col-md-3 stats-num">
+        <h2>3</h2>
+        <p>Companies</p>
+      </div>
+      <div class="col-md-3 stats-num">
+        <h2>5</h2>
+        <p>Job Positions</p>
+      </div>
+      <div class="col-md-3 stats-num">
+        <h2>3</h2>
+        <p>Volunteer Experiences</p>
+      </div>
+      <div class="col-md-3 stats-num" id="last">
+        <h2>14</h2>
+        <p>Course as a TA</p>
+      </div>
+    </div>
+  </div>
+  <div id="work-exp">
+    <div class="exp" *ngFor="let exp of resume.work">
+      <app-resume-experience [experience]="exp"></app-resume-experience>
+    </div>
+  </div>
+  <!-- <div class="page-body">
     <div class="title">
       <h2>Resume</h2>
     </div>
@@ -31,5 +73,5 @@
         <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
       </a>
     </div>
-  </div>
+  </div> -->
 </div>

@@ -30,6 +30,7 @@ import { FeaturedProjectsComponent } from './components/featured-projects/featur
 import { FeaturedWorkComponent } from './components/featured-work/featured-work.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NowComponent } from './pages/now/now.component';
+import { ResumeExperienceComponent } from './components/resume-experience/resume-experience.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { NowComponent } from './pages/now/now.component';
     FeaturedProjectsComponent,
     FeaturedWorkComponent,
     NowComponent,
+    ResumeExperienceComponent,
   ],
   imports: [
     BrowserModule,

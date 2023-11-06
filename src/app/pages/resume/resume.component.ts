@@ -1,8 +1,7 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { TimelineItem } from '../../components/ngx-vertical-timeline/timeline-item';
-import resume from '../../../assets/data/resume.json';
+import resume from '../../../assets/data/resume-data.json';
 import * as AOS from 'aos';
 
 @Component({
@@ -15,11 +14,11 @@ export class ResumeComponent implements OnInit {
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
   education: any;
+  resume: any;
 
-  // For vertical timeline
-  items: TimelineItem[] = [];
-
-  constructor(private renderer: Renderer2) {}
+  constructor() {
+    this.resume = resume;
+  }
 
   ngOnInit(): void {
     AOS.init({
@@ -28,26 +27,6 @@ export class ResumeComponent implements OnInit {
       once: false,
       anchorPlacement: 'top-bottom',
     });
-
-    const self = this;
-
-    for (let item of resume) {
-      this.items.push({
-        label: 'Link',
-        icon: 'fa fa-calendar-plus-o',
-        styleClass: 'teste',
-        content: item.content,
-        title: item.title,
-        date: item.date,
-        command() {
-          if (item.link) {
-            window.open(item.link, '_blank').focus();
-          } else {
-            window.open('/home').focus();
-          }
-        },
-      });
-    }
   }
 
   scroll(el: HTMLElement) {
