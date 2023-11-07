@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  about(): void {
+  now(): void {
     this.router.navigate(['/now']);
   }
 
