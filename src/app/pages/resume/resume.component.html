@@ -37,41 +37,70 @@
     </div>
   </div>
   <div id="work-exp">
+    <h2>Work Experience</h2>
     <div class="exp" *ngFor="let exp of resume.work">
       <app-resume-experience [experience]="exp"></app-resume-experience>
     </div>
   </div>
-  <!-- <div class="page-body">
-    <div class="title">
-      <h2>Resume</h2>
+  <div id="volunteer-exp">
+    <h2>Volunteer Experience</h2>
+    <div class="exp" *ngFor="let exp of resume.volunteer">
+      <app-resume-experience
+        [experience]="exp"
+        [inverted]="true"
+      ></app-resume-experience>
     </div>
-    <div class="options">
-      <button type="button" (click)="scroll(resume)">Resume PDF</button>
-    </div>
-    <div class="timeline">
-      <h4>Experience Timeline</h4>
-      <app-ngx-vertical-timeline [(items)]="items"></app-ngx-vertical-timeline>
-    </div>
-    <div class="subtitle" #resume>
-      <h4>Resume PDF</h4>
-    </div>
-    <div class="resume-pdf">
-      <iframe
-        src="https://drive.google.com/file/d/1CtJcVdPzPgCTTyhvHblja8xw0EoeGipi/preview"
-        allow="autoplay"
-      ></iframe>
-    </div>
-
-    <div class="icons">
-      <a href="mailto:jtony.cao@mail.utoronto.ca">
-        <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
-      </a>
-      <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-        <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
-      </a>
-      <a href="https://github.com/t-cao19" target="_blank">
-        <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
-      </a>
-    </div>
-  </div> -->
+  </div>
+  <div id="education">
+    <h2>Education</h2>
+    <h4>Honours Bachelor of Science with High Distinction</h4>
+    <div id="university">University of Toronto, 2018-2023</div>
+    <ul>
+      <li>
+        Completion of a specialist in Computer Science (Co-op) -
+        <i>Software Engineering</i> and Major in Mathematics
+      </li>
+    </ul>
+    <br />
+    <p><u>Awards/Honours</u></p>
+    <ul>
+      <li>Dean's List (Nov 2019, Sept 2020/21/22)</li>
+      <li>
+        University of Toronto Scholar (Top 700 applicant) carrying a value of
+        $7,500 initial and $3,000 in subsequent years (twice)
+      </li>
+      <li>
+        Best project by City of Toronto in CSCC01:
+        <i>Introduction to Software Engineering</i>
+      </li>
+    </ul>
+    <hr />
+    <h2>Teachings</h2>
+    <h4>
+      A list of all courses I have been apart of at the University of Toronto,
+      Department of Computer and Mathematical Science as a Teaching Assistant.
+    </h4>
+    <ul>
+      <li>
+        Engineering Large Software Systems - Head TA, CSCD01, Winter 2023.
+      </li>
+      <li>Calculus II for Physical Sciences, MATA36, Winter 2023.</li>
+      <li>Calculus II for Mathematical Sciences, MATA37, Winter 2023.</li>
+      <li>Discrete Mathematics, CSC/MATA67, Fall 2022.</li>
+      <li>Introduction to Databases - Head TA, CSCC43, Fall 2022.</li>
+      <li>Linear Algebra II, MATB24, Fall 2022.</li>
+      <li>
+        Techniques of the Calculus of Several Variables I, MATB41, Fall 2022.
+      </li>
+      <li>Groups and Symmetry, MATC01, Fall 2022.</li>
+      <li>Calculus II for Mathematical Sciences, MATA37, Summer 2022.</li>
+      <li>
+        Techniques of the Calculus of Several Variables I, MATB41, Summer 2022.
+      </li>
+      <li>Calculus II for Mathematical Sciences, MATA37, Winter 2022.</li>
+      <li>Discrete Mathematics, CSC/MATA67, Fall 2021.</li>
+      <li>Calculus for Management I - Two Tutorials, MATA32, Fall 2021.</li>
+      <li>Calculus II for Mathematical Sciences, MATA37, Winter 2021.</li>
+    </ul>
+  </div>
 </div>

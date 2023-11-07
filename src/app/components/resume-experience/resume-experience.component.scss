@@ -25,6 +25,22 @@ hr {
   margin: 10px auto;
 }
 
+.hr-inverted {
+  background: #fffefc;
+  width: 40%;
+  height: 1px;
+  margin: 10px auto;
+}
+
+.text-inverted {
+  color: #fffefc;
+  background: transparent;
+}
+
 h3 {
   margin: none;
+}
+
+ul {
+  margin-bottom: 8px;
 }

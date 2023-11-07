@@ -11,8 +11,10 @@ export class ResumeExperienceComponent implements OnInit {
     company: string;
     desc: string[];
     date: string | undefined;
-    color: 'black' | 'white' | undefined;
   };
+
+  @Input() inverted: boolean;
+
   constructor() {}
 
   ngOnInit(): void {}
