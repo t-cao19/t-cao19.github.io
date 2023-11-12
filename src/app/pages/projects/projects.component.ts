@@ -15,9 +15,39 @@ export class ProjectsComponent implements OnInit {
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
+  technicalSkills: any[] = [];
 
   constructor() {
-    this.projects = projects;
+    this.technicalSkills = [
+      {
+        id: 'row-1',
+        skill: ['Angular', 'React', 'Git/GitHub', 'HTML'],
+      },
+      {
+        id: 'row-2',
+        skill: ['CSS', 'NodeJS', 'Express', 'JavaScript'],
+      },
+      {
+        id: 'row-3',
+        skill: ['TypeScript', 'Python', 'ElectionJS', 'PostgreSQL'],
+      },
+      {
+        id: 'row-4',
+        skill: ['MongoDB', 'C', 'Android', 'Java'],
+      },
+    ];
+
+    this.projects = projects.reduce((resultArray, item, index) => {
+      const chunkIndex = Math.floor(index / 3);
+
+      if (!resultArray[chunkIndex]) {
+        resultArray[chunkIndex] = []; // start a new chunk
+      }
+
+      resultArray[chunkIndex].push(item);
+
+      return resultArray;
+    }, []);
   }
 
   ngOnInit(): void {
