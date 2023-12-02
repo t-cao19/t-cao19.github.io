@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   carouselHighlight: any[];
   highlight1Pos: number;
   highlight2Pos: number;
+  mailText: string;
 
   messageForm = new FormGroup({
     firstName: new FormControl(''),
@@ -71,7 +72,8 @@ export class HomeComponent implements OnInit {
     ];
   }
 
-  sendMessage(): void {
-    console.log(this.messageForm.value);
-  }
+  // sendMessage(): void {
+  //   this.mailText = `mailto:tony.cao1@outlook.com?subject=${this.messageForm.value.subject}&body=${this.messageForm.value.message}`;
+  //   window.location.href = this.mailText;
+  // }
 }

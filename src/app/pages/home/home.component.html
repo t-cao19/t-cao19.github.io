@@ -38,7 +38,9 @@
   <div id="featured-work">
     <div class="row">
       <h2>Featured Work</h2>
-      <button id="more-project-button">View more under projects</button>
+      <button id="more-project-button" [routerLink]="'/projects'">
+        View more under projects
+      </button>
     </div>
     <div class="work" *ngFor="let work of featuredWork">
       <app-featured-work [work]="work"></app-featured-work>
@@ -134,32 +136,40 @@
       />
     </div>
   </div>
-  <div id="contact-me">
+  <div id="quotes">
+    <h2>Some Quotes I Live By</h2>
+    <div class="left-words">
+      <p>
+        Always remind yourself that your track record for making it through your
+        bad days is perfect.
+      </p>
+    </div>
+    <div class="right-words">
+      <p>No one has ever argued their way to happiness.</p>
+    </div>
+    <div class="left-words">
+      <p>
+        Taking no risk is the biggest risk you can take. Regret from inaction is
+        always more painful than regret from action.
+      </p>
+    </div>
+    <div class="right-words">
+      <p>
+        Indeed the function of life has its relative lows and highs. Remember
+        they are all relative.
+      </p>
+    </div>
+    <div class="left-words">
+      <p>Shoot for the Moon. Even if you miss, you'll land among the stars.</p>
+    </div>
+    <div class="right-words">
+      <p>Life's a climb. But the view is great.</p>
+    </div>
+  </div>
+  <!-- <div id="contact-me">
     <div id="contact-me-box">
       <h1>Let's work together</h1>
-      <form
-        [formGroup]="messageForm"
-        (ngSubmit)="sendMessage()"
-        action="https://script.googleapis.com/v1/scripts/AKfycbycxkHowy6Qa5JrDzKHkoqtDbTQPdpHIRuj95lgesyA0MKKX3oLKb9teTRSkQQxUT35:run"
-      >
-        <div class="row contact-form">
-          <div class="col-md-6">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First name"
-              formControlName="firstName"
-            />
-          </div>
-          <div class="col-md-6">
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last name"
-              formControlName="lastName"
-            />
-          </div>
-        </div>
+      <form [formGroup]="messageForm" (ngSubmit)="sendMessage()">
         <div class="row contact-form">
           <div class="col-md-4">
             <input
@@ -167,6 +177,7 @@
               name="subject"
               placeholder="Subject"
               formControlName="subject"
+              required
             />
           </div>
           <div class="col-md-8">
@@ -175,6 +186,7 @@
               name="email"
               placeholder="Email"
               formControlName="email"
+              required
             />
           </div>
         </div>
@@ -185,11 +197,12 @@
               name="message"
               placeholder="Message"
               formControlName="message"
+              required
             ></textarea>
           </div>
         </div>
         <button id="send-message" type="submit">Send Message</button>
       </form>
     </div>
-  </div>
+  </div> -->
 </div>
