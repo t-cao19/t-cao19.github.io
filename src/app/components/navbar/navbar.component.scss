@@ -20,6 +20,11 @@
   margin-left: 10px;
 }
 
+#navbar-title.is-tablet-portrait {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
 #navbarNav {
   border-bottom: rgba(0, 0, 0, 0.16) 1px solid;
   padding: 10px 0px;
@@ -37,28 +42,26 @@
   margin-left: 15px;
 }
 
-.nav-link.is-tablet-landscape {
+.nav-link.is-tablet-landscape,
+.nav-link.is-tablet-portrait {
   font-size: 18px;
   margin-left: 0px;
+  padding: 0px;
 }
 
 .media-icon {
   padding-right: 20px;
   font-size: 20px;
-
   color: black;
+}
 
-  @media screen and (max-width: 900px) {
-    font-size: 38px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 36px;
-  }
+.media-icon.is-tablet-portrait {
+  font-size: 18px;
+  margin-right: 20px;
 }
 
 .navbar-toggler {
-  background-color: #16425b;
+  background: #000;
   border: 1px solid white;
   width: 47px;
   height: 34px;
@@ -70,6 +73,10 @@
   height: 2px;
   background-color: #fff;
   margin-bottom: 5px;
+}
+
+.navbar-toggler > .line {
+  margin-top: 2px;
 }
 
 .navbar-toggler:focus,

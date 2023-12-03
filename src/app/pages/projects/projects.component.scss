@@ -4,8 +4,8 @@
   padding-left: 10%;
   padding-top: 70px;
 }
+
 #projects {
-  height: 450px;
   padding-bottom: 30px;
 }
 
@@ -17,6 +17,18 @@
   object-fit: cover;
   border-radius: 30px;
   margin: 30px auto 0px auto;
+}
+
+#projects-pic.is-tablet-landscape {
+  width: 450px;
+  height: 300px;
+  margin: 20px auto 0px auto;
+}
+
+#projects-pic.is-tablet-portrait {
+  width: 325px;
+  height: 250px;
+  margin: 70px auto 0px auto;
 }
 
 #skills {
@@ -46,4 +58,8 @@
   padding-left: 70%;
   font-size: 16px;
   color: black;
+}
+
+div.hidden {
+  display: none;
 }

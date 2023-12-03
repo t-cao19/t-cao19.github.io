@@ -1,19 +1,48 @@
 <div class="card resumeExp" [ngClass]="inverted ? 'text-inverted' : ''">
   <div class="row">
     <div class="col-md-6">
-      <h3 [ngClass]="inverted ? 'text-inverted' : ''">
+      <h3
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'text-inverted': inverted
+        }"
+      >
         {{ experience.position | titlecase }}
       </h3>
     </div>
     <div class="col-md-6 date">
-      <h3 [ngClass]="inverted ? 'text-inverted' : ''">{{ experience.date }}</h3>
+      <h3
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'text-inverted': inverted
+        }"
+      >
+        {{ experience.date }}
+      </h3>
     </div>
   </div>
-  <div class="company" [ngClass]="inverted ? 'text-inverted' : ''">
+  <div
+    class="company"
+    [ngClass]="{
+      'is-tablet-landscape': isTabletLandscape,
+      'is-tablet-portrait': isTabletPortrait,
+      'text-inverted': inverted
+    }"
+  >
     {{ experience.company }}
   </div>
   <ul *ngFor="let bullet of experience.desc">
-    <li [ngClass]="inverted ? 'text-inverted' : ''">{{ bullet }}</li>
+    <li
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'text-inverted': inverted
+      }"
+    >
+      {{ bullet }}
+    </li>
   </ul>
   <hr [ngClass]="inverted ? 'hr-inverted' : ''" />
 </div>

@@ -1,8 +1,20 @@
 <div class="projects-page">
   <div class="row" id="projects">
     <div class="col-md-6" id="projects-desc">
-      <h1>Projects</h1>
-      <h4>
+      <h1
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Projects
+      </h1>
+      <h4
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         A showcase of my projects where technical skills and creativity combine
         together to produce innovation.
       </h4>
@@ -12,6 +24,10 @@
         id="projects-pic"
         src="../../../assets/images/YVR.jpg"
         alt="Tony Cao"
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
       />
     </div>
   </div>
@@ -20,37 +36,79 @@
     <div *ngFor="let row of technicalSkills">
       <div class="row onerow-skill" id="{{ row.id }}">
         <div class="col-md-3">
-          <h2>{{ row.skill[0] }}</h2>
+          <h2
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ row.skill[0] }}
+          </h2>
         </div>
         <div class="col-md-3">
-          <h2>{{ row.skill[1] }}</h2>
+          <h2
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ row.skill[1] }}
+          </h2>
         </div>
         <div class="col-md-3">
-          <h2>{{ row.skill[2] }}</h2>
+          <h2
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ row.skill[2] }}
+          </h2>
         </div>
         <div class="col-md-3">
-          <h2>{{ row.skill[3] }}</h2>
+          <h2
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ row.skill[3] }}
+          </h2>
         </div>
       </div>
     </div>
   </div>
   <div id="all-projects">
-    <div class="row" *ngFor="let trio of projects">
+    <div
+      class="row"
+      *ngFor="let row of projects"
+      [ngClass]="{
+        hidden: isTabletPortrait
+      }"
+    >
       <div class="col-md-4">
-        <app-project-box *ngIf="trio[0]" [project]="trio[0]"></app-project-box>
+        <app-project-box *ngIf="row[0]" [project]="row[0]"></app-project-box>
       </div>
       <div class="col-md-4">
-        <app-project-box *ngIf="trio[1]" [project]="trio[1]"></app-project-box>
+        <app-project-box *ngIf="row[1]" [project]="row[1]"></app-project-box>
       </div>
       <div class="col-md-4">
-        <app-project-box *ngIf="trio[2]" [project]="trio[2]"></app-project-box>
+        <app-project-box *ngIf="row[2]" [project]="row[2]"></app-project-box>
+      </div>
+    </div>
+    <div
+      class="row"
+      *ngFor="let row of projects"
+      [ngClass]="{
+        hidden: !isTabletPortrait
+      }"
+    >
+      <div class="col-md-6">
+        <app-project-box *ngIf="row[0]" [project]="row[0]"></app-project-box>
+      </div>
+      <div class="col-md-6">
+        <app-project-box *ngIf="row[1]" [project]="row[1]"></app-project-box>
       </div>
     </div>
   </div>
-  <!-- <div id="work-exp">
-    <h2>Work Experience</h2>
-    <div class="exp" *ngFor="let exp of resume.work">
-      <app-resume-experience [experience]="exp"></app-resume-experience>
-    </div>
-  </div> -->
 </div>

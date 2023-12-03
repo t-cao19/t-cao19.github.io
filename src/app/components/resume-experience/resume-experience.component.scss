@@ -18,6 +18,11 @@
   line-height: 150%; /* 36px */
 }
 
+.company.is-tablet-landscape,
+.company.is-tablet-portrait {
+  font-size: 18px;
+}
+
 hr {
   background: #000;
   width: 40%;
@@ -38,7 +43,7 @@ hr {
 }
 
 h3 {
-  margin: none;
+  margin: 0px;
 }
 
 ul {

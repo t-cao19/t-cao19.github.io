@@ -1,8 +1,20 @@
 <div class="resume-page">
   <div class="row" id="resume">
     <div class="col-md-6" id="resume-desc">
-      <h1>Resume</h1>
-      <h4>
+      <h1
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Resume
+      </h1>
+      <h4
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         A walkthrough of my current and past experiences along with the skills I
         have gained through it.
       </h4>
@@ -12,38 +24,119 @@
         id="resume-pic"
         src="../../../assets/images/TelusGarden.jpg"
         alt="Tony Cao"
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
       />
     </div>
   </div>
   <div id="statistics">
-    <h2>Some quick statistics</h2>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      Some quick statistics
+    </h2>
     <div class="row">
       <div class="col-md-3 stats-num">
-        <h2>3</h2>
-        <p>Companies</p>
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          3
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          Companies
+        </p>
       </div>
       <div class="col-md-3 stats-num">
-        <h2>5</h2>
-        <p>Job Positions</p>
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          5
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          Job Positions
+        </p>
       </div>
       <div class="col-md-3 stats-num">
-        <h2>3</h2>
-        <p>Volunteer Experiences</p>
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          3
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          Volunteer Experiences
+        </p>
       </div>
       <div class="col-md-3 stats-num" id="last">
-        <h2>14</h2>
-        <p>Course as a TA</p>
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          14
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          Course as a TA
+        </p>
       </div>
     </div>
   </div>
   <div id="work-exp">
-    <h2>Work Experience</h2>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      Work Experience
+    </h2>
     <div class="exp" *ngFor="let exp of resume.work">
       <app-resume-experience [experience]="exp"></app-resume-experience>
     </div>
   </div>
   <div id="volunteer-exp">
-    <h2>Volunteer Experience</h2>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      Volunteer Experience
+    </h2>
     <div class="exp" *ngFor="let exp of resume.volunteer">
       <app-resume-experience
         [experience]="exp"
@@ -52,55 +145,210 @@
     </div>
   </div>
   <div id="education">
-    <h2>Education</h2>
-    <h4>Honours Bachelor of Science with High Distinction</h4>
-    <div id="university">University of Toronto, 2018-2023</div>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      Education
+    </h2>
+    <h4
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      Honours Bachelor of Science with High Distinction
+    </h4>
+    <div
+      id="university"
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      University of Toronto, 2018-2023
+    </div>
     <ul>
-      <li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         Completion of a specialist in Computer Science (Co-op) -
         <i>Software Engineering</i> and Major in Mathematics
       </li>
     </ul>
     <br />
-    <p><u>Awards/Honours</u></p>
+    <p
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      <u>Awards/Honours</u>
+    </p>
     <ul>
-      <li>Dean's List (Nov 2019, Sept 2020/21/22)</li>
-      <li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Dean's List (Nov 2019, Sept 2020/21/22)
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         University of Toronto Scholar (Top 700 applicant) carrying a value of
         $7,500 initial and $3,000 in subsequent years (twice)
       </li>
-      <li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         Best project by City of Toronto in CSCC01:
         <i>Introduction to Software Engineering</i>
       </li>
     </ul>
     <hr />
-    <h2>Teachings</h2>
-    <h4>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      Teachings
+    </h2>
+    <h4
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
       A list of all courses I have been apart of at the University of Toronto,
       Department of Computer and Mathematical Science as a Teaching Assistant.
     </h4>
     <ul>
-      <li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         Engineering Large Software Systems - Head TA, CSCD01, Winter 2023.
       </li>
-      <li>Calculus II for Physical Sciences, MATA36, Winter 2023.</li>
-      <li>Calculus II for Mathematical Sciences, MATA37, Winter 2023.</li>
-      <li>Discrete Mathematics, CSC/MATA67, Fall 2022.</li>
-      <li>Introduction to Databases - Head TA, CSCC43, Fall 2022.</li>
-      <li>Linear Algebra II, MATB24, Fall 2022.</li>
-      <li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Calculus II for Physical Sciences, MATA36, Winter 2023.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Calculus II for Mathematical Sciences, MATA37, Winter 2023.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Discrete Mathematics, CSC/MATA67, Fall 2022.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Introduction to Databases - Head TA, CSCC43, Fall 2022.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Linear Algebra II, MATB24, Fall 2022.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         Techniques of the Calculus of Several Variables I, MATB41, Fall 2022.
       </li>
-      <li>Groups and Symmetry, MATC01, Fall 2022.</li>
-      <li>Calculus II for Mathematical Sciences, MATA37, Summer 2022.</li>
-      <li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Groups and Symmetry, MATC01, Fall 2022.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Calculus II for Mathematical Sciences, MATA37, Summer 2022.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         Techniques of the Calculus of Several Variables I, MATB41, Summer 2022.
       </li>
-      <li>Calculus II for Mathematical Sciences, MATA37, Winter 2022.</li>
-      <li>Discrete Mathematics, CSC/MATA67, Fall 2021.</li>
-      <li>Calculus for Management I - Two Tutorials, MATA32, Fall 2021.</li>
-      <li>Calculus II for Mathematical Sciences, MATA37, Winter 2021.</li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Calculus II for Mathematical Sciences, MATA37, Winter 2022.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Discrete Mathematics, CSC/MATA67, Fall 2021.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Calculus for Management I - Two Tutorials, MATA32, Fall 2021.
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Calculus II for Mathematical Sciences, MATA37, Winter 2021.
+      </li>
     </ul>
   </div>
 </div>

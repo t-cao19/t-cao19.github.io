@@ -17,7 +17,10 @@
     <div class="col-md-5">
       <div
         id="navbar-title"
-        [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
       >
         Tony Cao | Software Developer
       </div>
@@ -30,7 +33,10 @@
             (click)="home()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
-            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
           >
             Home
           </a>
@@ -41,7 +47,10 @@
             (click)="now()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
-            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
           >
             Now
           </a>
@@ -52,7 +61,10 @@
             (click)="resume()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
-            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
           >
             Resume
           </a>
@@ -63,7 +75,10 @@
             (click)="projects()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
-            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
           >
             Projects
           </a>
@@ -72,13 +87,34 @@
     </div>
     <div class="col-md-2">
       <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-        <fa-icon class="media-icon" [icon]="faLinkedinIn"></fa-icon>
+        <fa-icon
+          class="media-icon"
+          [icon]="faLinkedinIn"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        ></fa-icon>
       </a>
       <a href="https://github.com/t-cao19" target="_blank">
-        <fa-icon class="media-icon" [icon]="faGitHub"></fa-icon>
+        <fa-icon
+          class="media-icon"
+          [icon]="faGitHub"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        ></fa-icon>
       </a>
       <a href="mailto:tony.cao1@outlook.com">
-        <fa-icon class="media-icon" [icon]="faEnvelope"></fa-icon>
+        <fa-icon
+          class="media-icon"
+          [icon]="faEnvelope"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        ></fa-icon>
       </a>
     </div>
   </div>

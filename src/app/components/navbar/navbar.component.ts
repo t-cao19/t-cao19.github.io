@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
 
   // Mobile queries
   isTabletLandscape: boolean;
+  isTabletPortrait: boolean;
   isPhoneView: boolean;
 
   constructor(private router: Router, private responsive: BreakpointObserver) {}
@@ -25,6 +26,13 @@ export class NavbarComponent implements OnInit {
       this.isTabletLandscape = false;
       if (result.matches) {
         this.isTabletLandscape = true;
+      }
+    });
+
+    this.responsive.observe(Breakpoints.TabletPortrait).subscribe((result) => {
+      this.isTabletPortrait = false;
+      if (result.matches) {
+        this.isTabletPortrait = true;
       }
     });
   }

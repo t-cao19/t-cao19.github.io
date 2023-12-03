@@ -78,7 +78,8 @@ h3 {
 
 h3.is-tablet-landscape,
 h3.is-tablet-portrait {
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -119,7 +120,9 @@ p {
 }
 
 p.is-tablet-landscape,
-p.is-tablet-portrait {
+p.is-tablet-portrait,
+li.is-tablet-portrait,
+li.is-tablet-landscape {
   font-size: 18px;
 }
 
