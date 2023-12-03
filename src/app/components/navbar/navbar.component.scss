@@ -15,6 +15,11 @@
   margin-left: 10%;
 }
 
+#navbar-title.is-tablet-landscape {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
 #navbarNav {
   border-bottom: rgba(0, 0, 0, 0.16) 1px solid;
   padding: 10px 0px;
@@ -30,6 +35,11 @@
 
   color: black;
   margin-left: 15px;
+}
+
+.nav-link.is-tablet-landscape {
+  font-size: 18px;
+  margin-left: 0px;
 }
 
 .media-icon {

@@ -1,5 +1,20 @@
 <footer>
   <div id="footer-content">
-    <p>© Copyright 2023 Tony Cao</p>
+    <p
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      © Copyright 2023 Tony Cao
+    </p>
+    <p
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait
+      }"
+    >
+      tony.cao1 [at] outlook.com
+    </p>
   </div>
 </footer>

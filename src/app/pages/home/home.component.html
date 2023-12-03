@@ -2,7 +2,12 @@
   <div class="row" id="intro">
     <div class="col-md-6" id="intro-desc">
       <div id="helloAll">👋 Hello All</div>
-      <h1>
+      <h1
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         I'm Tony Cao, <br />
         An Aspiring Full-Stack Software Developer
       </h1>
@@ -24,7 +29,7 @@
             />
           </svg>
         </button>
-        <button id="contact-button">Contact Me</button>
+        <!-- <button id="contact-button">Contact Me</button> -->
       </div>
     </div>
     <div class="col-md-6">
@@ -32,6 +37,10 @@
         id="intro-pic"
         src="../../../assets/images/profilePic/Tony_Mountain.jpg"
         alt="Tony Cao"
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
       />
     </div>
   </div>
@@ -59,6 +68,10 @@
           height="86"
           viewBox="0 0 86 86"
           fill="none"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
         >
           <path
             fill-rule="evenodd"
@@ -69,26 +82,88 @@
         </svg>
       </div>
       <div class="col-md-5 carousel-card">
-        <h3 class="carousel-title">{{ carouselHighlight[0].position }}</h3>
-        <div class="carousel-content">
-          <p>{{ carouselHighlight[0].content }}</p>
+        <h3
+          class="carousel-title"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          {{ carouselHighlight[0].position }}
+        </h3>
+        <div
+          class="carousel-content"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          <p
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ carouselHighlight[0].content }}
+          </p>
         </div>
         <div class="carousel-footer">
-          <h5>{{ carouselHighlight[0].company }}</h5>
+          <h5
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ carouselHighlight[0].company }}
+          </h5>
           <div>{{ carouselHighlight[0].subtitle }}</div>
         </div>
       </div>
       <div class="col-md-5 carousel-card">
-        <h3 class="carousel-title">{{ carouselHighlight[1].position }}</h3>
-        <div class="carousel-content">
-          <p>{{ carouselHighlight[1].content }}</p>
+        <h3
+          class="carousel-title"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          {{ carouselHighlight[1].position }}
+        </h3>
+        <div
+          class="carousel-content"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          <p
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ carouselHighlight[1].content }}
+          </p>
         </div>
         <div class="carousel-footer">
-          <h5>{{ carouselHighlight[1].company }}</h5>
-          <div>{{ carouselHighlight[1].subtitle }}</div>
+          <h5
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ carouselHighlight[1].company }}
+          </h5>
+          <div
+            [ngClass]="{
+              'is-tablet-landscape': isTabletLandscape,
+              'is-tablet-portrait': isTabletPortrait
+            }"
+          >
+            {{ carouselHighlight[1].subtitle }}
+          </div>
         </div>
       </div>
-
       <div class="col-md-1 carousel-arrows" (click)="nextArrow()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +171,10 @@
           height="86"
           viewBox="0 0 86 86"
           fill="none"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
         >
           <path
             fill-rule="evenodd"
@@ -107,10 +186,23 @@
       </div>
     </div>
   </div>
+
   <div class="row" id="about-me">
     <div class="col-md-6" id="about-me-desc">
-      <h2>A Little About Me</h2>
-      <p>
+      <h2
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        A Little About Me
+      </h2>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
         Welcome to my personal portfolio! I'm Tony a recent graduate from the
         University of Toronto working towards becoming a full-stack developer in
         the future.
@@ -126,7 +218,7 @@
         always daydreaming about my next trip!
       </p>
 
-      <button id="contact-me-button">Contact Me</button>
+      <!-- <button id="contact-me-button">Contact Me</button> -->
     </div>
     <div class="col-md-6">
       <img
@@ -140,33 +232,35 @@
     <h2>Some Quotes I Live By</h2>
     <div class="left-words">
       <p>
-        Always remind yourself that your track record for making it through your
-        bad days is perfect.
+        "Always remind yourself that your track record for making it through
+        your bad days is perfect."
       </p>
     </div>
     <div class="right-words">
-      <p>No one has ever argued their way to happiness.</p>
+      <p>"No one has ever argued their way to happiness."</p>
     </div>
     <div class="left-words">
       <p>
-        Taking no risk is the biggest risk you can take. Regret from inaction is
-        always more painful than regret from action.
+        "Taking no risk is the biggest risk you can take. Regret from inaction
+        is always more painful than regret from action."
       </p>
     </div>
     <div class="right-words">
       <p>
-        Indeed the function of life has its relative lows and highs. Remember
-        they are all relative.
+        "Indeed the function of life has its relative lows and highs. Remember
+        they are all relative."
       </p>
     </div>
     <div class="left-words">
-      <p>Shoot for the Moon. Even if you miss, you'll land among the stars.</p>
+      <p>
+        "Shoot for the Moon. Even if you miss, you'll land among the stars."
+      </p>
     </div>
     <div class="right-words">
-      <p>Life's a climb. But the view is great.</p>
+      <p>"Life's a climb. But the view is great."</p>
     </div>
-  </div>
-  <!-- <div id="contact-me">
+
+    <!-- <div id="contact-me">
     <div id="contact-me-box">
       <h1>Let's work together</h1>
       <form [formGroup]="messageForm" (ngSubmit)="sendMessage()">
@@ -205,4 +299,5 @@
       </form>
     </div>
   </div> -->
+  </div>
 </div>

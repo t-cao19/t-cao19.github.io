@@ -29,7 +29,6 @@ $box-border-shadow-color: rgb(175, 175, 175);
 }
 
 #intro {
-  height: 500px;
   padding-bottom: 30px;
 }
 
@@ -41,6 +40,18 @@ $box-border-shadow-color: rgb(175, 175, 175);
   object-fit: cover;
   border-radius: 30px;
   margin: 30px auto 0px auto;
+}
+
+#intro-pic.is-tablet-landscape {
+  width: 450px;
+  height: 300px;
+  margin: 20px auto 0px auto;
+}
+
+#intro-pic.is-tablet-portrait {
+  width: 325px;
+  height: 250px;
+  margin: 70px auto 0px auto;
 }
 
 #projects-button {
@@ -129,7 +140,6 @@ button {
 }
 
 #highlights-carousel {
-  height: 325px;
   margin-bottom: 40px;
 }
 
@@ -144,6 +154,10 @@ button {
 
 .carousel-content {
   height: 150px;
+}
+
+.carousel-content.is-tablet-portrait {
+  height: 200px;
 }
 
 .carousel-footer {
@@ -162,8 +176,17 @@ button {
   line-height: 25px; /* 156.25% */
 }
 
+.carousel-footer > div.is-tablet-portrait {
+  font-size: 14px;
+}
+
 .carousel-arrows {
   margin: auto 0px;
+}
+
+svg.is-tablet-portrait {
+  width: 60px;
+  height: 60px;
 }
 
 /* Fourth container CSS */

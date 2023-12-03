@@ -2,8 +2,22 @@
   <div class="row">
     <div class="col-md-7">
       <div class="descBox">
-        <h3>{{ work.title | titlecase }}</h3>
-        <h4>{{ work.desc }}</h4>
+        <h3
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          {{ work.title | titlecase }}
+        </h3>
+        <h4
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          {{ work.desc }}
+        </h4>
       </div>
     </div>
     <div class="col-md-5">

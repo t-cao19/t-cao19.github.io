@@ -45,6 +45,14 @@ h1 {
   letter-spacing: 1.28px;
 }
 
+h1.is-tablet-landscape {
+  font-size: 38px;
+}
+
+h1.is-tablet-portrait {
+  font-size: 30px;
+}
+
 h2 {
   color: #fffefc;
   font-family: Eczar;
@@ -53,6 +61,10 @@ h2 {
   font-weight: 600;
   line-height: 175%;
   letter-spacing: 0.8px;
+}
+
+h2.is-tablet-portrait {
+  font-size: 32px;
 }
 
 h3 {
@@ -64,6 +76,11 @@ h3 {
   line-height: 150%; /* 48px */
 }
 
+h3.is-tablet-landscape,
+h3.is-tablet-portrait {
+  font-size: 24px;
+}
+
 h4 {
   color: #594f43;
   font-family: Work Sans;
@@ -71,6 +88,11 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 36px */
+}
+
+h4.is-tablet-landscape,
+h4.is-tablet-portrait {
+  font-size: 18px;
 }
 
 h5 {
@@ -94,6 +116,11 @@ p {
   font-style: normal;
   font-weight: 300;
   line-height: 150%; /* 30px */
+}
+
+p.is-tablet-landscape,
+p.is-tablet-portrait {
+  font-size: 18px;
 }
 
 .page-header-img {

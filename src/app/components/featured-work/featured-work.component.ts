@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-featured-work',
@@ -13,9 +14,28 @@ export class FeaturedWorkComponent implements OnInit {
     imagePath: string;
     link: string;
   };
-  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  // Mobile queries
+  isTabletLandscape: boolean;
+  isTabletPortrait: boolean;
+  isPhoneView: boolean;
+
+  constructor(private router: Router, private responsive: BreakpointObserver) {}
+
+  ngOnInit(): void {
+    this.responsive.observe(Breakpoints.TabletLandscape).subscribe((result) => {
+      this.isTabletLandscape = false;
+      if (result.matches) {
+        this.isTabletLandscape = true;
+      }
+    });
+    this.responsive.observe(Breakpoints.TabletPortrait).subscribe((result) => {
+      this.isTabletPortrait = false;
+      if (result.matches) {
+        this.isTabletPortrait = true;
+      }
+    });
+  }
 
   navigate(): void {
     this.router.navigate([this.work.link]);

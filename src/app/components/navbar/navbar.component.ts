@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-navbar',
@@ -12,9 +13,21 @@ export class NavbarComponent implements OnInit {
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
-  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  // Mobile queries
+  isTabletLandscape: boolean;
+  isPhoneView: boolean;
+
+  constructor(private router: Router, private responsive: BreakpointObserver) {}
+
+  ngOnInit(): void {
+    this.responsive.observe(Breakpoints.TabletLandscape).subscribe((result) => {
+      this.isTabletLandscape = false;
+      if (result.matches) {
+        this.isTabletLandscape = true;
+      }
+    });
+  }
 
   home(): void {
     this.router.navigate(['/home']);
@@ -30,9 +43,5 @@ export class NavbarComponent implements OnInit {
 
   projects(): void {
     this.router.navigate(['/projects']);
-  }
-
-  teaching(): void {
-    this.router.navigate(['/teaching']);
   }
 }

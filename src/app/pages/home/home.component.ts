@@ -4,6 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from 'aos';
 import homeData from '../../../assets/data/home-data.json';
 import { FormControl, FormGroup } from '@angular/forms';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,11 @@ export class HomeComponent implements OnInit {
   highlight2Pos: number;
   mailText: string;
 
+  // Mobile queries
+  isTabletLandscape: boolean;
+  isTabletPortrait: boolean;
+  isPhoneView: boolean;
+
   messageForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
@@ -29,7 +35,7 @@ export class HomeComponent implements OnInit {
     message: new FormControl(''),
   });
 
-  constructor() {
+  constructor(private responsive: BreakpointObserver) {
     this.featuredWork = homeData.featuredWork;
     this.highlight1Pos = 0;
     this.highlight2Pos = this.highlight1Pos + 1;
@@ -40,6 +46,20 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.responsive.observe(Breakpoints.TabletLandscape).subscribe((result) => {
+      this.isTabletLandscape = false;
+      if (result.matches) {
+        this.isTabletLandscape = true;
+      }
+    });
+
+    this.responsive.observe(Breakpoints.TabletPortrait).subscribe((result) => {
+      this.isTabletPortrait = false;
+      if (result.matches) {
+        this.isTabletPortrait = true;
+      }
+    });
+
     AOS.init({
       delay: 200,
       duration: 1500,

@@ -15,7 +15,12 @@
   </button>
   <div class="collapse navbar-collapse row" id="navbarNav">
     <div class="col-md-5">
-      <div id="navbar-title">Tony Cao | Software Developer</div>
+      <div
+        id="navbar-title"
+        [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
+      >
+        Tony Cao | Software Developer
+      </div>
     </div>
     <div class="col-md-5">
       <ul class="navbar-nav">
@@ -25,6 +30,7 @@
             (click)="home()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
+            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
           >
             Home
           </a>
@@ -35,6 +41,7 @@
             (click)="now()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
+            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
           >
             Now
           </a>
@@ -45,6 +52,7 @@
             (click)="resume()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
+            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
           >
             Resume
           </a>
@@ -55,6 +63,7 @@
             (click)="projects()"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
+            [ngClass]="{ 'is-tablet-landscape': isTabletLandscape }"
           >
             Projects
           </a>
