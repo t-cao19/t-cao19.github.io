@@ -65,6 +65,13 @@ h2 {
 
 h2.is-tablet-portrait {
   font-size: 32px;
+  margin-bottom: 0px;
+}
+
+h2.is-phone-portrait {
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -80,6 +87,11 @@ h3.is-tablet-landscape,
 h3.is-tablet-portrait {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+h3.is-phone-portrait {
+  font-size: 24px;
+  line-height: 125%;
 }
 
 h4 {
@@ -167,4 +179,8 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+div.hidden {
+  display: none;
 }

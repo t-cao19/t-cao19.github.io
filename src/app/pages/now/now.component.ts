@@ -10,7 +10,8 @@ export class NowComponent implements OnInit {
   // Mobile queries
   isTabletLandscape: boolean;
   isTabletPortrait: boolean;
-  isPhoneView: boolean;
+  isPhoneLandscape: boolean;
+  isPhonePortrait: boolean;
 
   constructor(private responsive: BreakpointObserver) {}
 
@@ -26,6 +27,22 @@ export class NowComponent implements OnInit {
       this.isTabletPortrait = false;
       if (result.matches) {
         this.isTabletPortrait = true;
+      }
+    });
+
+    this.responsive
+      .observe(Breakpoints.HandsetLandscape)
+      .subscribe((result) => {
+        this.isPhoneLandscape = false;
+        if (result.matches) {
+          this.isPhoneLandscape = true;
+        }
+      });
+
+    this.responsive.observe(Breakpoints.HandsetPortrait).subscribe((result) => {
+      this.isPhonePortrait = false;
+      if (result.matches) {
+        this.isPhonePortrait = true;
       }
     });
   }

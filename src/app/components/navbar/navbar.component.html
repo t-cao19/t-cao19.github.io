@@ -13,7 +13,11 @@
     <span class="line" style="margin-bottom: 0"></span>
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse row" id="navbarNav">
+  <div
+    class="collapse navbar-collapse row"
+    id="navbarNav"
+    [ngClass]="{ hidden: isPhonePortrait }"
+  >
     <div class="col-md-5">
       <div
         id="navbar-title"
@@ -27,7 +31,7 @@
     </div>
     <div class="col-md-5">
       <ul class="navbar-nav">
-        <li class="nav-item nav-link">
+        <li class="nav-item">
           <a
             class="nav-link"
             (click)="home()"
@@ -41,7 +45,7 @@
             Home
           </a>
         </li>
-        <li class="nav-item nav-link">
+        <li class="nav-item">
           <a
             class="nav-link"
             (click)="now()"
@@ -55,7 +59,7 @@
             Now
           </a>
         </li>
-        <li class="nav-item nav-link">
+        <li class="nav-item">
           <a
             class="nav-link"
             (click)="resume()"
@@ -69,7 +73,7 @@
             Resume
           </a>
         </li>
-        <li class="nav-item nav-link">
+        <li class="nav-item">
           <a
             class="nav-link"
             (click)="projects()"
@@ -116,6 +120,89 @@
           }"
         ></fa-icon>
       </a>
+    </div>
+  </div>
+  <div [ngClass]="{ hidden: !isPhonePortrait }">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div
+        id="navbar-title"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Tony Cao | Software Developer
+      </div>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="home()"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="now()"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            Now
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="resume()"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="projects()"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            Projects
+          </a>
+        </li>
+      </ul>
+      <div
+        class="media-icons"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
+          <fa-icon class="media-icon" [icon]="faLinkedinIn"></fa-icon>
+        </a>
+        <a href="https://github.com/t-cao19" target="_blank">
+          <fa-icon class="media-icon" [icon]="faGitHub"></fa-icon>
+        </a>
+        <a href="mailto:tony.cao1@outlook.com">
+          <fa-icon class="media-icon" [icon]="faEnvelope"></fa-icon>
+        </a>
+      </div>
     </div>
   </div>
 </nav>

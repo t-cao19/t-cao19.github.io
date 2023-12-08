@@ -39,15 +39,44 @@
         alt="Tony Cao"
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
         }"
       />
     </div>
   </div>
   <div id="featured-work">
-    <div class="row">
-      <h2>Featured Work</h2>
+    <div
+      class="row"
+      [ngClass]="{
+        hidden: isPhonePortrait
+      }"
+    >
+      <h2
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        Featured Work
+      </h2>
       <button id="more-project-button" [routerLink]="'/projects'">
+        View more under projects
+      </button>
+    </div>
+    <div
+      [ngClass]="{
+        hidden: !isPhonePortrait
+      }"
+    >
+      <h2>Featured Work</h2>
+      <button
+        id="more-project-button"
+        [routerLink]="'/projects'"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
         View more under projects
       </button>
     </div>
@@ -56,11 +85,32 @@
     </div>
   </div>
   <div id="highlights">
-    <div id="highlights-title">
-      <h2>Some Selected Highlights</h2>
+    <div
+      id="highlights-title"
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      <h2
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Some Selected Highlights
+      </h2>
       <h4>Selection of highlights from my professional career so far</h4>
     </div>
-    <div class="row" id="highlights-carousel">
+    <div
+      class="row"
+      id="highlights-carousel"
+      [ngClass]="{
+        hidden: isPhonePortrait
+      }"
+    >
       <div class="col-md-1 carousel-arrows" (click)="prevArrow()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -185,9 +235,153 @@
         </svg>
       </div>
     </div>
+    <div
+      id="highlights-carousel"
+      [ngClass]="{
+        hidden: !isPhonePortrait
+      }"
+    >
+      <div
+        class="carousel-arrows"
+        (click)="prevArrow()"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="86"
+          height="86"
+          viewBox="0 0 86 86"
+          fill="none"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M52.7002 22.5495C54.0996 23.9489 54.0996 26.2178 52.7002 27.6171L37.3173 43L52.7002 58.3829C54.0996 59.7822 54.0996 62.0511 52.7002 63.4505C51.3008 64.8498 49.032 64.8498 47.6326 63.4505L29.7159 45.5338C28.3166 44.1344 28.3166 41.8656 29.7159 40.4662L47.6326 22.5495C49.032 21.1502 51.3008 21.1502 52.7002 22.5495Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <div
+        class="carousel-card"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <h3
+          class="carousel-title"
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          {{ carouselHighlight[0].position }}
+        </h3>
+        <div
+          class="carousel-content"
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          <p
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            {{ carouselHighlight[0].content }}
+          </p>
+        </div>
+        <div class="carousel-footer">
+          <h5
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            {{ carouselHighlight[0].company }}
+          </h5>
+          <div>{{ carouselHighlight[0].subtitle }}</div>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="carousel-card"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <h3
+          class="carousel-title"
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          {{ carouselHighlight[1].position }}
+        </h3>
+        <div
+          class="carousel-content"
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          <p
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            {{ carouselHighlight[1].content }}
+          </p>
+        </div>
+        <div class="carousel-footer">
+          <h5
+            [ngClass]="{
+              'is-phone-portrait': isPhonePortrait
+            }"
+          >
+            {{ carouselHighlight[1].company }}
+          </h5>
+          <div>{{ carouselHighlight[1].subtitle }}</div>
+        </div>
+      </div>
+      <div
+        class="carousel-arrows"
+        (click)="nextArrow()"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="86"
+          height="86"
+          viewBox="0 0 86 86"
+          fill="none"
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait
+          }"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.2995 22.5495C34.6989 21.1502 36.9678 21.1502 38.3671 22.5495L56.2838 40.4662C57.6832 41.8656 57.6832 44.1344 56.2838 45.5338L38.3671 63.4505C36.9678 64.8498 34.6989 64.8498 33.2995 63.4505C31.9002 62.0511 31.9002 59.7822 33.2995 58.3829L48.6824 43L33.2995 27.6171C31.9002 26.2178 31.9002 23.9489 33.2995 22.5495Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+    </div>
   </div>
 
-  <div class="row" id="about-me">
+  <div
+    class="row"
+    id="about-me"
+    [ngClass]="{
+      hidden: isPhonePortrait
+    }"
+  >
     <div class="col-md-6" id="about-me-desc">
       <h2
         [ngClass]="{
@@ -228,36 +422,138 @@
       />
     </div>
   </div>
+  <div
+    id="about-me"
+    [ngClass]="{
+      hidden: !isPhonePortrait,
+      'is-phone-portrait': isPhonePortrait
+    }"
+  >
+    <div
+      id="about-me-desc"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      <h2
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait
+        }"
+      >
+        A Little About Me
+      </h2>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Welcome to my personal portfolio! I'm Tony a recent graduate from the
+        University of Toronto working towards becoming a full-stack developer in
+        the future.
+        <br />
+        <br />
+        Currently, I am blazing my own career path with the TELUS Graduate
+        Technology Leadership Program (GTLP) where I am doing some front-end
+        developer work to support the move of legacy applications to Google
+        Cloud and improve application reliability.
+        <br />
+        <br />
+        In my free time, I love exploring the city, country and the world. I am
+        always daydreaming about my next trip!
+      </p>
+
+      <!-- <button id="contact-me-button">Contact Me</button> -->
+    </div>
+    <div>
+      <img
+        id="about-me-pic"
+        src="../../../assets/images/profilePic/Tony_SeaToSky.jpeg"
+        alt="Tony Cao"
+        [ngClass]="{ 'is-phone-portrait': isPhonePortrait }"
+      />
+    </div>
+  </div>
   <div id="quotes">
-    <h2>Some Quotes I Live By</h2>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      Some Quotes I Live By
+    </h2>
     <div class="left-words">
-      <p>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
         "Always remind yourself that your track record for making it through
         your bad days is perfect."
       </p>
     </div>
     <div class="right-words">
-      <p>"No one has ever argued their way to happiness."</p>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        "No one has ever argued their way to happiness."
+      </p>
     </div>
     <div class="left-words">
-      <p>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
         "Taking no risk is the biggest risk you can take. Regret from inaction
         is always more painful than regret from action."
       </p>
     </div>
     <div class="right-words">
-      <p>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
         "Indeed the function of life has its relative lows and highs. Remember
         they are all relative."
       </p>
     </div>
     <div class="left-words">
-      <p>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
         "Shoot for the Moon. Even if you miss, you'll land among the stars."
       </p>
     </div>
     <div class="right-words">
-      <p>"Life's a climb. But the view is great."</p>
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        "Life's a climb. But the view is great."
+      </p>
     </div>
 
     <!-- <div id="contact-me">

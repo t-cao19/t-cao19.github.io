@@ -54,6 +54,12 @@ $box-border-shadow-color: rgb(175, 175, 175);
   margin: 70px auto 0px auto;
 }
 
+#intro-pic.is-phone-portrait {
+  width: 325px;
+  height: 250px;
+  margin: 30px auto 0px auto;
+}
+
 #projects-button {
   background: #000;
   color: #f3f2ff;
@@ -118,6 +124,10 @@ button {
   color: #fff;
 }
 
+#more-project-button.is-phone-portrait {
+  margin-left: 0px;
+}
+
 /* Third container CSS */
 #highlights {
   background: #fff;
@@ -128,6 +138,11 @@ button {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+#highlights-title.is-phone-portrait {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 #highlights h2 {
@@ -147,9 +162,17 @@ button {
   margin-bottom: 30px;
 }
 
+.carousel-title.is-phone-portrait {
+  margin-bottom: 0px;
+}
+
 .carousel-card {
   text-align: center;
   padding: 0px 20px;
+}
+
+.carousel-card.is-phone-portrait {
+  margin-bottom: 20px;
 }
 
 .carousel-content {
@@ -158,6 +181,9 @@ button {
 
 .carousel-content.is-tablet-portrait {
   height: 200px;
+}
+.carousel-content.is-phone-portrait {
+  height: 225px;
 }
 
 .carousel-footer {
@@ -184,9 +210,20 @@ button {
   margin: auto 0px;
 }
 
+.carousel-arrows.is-phone-portrait {
+  text-align: center;
+}
+
 svg.is-tablet-portrait {
   width: 60px;
   height: 60px;
+}
+
+hr {
+  background: #000;
+  width: 40%;
+  height: 1px;
+  margin: 20px auto;
 }
 
 /* Fourth container CSS */
@@ -194,11 +231,19 @@ svg.is-tablet-portrait {
   height: 700px;
 }
 
+#about-me.is-phone-portrait {
+  height: auto;
+}
+
 #about-me-desc {
   background: #000;
   padding-left: 10%;
   padding-top: 50px;
   padding-right: 5%;
+}
+
+#about-me-desc.is-phone-portrait {
+  padding-bottom: 20px;
 }
 
 #about-me p {
@@ -220,6 +265,17 @@ svg.is-tablet-portrait {
   object-fit: cover;
   height: 700px;
   margin-left: -15px;
+}
+
+#about-me-pic.is-phone-portrait {
+  width: 100%;
+  height: 350px;
+  object-position: bottom;
+  margin-left: 0px;
+}
+
+p.is-phone-portrait {
+  margin: 0px;
 }
 
 /* Fifth container CSS */

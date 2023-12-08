@@ -1,5 +1,5 @@
 <div class="now-page">
-  <div class="row" id="now">
+  <div class="row" id="now" [ngClass]="{ hidden: isPhonePortrait }">
     <div class="col-md-6" id="now-desc">
       <h1
         [ngClass]="{
@@ -34,12 +34,49 @@
       />
     </div>
   </div>
+  <div id="now" [ngClass]="{ hidden: !isPhonePortrait }">
+    <div
+      id="now-desc"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      <h1
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Now...
+      </h1>
+      <h4
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        What is a now page? It's something different than the standard “About
+        me” page inspired by the now movement. It's what I would say if I was in
+        a networking chat and asked what am I up to now?
+        <br /><br />
+        Now: As of December 2023
+      </h4>
+    </div>
+
+    <img
+      id="now-pic"
+      src="../../../assets/images/profilePic/Tony_TorIsland.png"
+      alt="Tony Cao"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    />
+  </div>
   <div id="now-words">
     <div class="left-words">
       <h2
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
         }"
       >
         Software Developer @TELUS
@@ -49,7 +86,8 @@
       <h2
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
         }"
       >
         Forever Learner
@@ -59,7 +97,8 @@
       <h2
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
         }"
       >
         Travel Enthusiast
@@ -69,7 +108,8 @@
       <h2
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
         }"
       >
         Self-Discovery and Care
@@ -79,7 +119,8 @@
       <h2
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait
         }"
       >
         Looking for my next chapter and adventure in life!
@@ -89,7 +130,7 @@
       Along with my usual of always baking, reading and new hobby of meditating!
     </p>
   </div>
-  <div class="row" id="now-reflection">
+  <div class="row" id="now-reflection" [ngClass]="{ hidden: isPhonePortrait }">
     <div class="col-md-7" id="now-content">
       <h2
         [ngClass]="{
@@ -148,5 +189,59 @@
         }"
       />
     </div>
+  </div>
+  <div id="now-reflection" [ngClass]="{ hidden: !isPhonePortrait }">
+    <div id="now-content">
+      <h2
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        What a year 2023 has been
+      </h2>
+      <p
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        As 2023 ends, I'm still mentally processing what a year it has been.
+        There have been many highs this year such as graduating from U of T with
+        an Honours Bachelor of Science in Computer Science and Mathematics,
+        joining TELUS as part of their Graduate Technology Leadership Program
+        and recently traveling to Vancouver with friends.
+      </p>
+      <p
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        However, the year has not been always all ups as there were many low
+        points where I questioned my skills and let imposter syndrome slowly
+        creep in during the process. If there's one thing 2023 has taught me is
+        that more work is needed on self-care and confidence.
+      </p>
+      <p
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Side-tangent aside, I am still trying to build my own career path and
+        getting use to working full-time . One piece is networking whether it is
+        meeting new people in the office, setting up coffee chats and even
+        reconnecting with old colleagues during my time from co-op. I am
+        constantly learning new soft skills or technical skills as part of my
+        career tool belt. I'm also using this time after University to focus on
+        what is it that I want next for me and how to achieve that vision.
+      </p>
+    </div>
+
+    <img
+      id="reflection-pic"
+      src="../../../assets/images/wildplayNanaimo.jpg"
+      alt="Tony Cao"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    />
   </div>
 </div>

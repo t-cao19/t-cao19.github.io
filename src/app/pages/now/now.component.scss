@@ -5,6 +5,10 @@
   padding-top: 70px;
 }
 
+#now-desc.is-phone-portrait {
+  padding-left: 20px;
+}
+
 #now {
   padding-bottom: 30px;
 }
@@ -29,6 +33,11 @@
   width: 325px;
   height: 250px;
   margin: 70px auto 0px auto;
+}
+
+#now-pic.is-phone-portrait {
+  width: 325px;
+  height: 250px;
 }
 
 #now-words {

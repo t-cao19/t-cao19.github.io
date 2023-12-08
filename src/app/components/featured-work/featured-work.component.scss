@@ -6,6 +6,10 @@
   margin: 40px 0px;
 }
 
+.featuredWork.is-phone-portrait {
+  border-radius: 5px;
+}
+
 a {
   color: #000;
   font-family: Work Sans;
@@ -20,6 +24,11 @@ a {
   margin-left: 10%;
 }
 
+.descBox.is-phone-portrait {
+  text-align: center;
+  margin: 40px 10px;
+}
+
 .work-img {
   display: block;
   width: 100%;
@@ -29,4 +38,9 @@ a {
   border-radius: 0px 30px 30px 0px;
   background: #c4c4c4;
   object-position: top;
+}
+
+.work-img.is-phone-portrait {
+  border-radius: 0px;
+  object-position: left top;
 }
