@@ -1,5 +1,5 @@
 <div class="projects-page">
-  <div class="row" id="projects">
+  <div class="row" id="projects" [ngClass]="{ hidden: isPhonePortrait }">
     <div class="col-md-6" id="projects-desc">
       <h1
         [ngClass]="{
@@ -31,10 +31,56 @@
       />
     </div>
   </div>
+  <div id="projects" [ngClass]="{ hidden: !isPhonePortrait }">
+    <div
+      id="projects-desc"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      <h1
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Projects
+      </h1>
+      <h4
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        A showcase of my projects where technical skills and creativity combine
+        together to produce innovation.
+      </h4>
+
+      <img
+        id="projects-pic"
+        src="../../../assets/images/YVR.jpg"
+        alt="Tony Cao"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      />
+    </div>
+  </div>
   <div id="skills">
-    <h2>Some Technical Skills</h2>
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      Some Technical Skills
+    </h2>
+    <hr [ngClass]="{ hidden: !isPhonePortrait }" />
     <div *ngFor="let row of technicalSkills">
-      <div class="row onerow-skill" id="{{ row.id }}">
+      <div
+        class="row onerow-skill"
+        id="{{ row.id }}"
+        [ngClass]="{ hidden: isPhonePortrait }"
+      >
         <div class="col-md-3">
           <h2
             [ngClass]="{
@@ -75,6 +121,44 @@
             {{ row.skill[3] }}
           </h2>
         </div>
+      </div>
+
+      <div
+        class="onerow-skill"
+        id="{{ row.id }}"
+        [ngClass]="{ hidden: !isPhonePortrait }"
+      >
+        <h2
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          {{ row.skill[0] }}
+        </h2>
+
+        <h2
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          {{ row.skill[1] }}
+        </h2>
+
+        <h2
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          {{ row.skill[2] }}
+        </h2>
+
+        <h2
+          [ngClass]="{
+            'is-phone-portrait': isPhonePortrait
+          }"
+        >
+          {{ row.skill[3] }}
+        </h2>
       </div>
     </div>
   </div>

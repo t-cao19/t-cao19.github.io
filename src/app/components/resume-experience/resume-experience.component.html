@@ -1,5 +1,5 @@
 <div class="card resumeExp" [ngClass]="inverted ? 'text-inverted' : ''">
-  <div class="row">
+  <div class="row" [ngClass]="{ hidden: isPhonePortrait }">
     <div class="col-md-6">
       <h3
         [ngClass]="{
@@ -23,12 +23,36 @@
       </h3>
     </div>
   </div>
+  <div>
+    <h3
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'text-inverted': inverted
+      }"
+    >
+      {{ experience.position | titlecase }}
+    </h3>
+
+    <h3
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'text-inverted': inverted,
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      {{ experience.date }}
+    </h3>
+  </div>
   <div
     class="company"
     [ngClass]="{
       'is-tablet-landscape': isTabletLandscape,
       'is-tablet-portrait': isTabletPortrait,
-      'text-inverted': inverted
+      'text-inverted': inverted,
+      'is-phone-portrait': isPhonePortrait
     }"
   >
     {{ experience.company }}
@@ -38,7 +62,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'text-inverted': inverted
+        'text-inverted': inverted,
+        'is-phone-portrait': isPhonePortrait
       }"
     >
       {{ bullet }}

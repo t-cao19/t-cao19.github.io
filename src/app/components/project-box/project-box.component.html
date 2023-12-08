@@ -1,14 +1,38 @@
 <div class="card projectBox">
   <img src="{{ project.image }}" class="project-pic" />
-  <div class="project-desc">
-    <h3>{{ project.title | titlecase }}</h3>
+  <div
+    class="project-desc"
+    [ngClass]="{
+      'is-phone-portrait': isPhonePortrait
+    }"
+  >
+    <h3
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      {{ project.title | titlecase }}
+    </h3>
     <div class="project-date">
       {{ project.date }}
     </div>
     <hr />
-    <h4>{{ project.desc }}</h4>
+    <h4
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      {{ project.desc }}
+    </h4>
     <br />
-    <h4 class="project-tech">{{ project.tech }}</h4>
+    <h4
+      class="project-tech"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    >
+      {{ project.tech }}
+    </h4>
   </div>
   <a href="{{ project.github }}" target="_blank" *ngIf="project.github">
     <fa-icon

@@ -6,6 +6,7 @@
 }
 #resume {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 #resume-pic {
@@ -30,6 +31,11 @@
   margin: 70px auto 0px auto;
 }
 
+#resume-pic.is-phone-portrait {
+  width: 325px;
+  height: 250px;
+}
+
 #statistics,
 #volunteer-exp {
   background: rgba(0, 0, 0, 0.93);
@@ -39,6 +45,10 @@
 .stats-num {
   text-align: center;
   border-right: 1px white solid;
+}
+
+.stats-num.is-phone-portrait {
+  border-right: none;
 }
 
 #last {
@@ -83,6 +93,7 @@ hr {
   line-height: 150%; /* 36px */
 }
 
-#university.is-tablet-portrait {
+#university.is-tablet-portrait,
+#university.is-phone-portrait {
   font-size: 18px;
 }
