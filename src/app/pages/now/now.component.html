@@ -1,10 +1,17 @@
 <div class="now-page">
   <div class="row" id="now" [ngClass]="{ hidden: isPhonePortrait }">
-    <div class="col-md-6" id="now-desc">
+    <div
+      class="col-md-6"
+      id="now-desc"
+      [ngClass]="{
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
       <h1
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Now...
@@ -12,7 +19,8 @@
       <h4
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         What is a now page? It's something different than the standard “About
@@ -29,7 +37,8 @@
         alt="Tony Cao"
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       />
     </div>
@@ -76,7 +85,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Software Developer @TELUS
@@ -87,7 +97,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Forever Learner
@@ -98,7 +109,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Travel Enthusiast
@@ -109,7 +121,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Self-Discovery and Care
@@ -120,7 +133,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Looking for my next chapter and adventure in life!
@@ -135,7 +149,8 @@
       <h2
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         What a year 2023 has been
@@ -143,7 +158,8 @@
       <p
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         As 2023 ends, I'm still mentally processing what a year it has been.
@@ -155,7 +171,8 @@
       <p
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         However, the year has not been always all ups as there were many low
@@ -166,7 +183,8 @@
       <p
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Side-tangent aside, I am still trying to build my own career path and
@@ -185,7 +203,8 @@
         alt="Tony Cao"
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       />
     </div>

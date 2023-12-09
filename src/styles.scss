@@ -53,6 +53,10 @@ h1.is-tablet-portrait {
   font-size: 30px;
 }
 
+h1.is-phone-landscape {
+  font-size: 30px;
+}
+
 h2 {
   color: #fffefc;
   font-family: Eczar;
@@ -68,7 +72,8 @@ h2.is-tablet-portrait {
   margin-bottom: 0px;
 }
 
-h2.is-phone-portrait {
+h2.is-phone-portrait,
+h2.is-phone-landscape {
   font-size: 32px;
   line-height: 125%;
   margin-bottom: 10px;
@@ -89,8 +94,9 @@ h3.is-tablet-portrait {
   margin-bottom: 10px;
 }
 
+h3.is-phone-landscape,
 h3.is-phone-portrait {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 125%;
 }
 
@@ -105,7 +111,8 @@ h4 {
 
 h4.is-tablet-landscape,
 h4.is-tablet-portrait,
-h4.is-phone-portrait {
+h4.is-phone-portrait,
+h4.is-phone-landscape {
   font-size: 18px;
 }
 
@@ -135,7 +142,8 @@ p {
 p.is-tablet-landscape,
 p.is-tablet-portrait,
 li.is-tablet-portrait,
-li.is-tablet-landscape {
+li.is-tablet-landscape,
+p.is-phone-landscape {
   font-size: 18px;
 }
 

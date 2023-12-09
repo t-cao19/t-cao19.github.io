@@ -28,6 +28,10 @@ $box-border-shadow-color: rgb(175, 175, 175);
   padding-top: 30px;
 }
 
+#intro-desc.is-phone-landscape {
+  padding-top: 0px;
+}
+
 #intro {
   padding-bottom: 30px;
 }
@@ -54,7 +58,8 @@ $box-border-shadow-color: rgb(175, 175, 175);
   margin: 70px auto 0px auto;
 }
 
-#intro-pic.is-phone-portrait {
+#intro-pic.is-phone-portrait,
+#intro-pic.is-phone-landscape {
   width: 325px;
   height: 250px;
   margin: 30px auto 0px auto;
@@ -186,6 +191,10 @@ button {
   height: 225px;
 }
 
+.carousel-content.is-phone-landscape {
+  height: 275px;
+}
+
 .carousel-footer {
   width: 80%;
   margin: 0px auto;
@@ -217,6 +226,11 @@ button {
 svg.is-tablet-portrait {
   width: 60px;
   height: 60px;
+}
+
+svg.is-phone-landscape {
+  width: 50px;
+  height: 50px;
 }
 
 hr {

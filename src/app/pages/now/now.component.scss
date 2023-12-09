@@ -10,6 +10,10 @@
   padding-top: 30px;
 }
 
+#now-desc.is-phone-landscape {
+  padding-top: 10px;
+}
+
 #now {
   padding-bottom: 30px;
 }
@@ -36,7 +40,8 @@
   margin: 70px auto 0px auto;
 }
 
-#now-pic.is-phone-portrait {
+#now-pic.is-phone-portrait,
+#now-pic.is-phone-landscape {
   width: 325px;
   height: 250px;
 }
@@ -88,7 +93,8 @@
 }
 
 #reflection-pic.is-tablet-portrait,
-#reflection-pic.is-tablet-landscape {
+#reflection-pic.is-tablet-landscape,
+#reflection-pic.is-phone-landscape {
   height: 100%;
   object-position: 50% 50%;
 }

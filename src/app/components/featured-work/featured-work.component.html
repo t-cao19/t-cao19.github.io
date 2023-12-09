@@ -17,7 +17,8 @@
         <h3
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           {{ work.title | titlecase }}
@@ -25,7 +26,8 @@
         <h4
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           {{ work.desc }}
@@ -39,7 +41,8 @@
         alt="{{ work.title }}"
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       />
     </div>
