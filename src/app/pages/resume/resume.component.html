@@ -188,7 +188,12 @@
     >
       Work Experience
     </h2>
-    <div class="exp" *ngFor="let exp of resume.work">
+    <div
+      class="exp"
+      *ngFor="let exp of resume.work"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
       <app-resume-experience [experience]="exp"></app-resume-experience>
     </div>
   </div>
@@ -203,7 +208,12 @@
     >
       Volunteer Experience
     </h2>
-    <div class="exp" *ngFor="let exp of resume.volunteer">
+    <div
+      class="exp"
+      *ngFor="let exp of resume.volunteer"
+      data-aos="fade-down"
+      data-aos-duration="1200"
+    >
       <app-resume-experience
         [experience]="exp"
         [inverted]="true"

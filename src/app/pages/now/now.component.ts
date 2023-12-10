@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-now',
@@ -16,6 +17,13 @@ export class NowComponent implements OnInit {
   constructor(private responsive: BreakpointObserver) {}
 
   ngOnInit(): void {
+    AOS.init({
+      delay: 200,
+      duration: 1500,
+      once: false,
+      anchorPlacement: 'top-bottom',
+    });
+
     this.responsive.observe(Breakpoints.TabletLandscape).subscribe((result) => {
       this.isTabletLandscape = false;
       if (result.matches) {

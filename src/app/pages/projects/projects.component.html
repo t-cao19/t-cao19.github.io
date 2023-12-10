@@ -183,6 +183,8 @@
       [ngClass]="{
         hidden: isTabletPortrait || isPhoneLandscape
       }"
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <div class="col-md-4">
         <app-project-box *ngIf="row[0]" [project]="row[0]"></app-project-box>
@@ -200,6 +202,8 @@
       [ngClass]="{
         hidden: !(isTabletPortrait || isPhoneLandscape)
       }"
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <div class="col-md-6">
         <app-project-box *ngIf="row[0]" [project]="row[0]"></app-project-box>

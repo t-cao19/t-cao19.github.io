@@ -112,6 +112,7 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-up"
       >
         Travel Enthusiast
       </h2>
@@ -124,6 +125,7 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-down"
       >
         Self-Discovery and Care
       </h2>
@@ -136,11 +138,20 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-up"
       >
         Looking for my next chapter and adventure in life!
       </h2>
     </div>
-    <p>
+    <p
+      data-aos="fade-down"
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
       Along with my usual of always baking, reading and new hobby of meditating!
     </p>
   </div>
@@ -174,6 +185,7 @@
           'is-tablet-portrait': isTabletPortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-up-right"
       >
         However, the year has not been always all ups as there were many low
         points where I questioned my skills and let imposter syndrome slowly
@@ -186,6 +198,7 @@
           'is-tablet-portrait': isTabletPortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-up-left"
       >
         Side-tangent aside, I am still trying to build my own career path and
         getting use to working full-time . One piece is networking whether it is
@@ -233,6 +246,7 @@
         [ngClass]="{
           'is-phone-portrait': isPhonePortrait
         }"
+        data-aos="fade-up-right"
       >
         However, the year has not been always all ups as there were many low
         points where I questioned my skills and let imposter syndrome slowly
@@ -243,6 +257,7 @@
         [ngClass]="{
           'is-phone-portrait': isPhonePortrait
         }"
+        data-aos="fade-up-left"
       >
         Side-tangent aside, I am still trying to build my own career path and
         getting use to working full-time . One piece is networking whether it is

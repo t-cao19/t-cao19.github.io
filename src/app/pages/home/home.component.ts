@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import * as AOS from 'aos';
+import AOS from 'aos';
 import homeData from '../../../assets/data/home-data.json';
 import { FormControl, FormGroup } from '@angular/forms';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';

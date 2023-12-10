@@ -14,7 +14,6 @@ import { MatInputModule } from '@angular/material/input';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectBoxComponent } from './components/project-box/project-box.component';
-import { ExperienceBoxComponent } from './components/experience-box/experience-box.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FeaturedWorkComponent } from './components/featured-work/featured-work.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,7 +29,6 @@ import { ResumeExperienceComponent } from './components/resume-experience/resume
     ResumeComponent,
     FooterComponent,
     ProjectBoxComponent,
-    ExperienceBoxComponent,
     FeaturedWorkComponent,
     NowComponent,
     ResumeExperienceComponent,

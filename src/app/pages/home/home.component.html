@@ -96,7 +96,7 @@
         View more under projects
       </button>
     </div>
-    <div class="work" *ngFor="let work of featuredWork">
+    <div class="work" *ngFor="let work of featuredWork" data-aos="fade-up">
       <app-featured-work [work]="work"></app-featured-work>
     </div>
   </div>
@@ -423,14 +423,30 @@
         Welcome to my personal portfolio! I'm Tony a recent graduate from the
         University of Toronto working towards becoming a full-stack developer in
         the future.
-        <br />
-        <br />
+      </p>
+      <br />
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+        data-aos="fade-right"
+      >
         Currently, I am blazing my own career path with the TELUS Graduate
         Technology Leadership Program (GTLP) where I am doing some front-end
         developer work to support the move of legacy applications to Google
         Cloud and improve application reliability.
-        <br />
-        <br />
+      </p>
+      <br />
+      <p
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+        data-aos="fade-left"
+      >
         In my free time, I love exploring the city, country and the world. I am
         always daydreaming about my next trip!
       </p>
@@ -460,7 +476,6 @@
     >
       <h2
         [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait
         }"
       >
@@ -468,22 +483,32 @@
       </h2>
       <p
         [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
           'is-phone-portrait': isPhonePortrait
         }"
       >
         Welcome to my personal portfolio! I'm Tony a recent graduate from the
         University of Toronto working towards becoming a full-stack developer in
         the future.
-        <br />
-        <br />
+      </p>
+      <br />
+      <p
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+        data-aos="fade-right"
+      >
         Currently, I am blazing my own career path with the TELUS Graduate
         Technology Leadership Program (GTLP) where I am doing some front-end
         developer work to support the move of legacy applications to Google
         Cloud and improve application reliability.
-        <br />
-        <br />
+      </p>
+      <br />
+      <p
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+        data-aos="fade-left"
+      >
         In my free time, I love exploring the city, country and the world. I am
         always daydreaming about my next trip!
       </p>
@@ -543,6 +568,7 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-right"
       >
         "Taking no risk is the biggest risk you can take. Regret from inaction
         is always more painful than regret from action."
@@ -556,6 +582,7 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-left"
       >
         "Indeed the function of life has its relative lows and highs. Remember
         they are all relative."
@@ -569,6 +596,7 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-right"
       >
         "Shoot for the Moon. Even if you miss, you'll land among the stars."
       </p>
@@ -581,6 +609,7 @@
           'is-phone-portrait': isPhonePortrait,
           'is-phone-landscape': isPhoneLandscape
         }"
+        data-aos="fade-left"
       >
         "Life's a climb. But the view is great."
       </p>
