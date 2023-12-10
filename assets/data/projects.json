@@ -1,88 +1,71 @@
 [
   {
-    "title": "React Movie Database",
-    "description": "Movie Database Written in React",
-    "date": "December 2021",
-    "overview": "Mini project written to lookup a movie, view its synopsis and IMDB ratings",
-    "points": [
-      "Written using the ReactJS Framework",
-      "Uses the open source API (OMDb API)"
-    ],
-    "image": "../../../assets/images/projects/react-moviedb.jpg",
-    "github": "https://github.com/t-cao19/react-moviedb"
+    "title": "Divide and Conquer",
+    "date": "February - March 2023",
+    "desc": "Online real-time code competition platform for solving programming and algorithm questions.",
+    "tech": "Git/GitHub, MongoDB, Express, React, NodeJS, JavaScript",
+    "image": "../../../assets/images/projects/DivideAndConquer.png",
+    "github": "https://github.com/t-cao19/project-sup-effort"
+  },
+  {
+    "title": "Web Gallery",
+    "date": "January - February 2023",
+    "desc": "Developed an online photo gallery application that allowed users to upload images and leave comments using an Express RESTful API for the backend and JavaScript DOM manipulation in the frontend.",
+    "tech": "Git/GitHub, HTML, CSS, JavaScript, Express, NodeJs",
+    "image": "../../../assets/images/projects/web-gallery.png"
+  },
+  {
+    "title": "Political Chat Bot",
+    "date": "November - December 2022",
+    "desc": "Chat bot capable of answering general federal politic questions through the Open Parliament API.",
+    "tech": "Git/GitHub, HTML, CSS, JavaScript, Python, ElectronJS",
+    "image": "../../../assets/images/projects/FederalBot.png",
+    "github": "https://github.com/t-cao19/CSCD58-project"
   },
   {
     "title": "PintOS",
-    "description": "Open Source Operating Systems",
     "date": "January - April 2021",
-    "overview": "Course project for Operating Systems course at University of Toronto",
-    "points": [
-      "Technologies involved included Docker, GDB Debugger and C",
-      "Enhanced an existing open-source operating system by adding support for kernel threads, virtual memory, user programs and file systems"
-    ],
-    "image": "../../../assets/images/projects/PintOS.jpg",
-    "github": ""
+    "desc": "Enhanced an existing open-source operating system by adding support for kernel threads, virtual memory, user programs and file systems.",
+    "tech": "Docker, GDB Debugger, C",
+    "image": "../../../assets/images/projects/PintOS.jpg"
   },
   {
     "title": "Doodle Jump",
-    "description": "Video Game Written in Assembly",
     "date": "November - December 2020",
-    "overview": "Assembly implementation of the popular video game 'Doodle Jump'",
-    "points": [
-      "Written completely from scratch using MIPS Assembly",
-      "Includes complete graphics and animations similar to the mobile game"
-    ],
-    "image": "../../../assets/images/projects/Doodle-Jump.jpg",
-    "github": "https://github.com/t-cao19/CSCB58-Doodle"
+    "desc": "Functional video game replication of the popular game Doodle Jump using MIPS assembly",
+    "tech": "MIPS Assembly",
+    "image": "../../../assets/images/projects/doodle_jump.jpg",
+    "github": "https://github.com/t-cao19/team_08-project"
   },
   {
     "title": "t-cao19.github.io",
-    "description": "Personal Portfolio Webpage",
     "date": "September 2020 - Present",
-    "overview": "A webpage built completely from scratch using Angular to showcase all my accomplishments",
-    "points": [
-      "Technologies involved included Angular, TypeScript/JavaScript and HTML/CSS",
-      "Webpage is fully adapted for screens of all size"
-    ],
-    "image": "../../../assets/images/projects/t-cao19.github.io.jpg",
+    "desc": "My own personal portfolio webapge showcasing my career journey development, with multiple iterations.",
+    "tech": "Git/GitHub, Angular, TypeScript, HTML, CSS",
+    "image": "../../../assets/images/projects/t-cao19.github.io.png",
     "github": "https://github.com/t-cao19/t-cao19.github.io"
   },
   {
     "title": "Find Dining Scarborough",
-    "description": "Food Ordering Platform for Scarborough",
-    "emphasis": "Best Project - City of Toronto & The BRIDGE UTSC",
     "date": "June - August 2020",
-    "overview": "Food ordering web platform designed specifically for the Scarborough community to highlight their culinary backgrounds and stories by implementing pages that showcased owner profiles",
-    "points": [
-      "Technologies involved included Angular, TypeScript/JavaScript and HTML/CSS",
-      "Selected by the City of Toronto and the BRDIGE UTSC as winning project out of 4 other software engineer student groups",
-      "Worked in a team of 5 as front-end developer and project coordinator"
-    ],
-    "image": "../../../assets/images/projects/find_dining.jpg",
+    "desc": "Award winning project (by City of Toronto) to deliver a food ordering application during the COVID-19 pandemic.",
+    "tech": "Git/GitHub, Angular, TypeScript, HTML, CSS",
+    "image": "../../../assets/images/projects/FindDiningScarborough.png",
     "github": "https://github.com/t-cao19/team_08-project"
   },
   {
-    "title": "Pineapple eCommerce Store",
-    "description": "Mobile Android Application",
+    "title": "Pineapple eCommerce App",
     "date": "November - December 2019",
-    "overview": "Android application written in Java featuring design principles that simulated an online commercial store using databases to store customers’ accounts and purchases",
-    "points": [
-      "Technologies involved included Java, SQLite and Android Studio",
-      "Worked in a team of four as the project manager (keeping track of deadlines and meetings)"
-    ],
+    "desc": "Functional Android mobile eCommerce application selling pineapples with different profile views (owner, manager, customer).",
+    "tech": "Java, SQLite, Android Studio",
     "image": "../../../assets/images/projects/pineapple_store.jpg",
     "github": "https://github.com/t-cao19/Pineapple"
   },
   {
     "title": "Royal Castle Hero",
-    "description": "Python Video Game",
     "date": "May - June 2018",
-    "overview": "Video game written in Python that simulated 'Tower Fortress' on Nitrome",
-    "points": [
-      "Technologies involved included Python 2.7 and PyGame",
-      "Fully animated walking characters, scrolling background, background music and sound effects through the use of photoshop and classes in Python"
-    ],
-    "image": "../../../assets/images/projects/royal_castle_hero.jpg",
-    "github": ""
+    "desc": "A fully animated video game complete with characters, scrolling background and sound effects.",
+    "tech": "Python, PyGame",
+    "image": "../../../assets/images/projects/royal_castle_hero.jpg"
   }
 ]

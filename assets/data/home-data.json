@@ -1,0 +1,39 @@
+{
+  "featuredWork": [
+    {
+      "title": "Divide and Conquer",
+      "desc": "Online real-time code competition platform for solving programming and algorithm questions.",
+      "imagePath": "../../../assets/images/projects/DivideAndConquer.png"
+    },
+    {
+      "title": "Political Chat Bot",
+      "desc": "Chat bot capable of answering general federal politic questions through the Open Parliament API.",
+      "imagePath": "../../../assets/images/projects/FederalBot.png"
+    },
+    {
+      "title": "Find Dining Scarborough",
+      "desc": "Award winning project (chosen by City of Toronto) to deliver a food ordering application during the COVID-19 pandemic.",
+      "imagePath": "../../../assets/images/projects/FindDiningScarborough.png"
+    }
+  ],
+  "highlights": [
+    {
+      "position": "Software Developer",
+      "company": "TELUS",
+      "subtitle": "Graduate Technology Leadership Program",
+      "content": "Support the retirement of legacy systems into cloud based applications through developments of microservice applications including micro frontends and backends for frontend."
+    },
+    {
+      "position": "Teaching Assistant",
+      "company": "University of Toronto",
+      "subtitle": "Department of Computer and Mathemtical Sciences",
+      "content": "Taught over 14 tutorials on Databases, Engineering Large Software Systems, Linear Algebra and Calculus including the position of Head Teaching Assistant twice managing a group of 3-5 Teaching Assistants."
+    },
+    {
+      "position": "Student Ambassador",
+      "company": "University of Toronto",
+      "subtitle": "Department of Computer and Mathemtical Sciences",
+      "content": "Student representative for recruitment activities including the annual view book, open house showcases and Q&A sessions relating to Computer Science and Mathematics."
+    }
+  ]
+}
