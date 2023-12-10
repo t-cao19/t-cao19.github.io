@@ -1,0 +1,79 @@
+{
+  "work": [
+    {
+      "position": "Software Developer",
+      "company": "TELUS, Graduate Technology Leadership Program",
+      "date": "May 2023 - Present",
+      "desc": [
+        "Full-stack developer working on supporting the transition of legacy applications to Google Cloud through development of MFEs (Microfrontend) and BFFs (Backend for Frontend)",
+        "Improved application reliability and software processes by increasing unit test coverage on web application while using Generative AI"
+      ]
+    },
+    {
+      "position": "Teaching Assistant",
+      "company": "University of Toronto, Department of Computer & Mathematical Sciences",
+      "date": "January 2021 - May 2023",
+      "desc": [
+        "Taught over 14 tutorials on Databases, Engineering Large Software Systems, Linear Algebra and Calculus",
+        "Managed a group of 3 to 5 teaching assistants as Head Teaching Assistant to ensure a smooth and consistent experience for students by developing course materials, assigning tasks and addressing concerns",
+        "Drafted and delivered weekly tutorials along with review seminars to students to reinforce key concepts in preparation for exams and seek clarification on any course-related materials resulting in improvement of grades",
+        "Hosted weekly office hours that allowed students to seek clarification on course-related content"
+      ]
+    },
+    {
+      "position": "Software Application Developer Co-op",
+      "company": "University of Toronto Libraries, Digital Scholarship Unit",
+      "date": "May - August 2021",
+      "desc": [
+        "Collaborated with a team responsible for digital scholarship and digital preservation within the library",
+        "Delivered implementation, packaging and contribution of custom in-house open-source repository software for the library to reduce digital archive corruption through the implementation of a checksum micro-service"
+      ]
+    },
+    {
+      "position": "Facilitated Study Group Leader",
+      "company": "University of Toronto, Centre for Teaching and Learning",
+      "date": "May - August 2021",
+      "desc": [
+        "Designed and facilitated live weekly study sessions for students taking introductory linear algebra for mathematical sciences that involved worksheets, group discussions, and developing effective study habits"
+      ]
+    },
+    {
+      "position": "Data Scientist Co-op",
+      "company": "TELUS, Procurement",
+      "date": "January - August 2020",
+      "desc": [
+        "Produced data analytics and automation for TELUS Procurement to improve decision-making for directors",
+        "Organized and presented in bi-weekly presentations showcasing the team’s current and new projects",
+        "Developed the ETL of financial data analytics to data dashboards to cut down on manual labour by 50%"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "position": "Student Ambassador",
+      "company": "University of Toronto, Department of Computer and Mathematical Sciences",
+      "date": "March 2022 - May 2023",
+      "desc": [
+        "Supported department-planned club events to increase student engagement in the student body",
+        "Facilitated student questions and inquiries as a student ambassador at the University open house for first-year students answering common student questions and providing insights into Computer Science and Mathematics studies"
+      ]
+    },
+    {
+      "position": "Director of Front-end Development",
+      "company": "University of Toronto, LIVE Competition",
+      "date": "May 2021 - April 2022",
+      "desc": [
+        "Strengthened the existing competition portal, Blueboard, using Angular, and TypeScript to ensure a more secure, reliable, and straightforward system to be used for the business case competition",
+        "Participated and presented in weekly sprint meetings to showcase new improvements to the entire team"
+      ]
+    },
+    {
+      "position": "Student Mentor",
+      "company": "University of Toronto, Co-op Student Association",
+      "date": "September 2020 - April 2021",
+      "desc": [
+        "Provided mentor support for first-year students entering the Co-Op program or first-time seekers with activities such as resume and interview prep, workplace experience and the Co-op journey"
+      ]
+    }
+  ]
+}

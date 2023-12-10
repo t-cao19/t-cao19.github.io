@@ -9,15 +9,13 @@ $github-webpage-theme: mat-light-theme(
 );
 
 @include angular-material-theme($github-webpage-theme);
-// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,300;0,400;1,300&family=Oswald:wght@400;500;700&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,300;0,400;0,700;1,300&family=Oswald:wght@400;500;700&family=Poppins&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@500&family=Eczar:wght@600&family=Josefin+Sans:wght@600&family=Lora:ital,wght@1,700&family=Raleway&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap");
 $primary-color: #e2fadb;
 $secondary-color: #f2fdff;
 $dark-color: rgb(7, 27, 48);
 $grey-color: #dddddd;
 
-$background-color1: white;
+$background-color1: #fff;
 $background-color2: rgb(240, 240, 240);
 
 $navigation-color: #d9dcd6;
@@ -38,57 +36,116 @@ body {
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
+  color: #151413;
+  font-family: Eczar;
+  font-size: 44px;
   font-style: normal;
-  font-size: 50px;
-  line-height: 50px;
+  font-weight: 600;
+  line-height: 125%; /* 80px */
+  letter-spacing: 1.28px;
+}
+
+h1.is-tablet-landscape {
+  font-size: 38px;
+}
+
+h1.is-tablet-portrait {
+  font-size: 30px;
+}
+
+h1.is-phone-landscape {
+  font-size: 30px;
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
+  color: #fffefc;
+  font-family: Eczar;
+  font-size: 36px;
   font-style: normal;
-  color: black;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 70px;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 0.8px;
+}
+
+h2.is-tablet-portrait {
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+h2.is-phone-portrait,
+h2.is-phone-landscape {
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
+  color: #000;
+  font-family: Work Sans;
+  font-size: 28px;
   font-style: normal;
-  font-size: 35px;
-  line-height: 35px;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+}
+
+h3.is-tablet-landscape,
+h3.is-tablet-portrait {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3.is-phone-landscape,
+h3.is-phone-portrait {
+  font-size: 22px;
+  line-height: 125%;
 }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: bold;
+  color: #594f43;
+  font-family: Work Sans;
+  font-size: 20px;
   font-style: normal;
-  line-height: 36px;
-  color: #2f6690;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+}
+
+h4.is-tablet-landscape,
+h4.is-tablet-portrait,
+h4.is-phone-portrait,
+h4.is-phone-landscape {
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
+  color: #000;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
   font-style: normal;
-  line-height: 30px;
-  color: #16425b;
+  font-weight: 700;
+  line-height: 25px; /* 125% */
+  margin-bottom: 5px;
 }
 
 ul,
 li,
 p {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Work Sans;
   font-size: 20px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
   font-style: normal;
-  margin-bottom: 5px;
-  line-height: 20px;
+  font-weight: 300;
+  line-height: 150%; /* 30px */
+}
+
+p.is-tablet-landscape,
+p.is-tablet-portrait,
+li.is-tablet-portrait,
+li.is-tablet-landscape,
+p.is-phone-landscape,
+li.is-phone-landscape {
+  font-size: 18px;
 }
 
 .page-header-img {
@@ -125,5 +182,15 @@ p {
   color: white;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+div.hidden {
+  display: none;
+}

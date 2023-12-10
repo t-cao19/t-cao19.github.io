@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import * as AOS from 'aos';
-import highlights from '../../../assets/data/highlights.json';
+import AOS from 'aos';
+import homeData from '../../../assets/data/home-data.json';
+import { FormControl, FormGroup } from '@angular/forms';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
@@ -13,25 +15,68 @@ export class HomeComponent implements OnInit {
   faEnvelope = faEnvelope;
   faLinkedinIn = faLinkedinIn;
   faGitHub = faGithub;
-  currently: any[];
-  previously: any[];
-
+  featuredWork: any[];
   wordArray: string[];
+  carouselHighlight: any[];
+  highlight1Pos: number;
+  highlight2Pos: number;
+  mailText: string;
 
-  constructor() {
-    this.wordArray = [
-      'Tony Cao ',
-      'Final Year U of T Student ',
-      'CS + Math Enthusiast ',
-      'U of T Teaching Assistant ',
-      'Inspiring Frontend Developer ',
+  // Mobile queries
+  isTabletLandscape: boolean;
+  isTabletPortrait: boolean;
+  isPhoneLandscape: boolean;
+  isPhonePortrait: boolean;
+
+  messageForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    subject: new FormControl(''),
+    email: new FormControl(''),
+    message: new FormControl(''),
+  });
+
+  constructor(private responsive: BreakpointObserver) {
+    this.featuredWork = homeData.featuredWork;
+    this.highlight1Pos = 0;
+    this.highlight2Pos = this.highlight1Pos + 1;
+    this.carouselHighlight = [
+      homeData.highlights[this.highlight1Pos],
+      homeData.highlights[this.highlight2Pos],
     ];
-
-    this.currently = highlights.slice(0, 3);
-    this.previously = highlights.slice(3);
   }
 
   ngOnInit(): void {
+    this.responsive.observe(Breakpoints.TabletLandscape).subscribe((result) => {
+      this.isTabletLandscape = false;
+      if (result.matches) {
+        this.isTabletLandscape = true;
+      }
+    });
+
+    this.responsive.observe(Breakpoints.TabletPortrait).subscribe((result) => {
+      this.isTabletPortrait = false;
+      if (result.matches) {
+        this.isTabletPortrait = true;
+      }
+    });
+
+    this.responsive
+      .observe(Breakpoints.HandsetLandscape)
+      .subscribe((result) => {
+        this.isPhoneLandscape = false;
+        if (result.matches) {
+          this.isPhoneLandscape = true;
+        }
+      });
+
+    this.responsive.observe(Breakpoints.HandsetPortrait).subscribe((result) => {
+      this.isPhonePortrait = false;
+      if (result.matches) {
+        this.isPhonePortrait = true;
+      }
+    });
+
     AOS.init({
       delay: 200,
       duration: 1500,
@@ -39,4 +84,33 @@ export class HomeComponent implements OnInit {
       anchorPlacement: 'top-bottom',
     });
   }
+
+  nextArrow(): void {
+    this.highlight1Pos = this.highlight2Pos;
+    this.highlight2Pos =
+      this.highlight2Pos + 1 < homeData.highlights.length
+        ? this.highlight2Pos + 1
+        : 0;
+    this.carouselHighlight = [
+      homeData.highlights[this.highlight1Pos],
+      homeData.highlights[this.highlight2Pos],
+    ];
+  }
+
+  prevArrow(): void {
+    this.highlight2Pos = this.highlight1Pos;
+    this.highlight1Pos =
+      this.highlight1Pos - 1 > -1
+        ? this.highlight2Pos - 1
+        : homeData.highlights.length - 1;
+    this.carouselHighlight = [
+      homeData.highlights[this.highlight1Pos],
+      homeData.highlights[this.highlight2Pos],
+    ];
+  }
+
+  // sendMessage(): void {
+  //   this.mailText = `mailto:tony.cao1@outlook.com?subject=${this.messageForm.value.subject}&body=${this.messageForm.value.message}`;
+  //   window.location.href = this.mailText;
+  // }
 }

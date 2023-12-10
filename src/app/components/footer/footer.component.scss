@@ -2,35 +2,12 @@
 
 footer {
   font-size: 15px;
-  padding: 30px;
-  background-color: transparent;
-  // border-top: 2px solid silver;
-}
-
-.contact {
+  padding: 50px 0px;
+  background: #000;
   text-align: center;
 }
 
-h1 {
-  font-size: 35px;
-}
-
-.media-icon {
-  font-size: 30px;
-  margin: 10px;
-  color: black;
-}
-
-.icons {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.footer-content {
-  margin: 50px 20%;
-  color: $footer-text-color;
-
-  @media screen and (max-width: 700px) {
-    margin: 20px;
-  }
+footer p {
+  color: #fff;
+  margin: 0;
 }

@@ -1,35 +1,348 @@
 <div class="resume-page">
-  <div class="page-body">
-    <div class="title">
-      <h2>Resume</h2>
+  <div class="row" id="resume" [ngClass]="{ hidden: isPhonePortrait }">
+    <div
+      class="col-md-6"
+      id="resume-desc"
+      [ngClass]="{
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      <h1
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        Resume
+      </h1>
+      <h4
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        A walkthrough of my current and past experiences along with the skills I
+        have gained through it.
+      </h4>
     </div>
-    <div class="options">
-      <button type="button" (click)="scroll(resume)">Resume PDF</button>
+    <div class="col-md-6">
+      <img
+        id="resume-pic"
+        src="../../../assets/images/TelusGarden.jpg"
+        alt="Tony Cao"
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      />
     </div>
-    <div class="timeline">
-      <h4>Experience Timeline</h4>
-      <app-ngx-vertical-timeline [(items)]="items"></app-ngx-vertical-timeline>
+  </div>
+  <div id="resume" [ngClass]="{ hidden: !isPhonePortrait }">
+    <div class="col-md-6" id="resume-desc">
+      <h1
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        Resume
+      </h1>
+      <h4
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        A walkthrough of my current and past experiences along with the skills I
+        have gained through it.
+      </h4>
     </div>
-    <div class="subtitle" #resume>
-      <h4>Resume PDF</h4>
+    <div class="col-md-6">
+      <img
+        id="resume-pic"
+        src="../../../assets/images/TelusGarden.jpg"
+        alt="Tony Cao"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      />
     </div>
-    <div class="resume-pdf">
-      <iframe
-        src="https://drive.google.com/file/d/1CtJcVdPzPgCTTyhvHblja8xw0EoeGipi/preview"
-        allow="autoplay"
-      ></iframe>
+  </div>
+  <div id="statistics">
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      Some quick statistics
+    </h2>
+    <div class="row">
+      <div
+        class="col-md-3 stats-num"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          3
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          Companies
+        </p>
+      </div>
+      <div
+        class="col-md-3 stats-num"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          5
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          Job Positions
+        </p>
+      </div>
+      <div
+        class="col-md-3 stats-num"
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          3
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          Volunteer Experiences
+        </p>
+      </div>
+      <div class="col-md-3 stats-num" id="last">
+        <h2
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          14
+        </h2>
+        <p
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          Course as a TA
+        </p>
+      </div>
     </div>
-
-    <div class="icons">
-      <a href="mailto:jtony.cao@mail.utoronto.ca">
-        <fa-icon class="footer-icon" [icon]="faEnvelope"></fa-icon>
-      </a>
-      <a href="https://www.linkedin.com/in/tony-cao19/" target="_blank">
-        <fa-icon class="footer-icon" [icon]="faLinkedinIn"></fa-icon>
-      </a>
-      <a href="https://github.com/t-cao19" target="_blank">
-        <fa-icon class="footer-icon" [icon]="faGitHub"></fa-icon>
-      </a>
+  </div>
+  <div id="work-exp">
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      Work Experience
+    </h2>
+    <div
+      class="exp"
+      *ngFor="let exp of resume.work"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      <app-resume-experience [experience]="exp"></app-resume-experience>
     </div>
+  </div>
+  <div id="volunteer-exp">
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      Volunteer Experience
+    </h2>
+    <div
+      class="exp"
+      *ngFor="let exp of resume.volunteer"
+      data-aos="fade-down"
+      data-aos-duration="1200"
+    >
+      <app-resume-experience
+        [experience]="exp"
+        [inverted]="true"
+      ></app-resume-experience>
+    </div>
+  </div>
+  <div id="education">
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      Education
+    </h2>
+    <h4
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      Honours Bachelor of Science with High Distinction
+    </h4>
+    <div
+      id="university"
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      University of Toronto, 2018-2023
+    </div>
+    <ul>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        Completion of a specialist in Computer Science (Co-op) -
+        <i>Software Engineering</i> and Major in Mathematics
+      </li>
+    </ul>
+    <br />
+    <p
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      <u>Awards/Honours</u>
+    </p>
+    <ul>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        Dean's List (Nov 2019, Sept 2020/21/22)
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        University of Toronto Scholar (Top 700 applicant) carrying a value of
+        $7,500 initial and $3,000 in subsequent years (twice)
+      </li>
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        Best project by City of Toronto in CSCC01:
+        <i>Introduction to Software Engineering</i>
+      </li>
+    </ul>
+    <hr />
+    <h2
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      Teachings
+    </h2>
+    <h4
+      [ngClass]="{
+        'is-tablet-landscape': isTabletLandscape,
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
+      A list of all courses I have been apart of at the University of Toronto,
+      Department of Computer and Mathematical Science as a Teaching Assistant.
+    </h4>
+    <ul *ngFor="let course of courses">
+      <li
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      >
+        {{ course }}
+      </li>
+    </ul>
   </div>
 </div>

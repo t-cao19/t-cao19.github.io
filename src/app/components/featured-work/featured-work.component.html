@@ -1,0 +1,76 @@
+<div
+  class="card featuredWork"
+  [ngClass]="{
+    'is-tablet-landscape': isTabletLandscape,
+    'is-tablet-portrait': isTabletPortrait,
+    'is-phone-portrait': isPhonePortrait
+  }"
+>
+  <div
+    class="row"
+    [ngClass]="{
+      hidden: isPhonePortrait
+    }"
+  >
+    <div class="col-md-7">
+      <div class="descBox">
+        <h3
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          {{ work.title | titlecase }}
+        </h3>
+        <h4
+          [ngClass]="{
+            'is-tablet-landscape': isTabletLandscape,
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
+          }"
+        >
+          {{ work.desc }}
+        </h4>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img
+        class="work-img"
+        src="{{ work.imagePath }}"
+        alt="{{ work.title }}"
+        [ngClass]="{
+          'is-tablet-landscape': isTabletLandscape,
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
+        }"
+      />
+    </div>
+  </div>
+  <div
+    [ngClass]="{
+      hidden: !isPhonePortrait
+    }"
+  >
+    <div class="descBox">
+      <h3
+        [ngClass]="{
+          'is-phone-portrait': isPhonePortrait
+        }"
+      >
+        {{ work.title | titlecase }}
+      </h3>
+      <h4>
+        {{ work.desc }}
+      </h4>
+    </div>
+    <img
+      class="work-img"
+      src="{{ work.imagePath }}"
+      alt="{{ work.title }}"
+      [ngClass]="{
+        'is-phone-portrait': isPhonePortrait
+      }"
+    />
+  </div>
+</div>

@@ -1,69 +1,82 @@
 @import "src/styles";
 
-.projects-page {
-  background: #e6dace;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding-top: 100px;
-
-  @media screen and (max-width: 1400px) {
-    padding-top: 125px;
-  }
-
-  @media screen and (max-width: 900px) {
-    padding-top: 50px;
-  }
-
-  @media screen and (max-width: 400px) {
-    padding-top: 60px;
-  }
+#projects-desc {
+  padding-left: 10%;
+  padding-top: 70px;
 }
 
-.title {
-  text-align: center;
+#projects-desc.is-phone-portrait {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+#projects-desc.is-phone-landscape {
+  padding-top: 10px;
+}
+
+#projects {
   padding-bottom: 30px;
-
-  @media screen and (max-width: 1400px) {
-    padding-bottom: 15px;
-  }
-
-  @media screen and (max-width: 900px) {
-    padding-top: 10px;
-  }
-
-  @media screen and (max-width: 400px) {
-    // padding-top: 70px;
-  }
 }
 
-.media-icons {
-  position: absolute;
-  top: 135px;
-  width: 220px;
+#projects-pic {
+  display: block;
+  width: 475px;
+  height: 350px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 30px auto 0px auto;
+}
 
-  @media screen and (max-width: 850px) {
-    position: relative;
-    top: 20px;
-  }
+#projects-pic.is-tablet-landscape {
+  width: 450px;
+  height: 300px;
+  margin: 20px auto 0px auto;
+}
+
+#projects-pic.is-tablet-portrait {
+  width: 325px;
+  height: 250px;
+  margin: 70px auto 0px auto;
+}
+
+#projects-pic.is-phone-portrait,
+#projects-pic.is-phone-landscape {
+  width: 325px;
+  height: 250px;
+}
+
+#skills {
+  background: rgba(0, 0, 0, 0.93);
+  padding: 45px 10%;
+}
+
+.onerow-skill {
+  text-align: center;
+  color: #fffefc;
+}
+
+#row-2 h2 {
+  font-size: 32px;
+}
+
+#row-3 h2 {
+  font-size: 28px;
+}
+
+#row-4 h2 {
+  font-size: 24px;
 }
 
 .media-icon {
-  font-size: 35px;
-  float: right;
+  padding-left: 70%;
+  font-size: 16px;
   color: black;
 }
 
-.footer-icon {
-  font-size: 50px;
-  margin: 10px 10px 20px 20px;
-  color: black;
-}
-
-.icons {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  left: 50%;
-  text-align: center;
+hr {
+  background: #fffefc;
+  width: 50%;
+  height: 1px;
+  margin: 20px auto;
 }
