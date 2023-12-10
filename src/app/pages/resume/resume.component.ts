@@ -16,6 +16,7 @@ export class ResumeComponent implements OnInit {
   faGitHub = faGithub;
   education: any;
   resume: any;
+  courses: string[];
 
   // Mobile queries
   isTabletLandscape: boolean;
@@ -25,6 +26,22 @@ export class ResumeComponent implements OnInit {
 
   constructor(private responsive: BreakpointObserver) {
     this.resume = resume;
+    this.courses = [
+      'Engineering Large Software Systems - Head TA, CSCD01, Winter 2023.',
+      'Calculus II for Physical Sciences, MATA36, Winter 2023.',
+      'Calculus II for Mathematical Sciences, MATA37, Winter 2023.',
+      'Discrete Mathematics, CSC/MATA67, Fall 2022.',
+      'Introduction to Databases - Head TA, CSCC43, Fall 2022.',
+      'Linear Algebra II, MATB24, Fall 2022.',
+      'Techniques of the Calculus of Several Variables I, MATB41, Fall 2022.',
+      'Groups and Symmetry, MATC01, Fall 2022.',
+      'Calculus II for Mathematical Sciences, MATA37, Summer 2022.',
+      'Techniques of the Calculus of Several Variables I, MATB41, Summer 2022.',
+      'Calculus II for Mathematical Sciences, MATA37, Winter 2022.',
+      'Discrete Mathematics, CSC/MATA67, Fall 2021.',
+      'Calculus for Management I - Two Tutorials, MATA32, Fall 2021.',
+      'Calculus II for Mathematical Sciences, MATA37, Winter 2021.',
+    ];
   }
 
   ngOnInit(): void {

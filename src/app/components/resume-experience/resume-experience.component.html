@@ -5,7 +5,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'text-inverted': inverted
+          'text-inverted': inverted,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         {{ experience.position | titlecase }}
@@ -16,14 +17,15 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'text-inverted': inverted
+          'text-inverted': inverted,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         {{ experience.date }}
       </h3>
     </div>
   </div>
-  <div>
+  <div [ngClass]="{ hidden: !isPhonePortrait }">
     <h3
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
@@ -52,7 +54,8 @@
       'is-tablet-landscape': isTabletLandscape,
       'is-tablet-portrait': isTabletPortrait,
       'text-inverted': inverted,
-      'is-phone-portrait': isPhonePortrait
+      'is-phone-portrait': isPhonePortrait,
+      'is-phone-landscape': isPhoneLandscape
     }"
   >
     {{ experience.company }}

@@ -4,6 +4,11 @@
   padding-left: 10%;
   padding-top: 70px;
 }
+
+#resume-desc.is-phone-landscape {
+  padding-top: 10px;
+}
+
 #resume {
   padding-bottom: 30px;
   padding-top: 30px;
@@ -31,7 +36,8 @@
   margin: 70px auto 0px auto;
 }
 
-#resume-pic.is-phone-portrait {
+#resume-pic.is-phone-portrait,
+#resume-pic.is-phone-landscape {
   width: 325px;
   height: 250px;
 }
@@ -94,6 +100,7 @@ hr {
 }
 
 #university.is-tablet-portrait,
-#university.is-phone-portrait {
+#university.is-phone-portrait,
+#university.is-phone-landscape {
   font-size: 18px;
 }

@@ -1,10 +1,17 @@
 <div class="resume-page">
   <div class="row" id="resume" [ngClass]="{ hidden: isPhonePortrait }">
-    <div class="col-md-6" id="resume-desc">
+    <div
+      class="col-md-6"
+      id="resume-desc"
+      [ngClass]="{
+        'is-phone-landscape': isPhoneLandscape
+      }"
+    >
       <h1
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Resume
@@ -12,7 +19,8 @@
       <h4
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         A walkthrough of my current and past experiences along with the skills I
@@ -26,7 +34,8 @@
         alt="Tony Cao"
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       />
     </div>
@@ -65,7 +74,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Some quick statistics
@@ -80,7 +90,8 @@
         <h2
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           3
@@ -88,7 +99,8 @@
         <p
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           Companies
@@ -103,7 +115,8 @@
         <h2
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           5
@@ -111,7 +124,8 @@
         <p
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           Job Positions
@@ -126,7 +140,8 @@
         <h2
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           3
@@ -134,7 +149,8 @@
         <p
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           Volunteer Experiences
@@ -144,7 +160,8 @@
         <h2
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           14
@@ -152,7 +169,8 @@
         <p
           [ngClass]="{
             'is-tablet-landscape': isTabletLandscape,
-            'is-tablet-portrait': isTabletPortrait
+            'is-tablet-portrait': isTabletPortrait,
+            'is-phone-landscape': isPhoneLandscape
           }"
         >
           Course as a TA
@@ -164,7 +182,8 @@
     <h2
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
-        'is-tablet-portrait': isTabletPortrait
+        'is-tablet-portrait': isTabletPortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Work Experience
@@ -178,7 +197,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Volunteer Experience
@@ -195,7 +215,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Education
@@ -204,7 +225,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Honours Bachelor of Science with High Distinction
@@ -214,7 +236,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       University of Toronto, 2018-2023
@@ -224,7 +247,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Completion of a specialist in Computer Science (Co-op) -
@@ -236,7 +260,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       <u>Awards/Honours</u>
@@ -246,7 +271,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Dean's List (Nov 2019, Sept 2020/21/22)
@@ -255,7 +281,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         University of Toronto Scholar (Top 700 applicant) carrying a value of
@@ -265,7 +292,8 @@
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Best project by City of Toronto in CSCC01:
@@ -277,7 +305,8 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Teachings
@@ -286,138 +315,23 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       A list of all courses I have been apart of at the University of Toronto,
       Department of Computer and Mathematical Science as a Teaching Assistant.
     </h4>
-    <ul>
+    <ul *ngFor="let course of courses">
       <li
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
           'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
+          'is-phone-portrait': isPhonePortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
-        Engineering Large Software Systems - Head TA, CSCD01, Winter 2023.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Calculus II for Physical Sciences, MATA36, Winter 2023.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Calculus II for Mathematical Sciences, MATA37, Winter 2023.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Discrete Mathematics, CSC/MATA67, Fall 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Introduction to Databases - Head TA, CSCC43, Fall 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Linear Algebra II, MATB24, Fall 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Techniques of the Calculus of Several Variables I, MATB41, Fall 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Groups and Symmetry, MATC01, Fall 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Calculus II for Mathematical Sciences, MATA37, Summer 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Techniques of the Calculus of Several Variables I, MATB41, Summer 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Calculus II for Mathematical Sciences, MATA37, Winter 2022.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Discrete Mathematics, CSC/MATA67, Fall 2021.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Calculus for Management I - Two Tutorials, MATA32, Fall 2021.
-      </li>
-      <li
-        [ngClass]="{
-          'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait,
-          'is-phone-portrait': isPhonePortrait
-        }"
-      >
-        Calculus II for Mathematical Sciences, MATA37, Winter 2021.
+        {{ course }}
       </li>
     </ul>
   </div>
