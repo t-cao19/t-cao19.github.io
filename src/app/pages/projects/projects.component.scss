@@ -10,6 +10,10 @@
   padding-top: 30px;
 }
 
+#projects-desc.is-phone-landscape {
+  padding-top: 10px;
+}
+
 #projects {
   padding-bottom: 30px;
 }
@@ -36,7 +40,8 @@
   margin: 70px auto 0px auto;
 }
 
-#projects-pic.is-phone-portrait {
+#projects-pic.is-phone-portrait,
+#projects-pic.is-phone-landscape {
   width: 325px;
   height: 250px;
 }

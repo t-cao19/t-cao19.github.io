@@ -8,7 +8,8 @@
   >
     <h3
       [ngClass]="{
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       {{ project.title | titlecase }}
@@ -19,7 +20,8 @@
     <hr />
     <h4
       [ngClass]="{
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       {{ project.desc }}
@@ -28,7 +30,8 @@
     <h4
       class="project-tech"
       [ngClass]="{
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       {{ project.tech }}

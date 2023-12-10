@@ -91,6 +91,14 @@ export class ProjectsComponent implements OnInit {
         this.isPhoneLandscape = false;
         if (result.matches) {
           this.isPhoneLandscape = true;
+          this.projects = projects.reduce((resultArray, item, index) => {
+            const chunkIndex = Math.floor(index / 2);
+            if (!resultArray[chunkIndex]) {
+              resultArray[chunkIndex] = []; // start a new chunk
+            }
+            resultArray[chunkIndex].push(item);
+            return resultArray;
+          }, []);
         }
       });
 
@@ -98,6 +106,7 @@ export class ProjectsComponent implements OnInit {
       this.isPhonePortrait = false;
       if (result.matches) {
         this.isPhonePortrait = true;
+        this.projects = this.trioProjects;
       }
     });
 

@@ -1,10 +1,15 @@
 <div class="projects-page">
   <div class="row" id="projects" [ngClass]="{ hidden: isPhonePortrait }">
-    <div class="col-md-6" id="projects-desc">
+    <div
+      class="col-md-6"
+      id="projects-desc"
+      [ngClass]="{ 'is-phone-landscape': isPhoneLandscape }"
+    >
       <h1
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         Projects
@@ -12,7 +17,8 @@
       <h4
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       >
         A showcase of my projects where technical skills and creativity combine
@@ -26,7 +32,8 @@
         alt="Tony Cao"
         [ngClass]="{
           'is-tablet-landscape': isTabletLandscape,
-          'is-tablet-portrait': isTabletPortrait
+          'is-tablet-portrait': isTabletPortrait,
+          'is-phone-landscape': isPhoneLandscape
         }"
       />
     </div>
@@ -69,12 +76,15 @@
       [ngClass]="{
         'is-tablet-landscape': isTabletLandscape,
         'is-tablet-portrait': isTabletPortrait,
-        'is-phone-portrait': isPhonePortrait
+        'is-phone-portrait': isPhonePortrait,
+        'is-phone-landscape': isPhoneLandscape
       }"
     >
       Some Technical Skills
     </h2>
-    <hr [ngClass]="{ hidden: !isPhonePortrait }" />
+    <div [ngClass]="{ hidden: !isPhonePortrait }">
+      <hr />
+    </div>
     <div *ngFor="let row of technicalSkills">
       <div
         class="row onerow-skill"
@@ -85,7 +95,8 @@
           <h2
             [ngClass]="{
               'is-tablet-landscape': isTabletLandscape,
-              'is-tablet-portrait': isTabletPortrait
+              'is-tablet-portrait': isTabletPortrait,
+              'is-phone-landscape': isPhoneLandscape
             }"
           >
             {{ row.skill[0] }}
@@ -95,7 +106,8 @@
           <h2
             [ngClass]="{
               'is-tablet-landscape': isTabletLandscape,
-              'is-tablet-portrait': isTabletPortrait
+              'is-tablet-portrait': isTabletPortrait,
+              'is-phone-landscape': isPhoneLandscape
             }"
           >
             {{ row.skill[1] }}
@@ -105,7 +117,8 @@
           <h2
             [ngClass]="{
               'is-tablet-landscape': isTabletLandscape,
-              'is-tablet-portrait': isTabletPortrait
+              'is-tablet-portrait': isTabletPortrait,
+              'is-phone-landscape': isPhoneLandscape
             }"
           >
             {{ row.skill[2] }}
@@ -115,7 +128,8 @@
           <h2
             [ngClass]="{
               'is-tablet-landscape': isTabletLandscape,
-              'is-tablet-portrait': isTabletPortrait
+              'is-tablet-portrait': isTabletPortrait,
+              'is-phone-landscape': isPhoneLandscape
             }"
           >
             {{ row.skill[3] }}
@@ -167,7 +181,7 @@
       class="row"
       *ngFor="let row of projects"
       [ngClass]="{
-        hidden: isTabletPortrait
+        hidden: isTabletPortrait || isPhoneLandscape
       }"
     >
       <div class="col-md-4">
@@ -184,7 +198,7 @@
       class="row"
       *ngFor="let row of projects"
       [ngClass]="{
-        hidden: !isTabletPortrait
+        hidden: !(isTabletPortrait || isPhoneLandscape)
       }"
     >
       <div class="col-md-6">
